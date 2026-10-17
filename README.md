@@ -16,7 +16,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 | Date | Question | Folder | Article |
 |---|---|---|---|
-| 2026-10-17 | How can an ordinary user verify a bridged stablecoin's "1:1 backing"? (BRL1.p on Rayls) | [`2026-10-brl1p-backing`](2026-10-brl1p-backing/) | Binance Square: link to be added |
+| 2026-10-17 | How can an ordinary user verify a bridged stablecoin's "1:1 backing"? (BRL1.p on Rayls) | [`2026-10-brl1p-backing`](2026-10-brl1p-backing/) | [Binance Square](https://www.binance.com/zh-CN/square/post/378201716555838) · [X thread](https://x.com/hanson0520/status/2111378823787016491) |
 | 2026-10-08 | How much compute does one zero-knowledge private transfer need? (Rayls Enygma prover) | separate repo: [`enygma-bench`](https://github.com/hansonhan0520-lang/enygma-bench) | Binance Square |
 
 ### Ground rules
@@ -39,7 +39,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 | 日期 | 问题 | 文件夹 | 文章 |
 |---|---|---|---|
-| 2026-10-17 | 跨链桥稳定币说"1:1 背书"，普通人怎么自己验证？（以 Rayls 上的 BRL1.p 为例） | [`2026-10-brl1p-backing`](2026-10-brl1p-backing/) | 币安广场：链接待补 |
+| 2026-10-17 | 跨链桥稳定币说"1:1 背书"，普通人怎么自己验证？（以 Rayls 上的 BRL1.p 为例） | [`2026-10-brl1p-backing`](2026-10-brl1p-backing/) | [币安广场](https://www.binance.com/zh-CN/square/post/378201716555838) · [X 线程](https://x.com/hanson0520/status/2111378823787016491) |
 | 2026-10-08 | 一笔零知识隐私转账需要多少算力？（Rayls Enygma 证明器） | 独立仓库：[`enygma-bench`](https://github.com/hansonhan0520-lang/enygma-bench) | 币安广场 |
 
 ### 约定
