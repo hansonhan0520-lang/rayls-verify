@@ -32,7 +32,7 @@ jobs:
       - name: fetch BRL1 proof-of-reserves documents
         if: always()
         continue-on-error: true
-        run: python3 2026-11-brl1p-monitor/por.py
+        run: python3 2026-11-brl1p-monitor/por.py && python3 2026-11-brl1p-monitor/por_check.py
       - name: commit results
         if: always()
         run: |
