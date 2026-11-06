@@ -1,14 +1,14 @@
-name: brl1p-signers
+name: brl1p-adhoc
 on: workflow_dispatch
 permissions:
   contents: write
 jobs:
-  signers:
+  admins:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - run: pip install --quiet pycryptodome && python3 2026-11-brl1p-monitor/signers.py
+      - run: python3 2026-11-brl1p-monitor/admins.py
       - name: commit results
         if: always()
         run: |
