@@ -36,4 +36,17 @@ for u in list(idx["links"]):
             idx["links"][u] = {"seen_on": idx["links"][u], "file": name, "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
         except Exception as e:
             idx["links"][u] = {"seen_on": idx["links"][u], "error": str(e)[:100]}
+ids = sorted(set(re.findall(r"drive\.google\.com/file/d/([A-Za-z0-9_-]+)", " ".join(idx["links"]))))
+idx["drive"] = {}
+for i in ids:
+    u = f"https://drive.google.com/uc?export=download&id={i}"
+    try:
+        st, final, b = get(u)
+        kind = "pdf" if b[:4] == b"%PDF" else "html"
+        name = f"drive_{i}.{kind}"
+        open(os.path.join(OUT, name), "wb").write(b)
+        idx["drive"][i] = {"status": st, "final_url": final[:120], "file": name, "bytes": len(b), "sha256": hashlib.sha256(b).hexdigest()}
+    except Exception as e:
+        idx["drive"][i] = {"error": str(e)[:150]}
+    print("drive", i, idx["drive"][i])
 json.dump(idx, open(os.path.join(OUT, "index.json"), "w"), indent=1)
