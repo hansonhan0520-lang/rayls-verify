@@ -1,5 +1,5 @@
 {
- "fetched_utc": "2026-11-06T03:54:09Z",
+ "fetched_utc": "2026-11-06T03:55:11Z",
  "pages": [
   {
    "url": "https://brl1.io/en",
@@ -31,7 +31,7 @@
    "status": 200,
    "file": "docs_fact_finance_features_por_.html",
    "bytes": 48632,
-   "sha256": "fff3939009323714c242acdfe4b194fafe47b80778c1b4e346cea6dea9ed0d61"
+   "sha256": "2adce496100d7a8d0001b61c347f0f16cb57bdd1fdcddc3da4dadab626d64a03"
   },
   {
    "url": "https://docs.fact.finance/cases/stablecoins/",
@@ -39,7 +39,7 @@
    "status": 200,
    "file": "docs_fact_finance_cases_stablecoins_.html",
    "bytes": 44174,
-   "sha256": "18a6862903081df2d7590f6c7c19e1b8701b6aa40475fa41f1599cbcea0988e6"
+   "sha256": "951d23b9274df17731b1912d229a78fb36a2b1e665f77d429de8860b6c0ee9ac"
   }
  ],
  "links": {
@@ -49,5 +49,35 @@
   "https://drive.google.com/file/d/139WCYEqBprr83aPoYN5YlePpYpF50hrT/view?usp=sharing": "https://brl1.io/en",
   "https://drive.google.com/file/d/1aOuxzC0DAiRKuUDklpifvdxMsSqR06Vr/view?usp=sharing": "https://brl1.io/en",
   "https://drive.google.com/file/d/1q6arJKrt3wWta7kYCnppD1awhgzsz8AW/view?usp=sharing": "https://brl1.io/en/como_funciona"
+ },
+ "drive": {
+  "139WCYEqBprr83aPoYN5YlePpYpF50hrT": {
+   "status": 200,
+   "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.usercontent.google.com/download?id%3D139WCYEqBpr",
+   "file": "drive_139WCYEqBprr83aPoYN5YlePpYpF50hrT.html",
+   "bytes": 999575,
+   "sha256": "43367fde14511624df56b81186833cb272356fce5b50576fe29907d3e54a9e6e"
+  },
+  "1BuRUC6u3UTzf17kOChhKby_L9hE5IU73": {
+   "status": 200,
+   "final_url": "https://drive.usercontent.google.com/download?id=1BuRUC6u3UTzf17kOChhKby_L9hE5IU73&export=download",
+   "file": "drive_1BuRUC6u3UTzf17kOChhKby_L9hE5IU73.pdf",
+   "bytes": 87985,
+   "sha256": "a77750de14b9a69ea5dd391217e60a22392731fec6bd8da842828a6c858aa0ff"
+  },
+  "1aOuxzC0DAiRKuUDklpifvdxMsSqR06Vr": {
+   "status": 200,
+   "final_url": "https://drive.usercontent.google.com/download?id=1aOuxzC0DAiRKuUDklpifvdxMsSqR06Vr&export=download",
+   "file": "drive_1aOuxzC0DAiRKuUDklpifvdxMsSqR06Vr.pdf",
+   "bytes": 459055,
+   "sha256": "67061df780f3f65f28394414ee68b910a4c2dc62f274b972c7bbd220325f3042"
+  },
+  "1q6arJKrt3wWta7kYCnppD1awhgzsz8AW": {
+   "status": 200,
+   "final_url": "https://drive.usercontent.google.com/download?id=1q6arJKrt3wWta7kYCnppD1awhgzsz8AW&export=download",
+   "file": "drive_1q6arJKrt3wWta7kYCnppD1awhgzsz8AW.pdf",
+   "bytes": 189617,
+   "sha256": "57f6241158ea84a546556deb0a84e23dc5abe8571c4495447488439e4754f982"
+  }
  }
 }
