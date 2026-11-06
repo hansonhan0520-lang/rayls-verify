@@ -1,0 +1,313 @@
+{
+ "rayls:0x396dc0a78f789586e2982fccd830c5954c193f3c": {
+  "chain": "rayls",
+  "address": "0x396dc0a78f789586e2982fccd830c5954c193f3c",
+  "registry_name_now": "LayerZero Labs (id layerzero-labs)",
+  "quorum": 2,
+  "signer_size": 3,
+  "vid": 415,
+  "paused": 0,
+  "signers": [
+   "0x03429038953855beec609022284894049746c164",
+   "0x238fc6e3ffa0615925c96b23633f446881978ab5",
+   "0x9b16cf4574c8e1084a3b38c9d8da3631bb200190"
+  ],
+  "event_counts": {
+   "SetDstConfig": 164,
+   "SetWorkerLib": 1,
+   "SetDefaultMultiplierBps": 1,
+   "RoleGranted": 5
+  },
+  "admin_events": [
+   {
+    "event": "RoleGranted",
+    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
+    "block": 1374102,
+    "time": "2026-05-21T22:11:10Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
+    "block": 1374102,
+    "time": "2026-05-21T22:11:10Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
+    "block": 1374102,
+    "time": "2026-05-21T22:11:10Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
+    "block": 1374102,
+    "time": "2026-05-21T22:11:10Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0x37aaaf95887624a363effb7762d489e3c05c2a02"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
+    "block": 1374102,
+    "time": "2026-05-21T22:11:10Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0x38de71124f7a447a01d67945a51edce9ff491251"
+   },
+   {
+    "event": "SetWorkerLib",
+    "tx": "0x3a644b8469f2fd218a1c90fba00f32d55635721dcb49e97370dce889dfb6fbac",
+    "block": 1374714,
+    "time": "2026-05-21T22:24:24Z"
+   }
+  ]
+ },
+ "rayls:0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": {
+  "chain": "rayls",
+  "address": "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd",
+  "registry_name_now": "Twinstake (id nethermind)",
+  "quorum": 1,
+  "signer_size": 2,
+  "vid": 415,
+  "paused": 0,
+  "signers": [
+   "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
+   "0x86f0f839417da25586832187967fb830b9bc1d75"
+  ],
+  "event_counts": {
+   "UpdateSigner": 3,
+   "SetDstConfig": 145,
+   "SetWorkerLib": 1,
+   "RoleGranted": 5
+  },
+  "admin_events": [
+   {
+    "event": "RoleGranted",
+    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
+    "block": 1237170,
+    "time": "2026-05-19T20:38:31Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
+    "block": 1237170,
+    "time": "2026-05-19T20:38:31Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
+    "block": 1237170,
+    "time": "2026-05-19T20:38:31Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
+    "block": 1237170,
+    "time": "2026-05-19T20:38:31Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0x37aaaf95887624a363effb7762d489e3c05c2a02"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
+    "block": 1237170,
+    "time": "2026-05-19T20:38:31Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0x38de71124f7a447a01d67945a51edce9ff491251"
+   },
+   {
+    "event": "SetWorkerLib",
+    "tx": "0x1b392ce2e6ad64ef1290dbe387c818c3662c4be144f8430ac5192bb6cb2e9766",
+    "block": 1237492,
+    "time": "2026-05-19T20:45:38Z"
+   },
+   {
+    "event": "UpdateSigner",
+    "tx": "0x1247af643c3c64cbe52e7e62f41a43bc110f34dbed3fb54c86693a54c8113dca",
+    "block": 12507128,
+    "time": "2026-10-14T19:55:58Z",
+    "signer": "0x86f0f839417da25586832187967fb830b9bc1d75",
+    "active": true
+   },
+   {
+    "event": "UpdateSigner",
+    "tx": "0xd5a8b01df9eda0b5dabd110ec156269e26ec6f738e1b371c67a3fb50356e56ea",
+    "block": 12508822,
+    "time": "2026-10-14T20:33:30Z",
+    "signer": "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
+    "active": true
+   },
+   {
+    "event": "UpdateSigner",
+    "tx": "0x545c5b6ed5635c3cd47cf7d47ba5bd8521aa55160d6ed9cafb6aeeb3579ab407",
+    "block": 12519503,
+    "time": "2026-10-15T00:30:01Z",
+    "signer": "0xbbd4502c1509b15697772555d03b7eb37f2895c9",
+    "active": false
+   }
+  ]
+ },
+ "rayls:0xd01ae6905d48315f7be10c7330aecf8360ef5b12": {
+  "chain": "rayls",
+  "address": "0xd01ae6905d48315f7be10c7330aecf8360ef5b12",
+  "registry_name_now": "Canary (id canary)",
+  "quorum": 1,
+  "signer_size": 1,
+  "vid": 415,
+  "paused": 0,
+  "signers": [
+   "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+  ],
+  "event_counts": {
+   "Withdraw": 1,
+   "SetDstConfig": 463,
+   "SetWorkerLib": 1,
+   "RoleGranted": 5
+  },
+  "admin_events": [
+   {
+    "event": "RoleGranted",
+    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
+    "block": 1298362,
+    "time": "2026-05-20T18:51:29Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
+    "block": 1298362,
+    "time": "2026-05-20T18:51:29Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
+    "block": 1298362,
+    "time": "2026-05-20T18:51:29Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
+    "block": 1298362,
+    "time": "2026-05-20T18:51:29Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0x37aaaf95887624a363effb7762d489e3c05c2a02"
+   },
+   {
+    "event": "RoleGranted",
+    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
+    "block": 1298362,
+    "time": "2026-05-20T18:51:29Z",
+    "role": "MESSAGE_LIB_ROLE",
+    "account": "0x38de71124f7a447a01d67945a51edce9ff491251"
+   },
+   {
+    "event": "SetWorkerLib",
+    "tx": "0x1351d6752431ed053b500fd09bf98294ae729a5c0acea58f338f6b49b8f9f2bc",
+    "block": 1299140,
+    "time": "2026-05-20T19:08:40Z"
+   }
+  ]
+ },
+ "polygon:0x13feb7234ff60a97af04477d6421415766753ba3": {
+  "chain": "polygon",
+  "address": "0x13feb7234ff60a97af04477d6421415766753ba3",
+  "registry_name_now": "Canary (id canary)",
+  "quorum": 1,
+  "signer_size": 1,
+  "vid": 109,
+  "paused": 0,
+  "signers": [
+   "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+  ],
+  "event_counts": {
+   "SetDstConfig": 325,
+   "Withdraw": 10,
+   "0xd6d90193": 2
+  },
+  "admin_events": []
+ },
+ "polygon:0x23de2fe932d9043291f870324b74f820e11dc81a": {
+  "chain": "polygon",
+  "address": "0x23de2fe932d9043291f870324b74f820e11dc81a",
+  "registry_name_now": "LayerZero Labs (id layerzero-labs)",
+  "quorum": 2,
+  "signer_size": 3,
+  "vid": 109,
+  "paused": 0,
+  "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
+  "event_counts": {
+   "SetDstConfig": 20,
+   "Withdraw": 4,
+   "RoleGranted": 1
+  },
+  "admin_events": [
+   {
+    "event": "RoleGranted",
+    "tx": "0x82170f609b05450948e50c27258dcc3fd9ec75638178f852afccc538b0f22af8",
+    "block": 93630808,
+    "time": "2026-09-11T18:27:25Z",
+    "role": "ADMIN_ROLE",
+    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
+   }
+  ]
+ },
+ "polygon:0x31f748a368a893bdb5abb67ec95f232507601a73": {
+  "chain": "polygon",
+  "address": "0x31f748a368a893bdb5abb67ec95f232507601a73",
+  "registry_name_now": "Twinstake (id nethermind)",
+  "quorum": 1,
+  "signer_size": 2,
+  "vid": 109,
+  "paused": 0,
+  "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
+  "event_counts": {
+   "0x87e46b0a": 764,
+   "SetDstConfig": 6,
+   "Withdraw": 1,
+   "UpdateSigner": 3,
+   "0xd6d90193": 1
+  },
+  "admin_events": [
+   {
+    "event": "UpdateSigner",
+    "tx": "0x3a7b742098f846f218d3e06f2a8d03b27f720f7ba7d346d40043131c295f32ce",
+    "block": 95534996,
+    "time": "2026-10-14T19:56:58Z",
+    "signer": "0x86f0f839417da25586832187967fb830b9bc1d75",
+    "active": true
+   },
+   {
+    "event": "UpdateSigner",
+    "tx": "0x30fc305e5017b211d9d4550d678bfa664bc934b1d3b8517f277c15c9d396a319",
+    "block": 95536458,
+    "time": "2026-10-14T20:33:31Z",
+    "signer": "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
+    "active": true
+   },
+   {
+    "event": "UpdateSigner",
+    "tx": "0x019cbf6dc4ca1b9f14bfa579daafc401152d17d9ebb6a7acefae9a2991733544",
+    "block": 95545917,
+    "time": "2026-10-15T00:30:01Z",
+    "signer": "0xbbd4502c1509b15697772555d03b7eb37f2895c9",
+    "active": false
+   }
+  ]
+ }
+}

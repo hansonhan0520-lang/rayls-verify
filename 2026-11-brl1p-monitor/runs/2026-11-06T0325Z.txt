@@ -1,0 +1,64 @@
+BRL1.p backing monitor, run started 2026-11-06T03:25:52Z
+Polygon head used 96820054 (2026-11-06T03:25:37Z); Rayls head used 13938544
+Rayls explorer: 51 BRL1.p logs, 21 adapter logs
+Rayls RPC eth_getLogs over the same blocks: {'token': 0, 'adapter': 0, 'errors': 0}
+    LayerZero Scan 30109/0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6: HTTP 404 {"message":"Message not found for UA 0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6 on Endpoint ID 30109!","code":4
+    LayerZero Scan 30415/0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a: HTTP 404 {"message":"Message not found for UA 0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a on Endpoint ID 30415!","code":4
+LayerZero Scan: 18 messages Polygon->Rayls, 18 Rayls->Polygon
+Polygon publicnode: 16 transfers in, 2 out, 21 lockbox logs, 810 calls
+Polygon tenderly: 16 transfers in, 2 out, 21 lockbox logs, 405 calls
+Polygon providers agree log for log: True
+
+[1] Transfers paired by LayerZero GUID: 18 (16 Polygon->Rayls, 2 Rayls->Polygon)
+    all checks pass: 18 of 18
+    lockbox balance changes with no bridge message: 0  []
+    BRL1.p supply changes with no bridge message:  0  []
+    LayerZero Scan messages not found on either chain: 0
+    Polygon->Rayls latency min/median/max s: 248/267/293
+    Rayls->Polygon latency s: [57, 63]
+
+[2] Timeline: 36 balance changes merged by time
+    smallest lockbox - supply at any point: 0.000000 at 2026-10-14T09:50:16Z (0x45fcbb7c3e601bbe5d4be574b17331b7d8512975a86dce57cbab1c6a0c34e8e9)
+    supply ever above lockbox: False
+    rebuilt from events now: lockbox 255,291.961901, supply 255,291.961901
+    Polygon archive balanceOf at each change matches the rebuilt balance: {'drpc': {'checked': 18, 'mismatched': 0}, 'tenderly': {'checked': 18, 'mismatched': 0}}
+
+[3] Live state: lockbox 255,291.961901 (publicnode 255,291.961901), BRL1.p supply 255,291.961901 (explorer 255,291.961901)
+    live equals rebuilt-from-events: lockbox True, supply True
+    roles {'0x633ac5e2315b973417e8caa6b3ad2162e0461ce1': ['DEFAULT_ADMIN', 'PAUSER', 'UPGRADER'], '0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a': ['MINTER', 'BURNER']}; impl 0xcacba996ca4c2ac37144ba30bfebc5f7cdbd36d7; adapter owner 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1; delegate 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1
+    Rayls receive ULN {'confirmations': 120, 'required': 3, 'optional': 0, 'threshold': 0, 'dvns': ['0x396dc0a78f789586e2982fccd830c5954c193f3c', '0x8d77d35604a9f37f488e41d1d916b2a0088f82dd', '0xd01ae6905d48315f7be10c7330aecf8360ef5b12'], 'optional_dvns': []}
+    Rayls send ULN {'confirmations': 10, 'required': 3, 'optional': 0, 'threshold': 0, 'dvns': ['0x396dc0a78f789586e2982fccd830c5954c193f3c', '0x8d77d35604a9f37f488e41d1d916b2a0088f82dd', '0xd01ae6905d48315f7be10c7330aecf8360ef5b12'], 'optional_dvns': []}
+    DVN names in LayerZero's registry now: {'0x396dc0a78f789586e2982fccd830c5954c193f3c': {'canonicalName': 'LayerZero Labs', 'id': 'layerzero-labs'}, '0x8d77d35604a9f37f488e41d1d916b2a0088f82dd': {'canonicalName': 'Twinstake', 'id': 'nethermind'}, '0xd01ae6905d48315f7be10c7330aecf8360ef5b12': {'canonicalName': 'Canary', 'id': 'canary'}}
+
+[4] Polygon state at 00:00 UTC on 24 days (2026-10-14 to 2026-11-06)
+    two archive providers agree on lockbox balance every day: True
+    distinct lockbox_owner: ['0x633ac5e2315b973417e8caa6b3ad2162e0461ce1']
+    distinct lockbox_peer_rayls: ['0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a']
+    distinct lockbox_delegate: ['0x633ac5e2315b973417e8caa6b3ad2162e0461ce1']
+    distinct receive_dvns: ['3 req / 0 opt / 10 conf / 0x13feb7234ff60a97af04477d6421415766753ba3 0x23de2fe932d9043291f870324b74f820e11dc81a 0x31f748a368a893bdb5abb67ec95f232507601a73']
+    distinct send_dvns: ['3 req / 0 opt / 120 conf / 0x13feb7234ff60a97af04477d6421415766753ba3 0x23de2fe932d9043291f870324b74f820e11dc81a 0x31f748a368a893bdb5abb67ec95f232507601a73']
+    distinct brl1_paused: [False]
+    days with lockbox below rebuilt BRL1.p supply: 0
+
+[5] Admin and config events: 18
+    2026-10-13T18:05:30Z polygon lockbox     OwnershipTransferred  tx 0x6579f745fe62b8ba2faddada84ab3a239d4b40c6e18fd9ce27c81de5c4efafff
+    2026-10-13T18:09:08Z rayls   BRL1.p      Initialized  tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3
+    2026-10-13T18:09:08Z rayls   BRL1.p      RoleGranted  tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3
+    2026-10-13T18:09:08Z rayls   BRL1.p      RoleGranted  tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3
+    2026-10-13T18:09:08Z rayls   BRL1.p      RoleGranted  tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3
+    2026-10-13T18:09:08Z rayls   BRL1.p      Upgraded  tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3
+    2026-10-13T18:09:21Z rayls   adapter     OwnershipTransferred  tx 0xb580755612115e4d97b3d255d90a2319a53689bbb05efc7f54b9ee3aa3da2a0c
+    2026-10-13T18:09:21Z rayls   endpoint    DelegateSet  tx 0xb580755612115e4d97b3d255d90a2319a53689bbb05efc7f54b9ee3aa3da2a0c
+    2026-10-13T18:09:28Z rayls   BRL1.p      RoleGranted  tx 0x55c5d0b917d1a43360fb42125b78b998041a47266b47a43ae54eb660041773c6
+    2026-10-13T18:09:33Z rayls   BRL1.p      RoleGranted  tx 0x9b656d894679ee0fb7468f387aa7de02c1717f89f134d500fb45d455b98d8aa2
+    2026-10-13T18:09:58Z rayls   adapter     PeerSet  tx 0x1f7fb06d055bb985d2618d396b3e0466e895ab1e0459d0a37b6cf6fd67720eb3
+    2026-10-13T18:10:00Z polygon lockbox     PeerSet  tx 0xdd0a432bcabb11330c1cf303c4f8411060081595f75c22d6615620005c759db4
+    2026-10-13T18:10:03Z rayls   endpoint    SendLibrarySet  tx 0x2e6d280dd9d487a712522d7226b7a32a3eacbf637fdd33feda37e58ecaa28c4f
+    2026-10-13T18:10:09Z rayls   endpoint    DefaultReceiveLibraryTimeoutSet_or_ReceiveLibraryTimeoutSet  tx 0x4019e6518852e331e5400dcc7522836664a4ff2451529f1ffdbbf280164ff89d
+    2026-10-13T18:10:09Z rayls   endpoint    ReceiveLibrarySet  tx 0x4019e6518852e331e5400dcc7522836664a4ff2451529f1ffdbbf280164ff89d
+    2026-10-13T18:10:18Z rayls   receive_uln UlnConfigSet  tx 0x6bea54ada9359b6d004f8ef4a57196627252d37b5efcaebdff07ad669d7c010e
+    2026-10-13T18:10:23Z rayls   adapter     EnforcedOptionSet  tx 0x3a53899159c2b41448b3c0916177df23d2e7c7e19d9305101ceac31f90de4fdb
+    2026-10-13T18:10:25Z polygon lockbox     EnforcedOptionSet  tx 0x9c2ff07ede019cee91cd7095446ff12075a129df778f093ae2b2334ff11f43b5
+    most recent admin/config event: 2026-10-13T18:10:25Z
+
+finished 2026-11-06T03:30:48Z (296 s)
