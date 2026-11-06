@@ -1,0 +1,536 @@
+{
+ "collect_run_utc": "2026-11-06T03:25:52Z",
+ "polygon_block": 96820054,
+ "rayls_block": 13938544,
+ "transfers": 18,
+ "p2r": 16,
+ "r2p": 2,
+ "all_pass": 18,
+ "nonces_p2r": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16
+ ],
+ "nonces_r2p": [
+  1,
+  2
+ ],
+ "stray_lockbox": 0,
+ "stray_supply": 0,
+ "lockbox_now": "255,291.961901",
+ "supply_now": "255,291.961901",
+ "timeline_changes": 36,
+ "supply_ever_above_lockbox": false,
+ "archive_check": {
+  "drpc": {
+   "checked": 18,
+   "mismatched": 0
+  },
+  "tenderly": {
+   "checked": 18,
+   "mismatched": 0
+  }
+ },
+ "latency_p2r": [
+  248,
+  267,
+  293
+ ],
+ "latency_r2p": [
+  57,
+  63
+ ],
+ "daily_days": 24,
+ "daily_from": "2026-10-14",
+ "daily_to": "2026-11-06",
+ "daily_config_unchanged": true,
+ "config_events": 18,
+ "last_config_event": "2026-10-13T18:10:25Z",
+ "roles": {
+  "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1": [
+   "DEFAULT_ADMIN",
+   "PAUSER",
+   "UPGRADER"
+  ],
+  "0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a": [
+   "MINTER",
+   "BURNER"
+  ]
+ },
+ "admin": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1",
+ "verifications": 54,
+ "verifications_p2r": 48,
+ "verify_secs_p2r": [
+  232,
+  238,
+  253
+ ],
+ "confirmations": [
+  10,
+  120
+ ],
+ "submitters": [
+  "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
+ ],
+ "dvn": {
+  "rayls:0x396dc0a78f789586e2982fccd830c5954c193f3c": {
+   "quorum": 2,
+   "signers": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5",
+    "0x9b16cf4574c8e1084a3b38c9d8da3631bb200190"
+   ],
+   "registry_name_now": "LayerZero Labs (id layerzero-labs)",
+   "admin_events_since_june": []
+  },
+  "rayls:0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": {
+   "quorum": 1,
+   "signers": [
+    "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "registry_name_now": "Twinstake (id nethermind)",
+   "admin_events_since_june": [
+    {
+     "event": "UpdateSigner",
+     "tx": "0x1247af643c3c64cbe52e7e62f41a43bc110f34dbed3fb54c86693a54c8113dca",
+     "block": 12507128,
+     "time": "2026-10-14T19:55:58Z",
+     "signer": "0x86f0f839417da25586832187967fb830b9bc1d75",
+     "active": true
+    },
+    {
+     "event": "UpdateSigner",
+     "tx": "0xd5a8b01df9eda0b5dabd110ec156269e26ec6f738e1b371c67a3fb50356e56ea",
+     "block": 12508822,
+     "time": "2026-10-14T20:33:30Z",
+     "signer": "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
+     "active": true
+    },
+    {
+     "event": "UpdateSigner",
+     "tx": "0x545c5b6ed5635c3cd47cf7d47ba5bd8521aa55160d6ed9cafb6aeeb3579ab407",
+     "block": 12519503,
+     "time": "2026-10-15T00:30:01Z",
+     "signer": "0xbbd4502c1509b15697772555d03b7eb37f2895c9",
+     "active": false
+    }
+   ]
+  },
+  "rayls:0xd01ae6905d48315f7be10c7330aecf8360ef5b12": {
+   "quorum": 1,
+   "signers": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ],
+   "registry_name_now": "Canary (id canary)",
+   "admin_events_since_june": []
+  },
+  "polygon:0x13feb7234ff60a97af04477d6421415766753ba3": {
+   "quorum": 1,
+   "signers": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ],
+   "registry_name_now": "Canary (id canary)",
+   "admin_events_since_june": []
+  },
+  "polygon:0x23de2fe932d9043291f870324b74f820e11dc81a": {
+   "quorum": 2,
+   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
+   "registry_name_now": "LayerZero Labs (id layerzero-labs)",
+   "admin_events_since_june": [
+    {
+     "event": "RoleGranted",
+     "tx": "0x82170f609b05450948e50c27258dcc3fd9ec75638178f852afccc538b0f22af8",
+     "block": 93630808,
+     "time": "2026-09-11T18:27:25Z",
+     "role": "ADMIN_ROLE",
+     "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
+    }
+   ]
+  },
+  "polygon:0x31f748a368a893bdb5abb67ec95f232507601a73": {
+   "quorum": 1,
+   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
+   "registry_name_now": "Twinstake (id nethermind)",
+   "admin_events_since_june": [
+    {
+     "event": "UpdateSigner",
+     "tx": "0x3a7b742098f846f218d3e06f2a8d03b27f720f7ba7d346d40043131c295f32ce",
+     "block": 95534996,
+     "time": "2026-10-14T19:56:58Z",
+     "signer": "0x86f0f839417da25586832187967fb830b9bc1d75",
+     "active": true
+    },
+    {
+     "event": "UpdateSigner",
+     "tx": "0x30fc305e5017b211d9d4550d678bfa664bc934b1d3b8517f277c15c9d396a319",
+     "block": 95536458,
+     "time": "2026-10-14T20:33:31Z",
+     "signer": "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
+     "active": true
+    },
+    {
+     "event": "UpdateSigner",
+     "tx": "0x019cbf6dc4ca1b9f14bfa579daafc401152d17d9ebb6a7acefae9a2991733544",
+     "block": 95545917,
+     "time": "2026-10-15T00:30:01Z",
+     "signer": "0xbbd4502c1509b15697772555d03b7eb37f2895c9",
+     "active": false
+    }
+   ]
+  }
+ },
+ "dvn_admins": {
+  "rayls:0x396dc0a78f789586e2982fccd830c5954c193f3c": {
+   "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb": true,
+   "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6": true,
+   "signers_by_isSigner_check": "n/a"
+  },
+  "rayls:0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": {
+   "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb": true,
+   "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6": true,
+   "signers_by_isSigner_check": "n/a"
+  },
+  "rayls:0xd01ae6905d48315f7be10c7330aecf8360ef5b12": {
+   "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb": true,
+   "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6": true,
+   "signers_by_isSigner_check": "n/a"
+  },
+  "polygon:0x23de2fe932d9043291f870324b74f820e11dc81a": {
+   "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb": true,
+   "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6": true,
+   "signers_by_isSigner_check": "n/a"
+  },
+  "polygon:0x31f748a368a893bdb5abb67ec95f232507601a73": {
+   "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb": true,
+   "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6": true,
+   "signers_by_isSigner_check": "n/a"
+  },
+  "polygon:0x13feb7234ff60a97af04477d6421415766753ba3": {
+   "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb": true,
+   "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6": true,
+   "signers_by_isSigner_check": "n/a"
+  },
+  "rayls:0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb:code": "0x",
+  "rayls:0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb:nonce": 5860,
+  "rayls:0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6:code": "0x",
+  "rayls:0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6:nonce": 446,
+  "polygon:0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb:code": "0x",
+  "polygon:0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb:nonce": 8880381,
+  "polygon:0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6:code": "0x",
+  "polygon:0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6:nonce": 1704
+ },
+ "registry_name_2026_10_17": {
+  "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": "Nethermind"
+ },
+ "matrix": [
+  {
+   "nonce": 1,
+   "time": "2026-10-14T09:45:49Z",
+   "amount": "0.010000",
+   "latency_s": 267,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0xbbd4502c1509b15697772555d03b7eb37f2895c9"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 2,
+   "time": "2026-10-14T10:09:52Z",
+   "amount": "1.000000",
+   "latency_s": 265,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0xbbd4502c1509b15697772555d03b7eb37f2895c9"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 3,
+   "time": "2026-10-14T10:11:34Z",
+   "amount": "1.000000",
+   "latency_s": 263,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0xbbd4502c1509b15697772555d03b7eb37f2895c9"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 4,
+   "time": "2026-10-14T19:47:15Z",
+   "amount": "10.000000",
+   "latency_s": 261,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0xbbd4502c1509b15697772555d03b7eb37f2895c9"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 5,
+   "time": "2026-10-15T11:01:45Z",
+   "amount": "2.000000",
+   "latency_s": 271,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 6,
+   "time": "2026-10-15T15:44:41Z",
+   "amount": "50.161295",
+   "latency_s": 264,
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 7,
+   "time": "2026-10-15T16:05:04Z",
+   "amount": "4,670.039696",
+   "latency_s": 248,
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ],
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ]
+  },
+  {
+   "nonce": 8,
+   "time": "2026-10-15T16:14:04Z",
+   "amount": "49.729215",
+   "latency_s": 267,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 9,
+   "time": "2026-10-15T16:32:10Z",
+   "amount": "94,779.053768",
+   "latency_s": 268,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 10,
+   "time": "2026-10-15T20:31:14Z",
+   "amount": "365.895698",
+   "latency_s": 264,
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ],
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ]
+  },
+  {
+   "nonce": 11,
+   "time": "2026-10-16T01:54:07Z",
+   "amount": "9,576.453346",
+   "latency_s": 274,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 12,
+   "time": "2026-10-16T15:00:37Z",
+   "amount": "146,994.594239",
+   "latency_s": 268,
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 13,
+   "time": "2026-10-16T15:33:07Z",
+   "amount": "3,090.000000",
+   "latency_s": 265,
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ],
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ]
+  },
+  {
+   "nonce": 14,
+   "time": "2026-10-25T17:33:20Z",
+   "amount": "2.000000",
+   "latency_s": 270,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x598ca3934788fdf2e8dc31a749a45609c54e64f7"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 15,
+   "time": "2026-10-26T16:33:53Z",
+   "amount": "5.000000",
+   "latency_s": 270,
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  },
+  {
+   "nonce": 16,
+   "time": "2026-10-28T14:32:58Z",
+   "amount": "5,271.478990",
+   "latency_s": 293,
+   "Nethermind/Twinstake": [
+    "0x86f0f839417da25586832187967fb830b9bc1d75"
+   ],
+   "LayerZero Labs": [
+    "0x03429038953855beec609022284894049746c164",
+    "0x238fc6e3ffa0615925c96b23633f446881978ab5"
+   ],
+   "Canary": [
+    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   ]
+  }
+ ],
+ "rayls_rpc": {
+  "getlogs_logs": {
+   "token": 0,
+   "adapter": 0,
+   "errors": 0
+  },
+  "historical_eth_call": "state at block ... is pruned (probe 2026-11-06)",
+  "tx_found": 18,
+  "receipts_found": 0,
+  "input_guid": 16,
+  "input_amount": 18
+ },
+ "por": {
+  "run_utc": "2026-11-06T03:56:09Z",
+  "reports": [
+   {
+    "report": "2025-04-14",
+    "file": "drive_1q6arJKrt3wWta7kYCnppD1awhgzsz8AW.pdf",
+    "block": 70301795,
+    "stated_supply": "5,349,963.000000",
+    "supply_drpc": "5,349,963.000000",
+    "supply_tenderly": "5,349,963.000000",
+    "block_time": "2025-04-14T18:57:10Z",
+    "matches": true
+   },
+   {
+    "report": "2026-10-01",
+    "file": "drive_1BuRUC6u3UTzf17kOChhKby_L9hE5IU73.pdf",
+    "block": 94777137,
+    "stated_supply": "17,381,384.540000",
+    "supply_drpc": "17,381,384.540000",
+    "supply_tenderly": "17,381,384.540000",
+    "block_time": "2026-10-01T16:07:26Z",
+    "matches": true
+   }
+  ],
+  "supply_now": "17,882,561.540000",
+  "supply_now_block": 96821267
+ }
+}
