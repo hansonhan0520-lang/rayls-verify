@@ -1,0 +1,41 @@
+BRL1.p backing monitor, run started 2026-11-06T03:11:51Z
+Polygon head used 96819494 (2026-11-06T03:11:37Z); Rayls head used 13937921
+Rayls explorer: 51 BRL1.p logs, 21 adapter logs
+Rayls RPC eth_getLogs over the same blocks: {'token': 0, 'adapter': 0, 'errors': 0}
+Traceback (most recent call last):
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 91, in http
+    with urllib.request.urlopen(req, timeout=40) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 533, in <module>
+    main()
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 228, in main
+    lz = {"polygon_to_rayls": lz_messages(EID_POLYGON, LOCKBOX), "rayls_to_polygon": lz_messages(EID_RAYLS, ADAPTER)}
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 188, in lz_messages
+    j = http(f"{LZ_SCAN}/messages/oapp/{eid}/{oapp}{q}")
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 96, in http
+    raise RuntimeError(last)
+RuntimeError: HTTP 404 {"message":"Message not found for UA 0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6 on Endpoint ID 30109!","code":4040}
