@@ -1,0 +1,40 @@
+probe run 2026-11-06T03:07:51Z
+rayls head                                                 http=200 "0xd4ac56"
+rayls totalSupply @ 12440000                               http=200 ERR {"code": -32603, "message": "state at block #12440001 is pruned"}
+rayls totalSupply @ 12500000                               http=200 ERR {"code": -32603, "message": "state at block #12500001 is pruned"}
+rayls totalSupply @ 12668378                               http=200 ERR {"code": -32603, "message": "state at block #12668379 is pruned"}
+rayls getLogs adapter 12437000-12446999                    http=200 0
+rayls getLogs adapter 12660000-12669999                    http=200 0
+rayls getLogs adapter last 50k                             http=200 0
+rayls explorer adapter logs page1                          http=200 items=21 next=None
+    13390128 0x96c533d7d8df0d5f80fbe91561ed17077778c69c77d7bb625106b7430d566b91 0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c OFTReceived(bytes32 indexed guid, uint32 srcEid, address indexed toAddress, uint256 amountReceivedLD)
+    13272133 0x0924ba01a5cd363115cdb4e6d8610410d0b3c7041702cfeb6843b0e9334cc40f 0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c OFTReceived(bytes32 indexed guid, uint32 srcEid, address indexed toAddress, uint256 amountReceivedLD)
+    13210561 0xf8188f70ac526e104c57e1ec881228ac86e83e9b630cc68f8acd751e62ae42fe 0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c OFTReceived(bytes32 indexed guid, uint32 srcEid, address indexed toAddress, uint256 amountReceivedLD)
+polygon publicnode head                                    http=200 "0x5c55891"
+polygon publicnode balanceOf @95500000                     http=403 ERR {"code": -32602, "message": "Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode"}
+polygon publicnode getLogs lockbox 10k                     http=200 3
+polygon drpc head                                          http=200 "0x5c55892"
+polygon drpc balanceOf @95500000                           http=200 "0x0000000000000000000000000000000000000000000000000000000000000000"
+polygon drpc getLogs lockbox 10k                           http=400 ERR {"message": "ranges over 10000 blocks are not supported on free plan", "code": 35}
+polygon polygon-rpc head                                   http=401 ERR "message: API key disabled, reason: tenant disabled, json-rpc code: -32051, rest code: 403"
+polygon polygon-rpc balanceOf @95500000                    http=401 ERR "message: API key disabled, reason: tenant disabled, json-rpc code: -32051, rest code: 403"
+polygon polygon-rpc getLogs lockbox 10k                    http=401 ERR "message: API key disabled, reason: tenant disabled, json-rpc code: -32051, rest code: 403"
+polygon llamarpc head                                      http=-1 ERR "<urlopen error [Errno -2] Name or service not known>"
+polygon llamarpc balanceOf @95500000                       http=-1 ERR "<urlopen error [Errno -2] Name or service not known>"
+polygon llamarpc getLogs lockbox 10k                       http=-1 ERR "<urlopen error [Errno -2] Name or service not known>"
+polygon 1rpc head                                          http=200 "0x5c4ddbb"
+polygon 1rpc balanceOf @95500000                           http=200 ERR {"code": -32000, "message": "historical state b492772a11b2378a914b6720bf1da09934c4ce3b4ae770d686ce3e9c79097717 is not available"}
+polygon 1rpc getLogs lockbox 10k                           http=200 ERR {"code": -32602, "message": "eth_getLogs is limited to 0 - 50 blocks range"}
+polygon ankr head                                          http=200 ERR {"code": -32000, "message": "Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free."}
+polygon ankr balanceOf @95500000                           http=200 ERR {"code": -32000, "message": "Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free."}
+polygon ankr getLogs lockbox 10k                           http=200 ERR {"code": -32000, "message": "Unauthorized: You must authenticate your request with an API key. Create an account on https://www.ankr.com/rpc/ and generate your personal API key for free."}
+polygon tenderly head                                      http=200 "0x5c5589b"
+polygon tenderly balanceOf @95500000                       http=200 "0x0000000000000000000000000000000000000000000000000000000000000000"
+polygon tenderly getLogs lockbox 10k                       http=200 3
+polygon blockscout lockbox logs 403 <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta nam
+layerzero scan by oapp                                     http=200 {"data":[{"pathway":{"srcEid":30109,"dstEid":30415,"sender":{"address":"0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6","chain":"polygon"},"receiver":{"address":"0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a","chain":"rayls"},"id":"30109-30415-0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6-0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a","nonce":16},"source":{"status":"SUCCEEDED","tx":{"txHash":"0x9fd78641163cbcd
+layerzero dvn metadata                                     http=200 bytes=260917
+web https://brl1.io                                        http=200 bytes=620522
+web https://www.brl1.io                                    http=200 bytes=620522
+web https://dapp.rayls.com                                 http=200 bytes=1002
+probe done 2026-11-06T03:08:12Z
