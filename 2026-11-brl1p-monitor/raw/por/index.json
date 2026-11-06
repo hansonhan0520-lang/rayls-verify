@@ -1,9 +1,53 @@
 {
- "fetched_utc": "2026-11-06T03:48:29Z",
- "links": [
+ "fetched_utc": "2026-11-06T03:54:09Z",
+ "pages": [
+  {
+   "url": "https://brl1.io/en",
+   "final_url": "https://brl1.io/en/",
+   "status": 200,
+   "file": "brl1_io_en.html",
+   "bytes": 624794,
+   "sha256": "eb10a9942b13d41212f263fc718913d2383c0d5c1bcf574d9ff95eedbec85ed1"
+  },
+  {
+   "url": "https://brl1.io/en/como_funciona",
+   "final_url": "https://brl1.io/en/como_funciona",
+   "status": 200,
+   "file": "brl1_io_en_como_funciona.html",
+   "bytes": 339405,
+   "sha256": "b4d4edcd64fb49606069f52ad2d5c19765a99577ea0bde4d5d2d6c898f33ebb2"
+  },
+  {
+   "url": "https://fact.finance/en/reserves/brl1",
+   "error": "HTTP Error 404: Not Found"
+  },
   {
    "url": "https://fact.finance/en/reserves/brl1?frame=true",
-   "seen_on": "https://brl1.io/en"
+   "error": "HTTP Error 404: Not Found"
+  },
+  {
+   "url": "https://docs.fact.finance/features/por/",
+   "final_url": "https://docs.fact.finance/features/por/",
+   "status": 200,
+   "file": "docs_fact_finance_features_por_.html",
+   "bytes": 48632,
+   "sha256": "fff3939009323714c242acdfe4b194fafe47b80778c1b4e346cea6dea9ed0d61"
+  },
+  {
+   "url": "https://docs.fact.finance/cases/stablecoins/",
+   "final_url": "https://docs.fact.finance/cases/stablecoins/",
+   "status": 200,
+   "file": "docs_fact_finance_cases_stablecoins_.html",
+   "bytes": 44174,
+   "sha256": "18a6862903081df2d7590f6c7c19e1b8701b6aa40475fa41f1599cbcea0988e6"
   }
- ]
+ ],
+ "links": {
+  "https://fact.finance/en/reserves/brl1?frame=true": "https://brl1.io/en",
+  "https://drive.google.com/file/d/1aOuxzC0DAiRKuUDklpifvdxMsSqR06Vr/view": "https://brl1.io/en",
+  "https://drive.google.com/file/d/1BuRUC6u3UTzf17kOChhKby_L9hE5IU73/view": "https://brl1.io/en",
+  "https://drive.google.com/file/d/139WCYEqBprr83aPoYN5YlePpYpF50hrT/view?usp=sharing": "https://brl1.io/en",
+  "https://drive.google.com/file/d/1aOuxzC0DAiRKuUDklpifvdxMsSqR06Vr/view?usp=sharing": "https://brl1.io/en",
+  "https://drive.google.com/file/d/1q6arJKrt3wWta7kYCnppD1awhgzsz8AW/view?usp=sharing": "https://brl1.io/en/como_funciona"
+ }
 }
