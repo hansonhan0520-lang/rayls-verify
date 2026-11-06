@@ -19,6 +19,10 @@ jobs:
         if: always()
         continue-on-error: true
         run: python3 2026-11-brl1p-monitor/dvn.py
+      - name: recover DVN signers; check Rayls transactions from the official RPC alone
+        if: always()
+        continue-on-error: true
+        run: pip install --quiet pycryptodome && python3 2026-11-brl1p-monitor/signers.py
       - name: rerun the October script unchanged
         if: always()
         continue-on-error: true

@@ -13,7 +13,7 @@ for page in ("https://fact.finance/en/reserves/brl1", "https://brl1.io", "https:
     try:
         html = get(page).decode("utf-8", "replace")
     except Exception as e:
-        print("page", page, "error", str(e)[:80]); continue
+        print("page", page, "error", str(e)[:80]); found.setdefault("ERROR " + page, str(e)[:120]); continue
     print("page", page, len(html), "bytes")
     if "fact.finance" in page:
         open(os.path.join(OUT, "fact_finance_brl1.html"), "w").write(html)
