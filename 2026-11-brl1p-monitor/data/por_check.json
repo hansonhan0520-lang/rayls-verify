@@ -1,0 +1,27 @@
+{
+ "run_utc": "2026-11-06T03:56:09Z",
+ "reports": [
+  {
+   "report": "2025-04-14",
+   "file": "drive_1q6arJKrt3wWta7kYCnppD1awhgzsz8AW.pdf",
+   "block": 70301795,
+   "stated_supply": "5,349,963.000000",
+   "supply_drpc": "5,349,963.000000",
+   "supply_tenderly": "5,349,963.000000",
+   "block_time": "2025-04-14T18:57:10Z",
+   "matches": true
+  },
+  {
+   "report": "2026-10-01",
+   "file": "drive_1BuRUC6u3UTzf17kOChhKby_L9hE5IU73.pdf",
+   "block": 94777137,
+   "stated_supply": "17,381,384.540000",
+   "supply_drpc": "17,381,384.540000",
+   "supply_tenderly": "17,381,384.540000",
+   "block_time": "2026-10-01T16:07:26Z",
+   "matches": true
+  }
+ ],
+ "supply_now": "17,882,561.540000",
+ "supply_now_block": 96821267
+}
