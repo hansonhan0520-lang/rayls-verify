@@ -9,12 +9,16 @@ def get(u):
     with urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=40) as r:
         return r.read()
 found = {}
-for page in ("https://brl1.io", "https://brl1.io/en", "https://brl1.io/transparency", "https://brl1.io/en/transparency", "https://brl1.io/transparencia"):
+for page in ("https://fact.finance/en/reserves/brl1", "https://brl1.io", "https://brl1.io/en", "https://brl1.io/transparency", "https://brl1.io/en/transparency", "https://brl1.io/transparencia"):
     try:
         html = get(page).decode("utf-8", "replace")
     except Exception as e:
         print("page", page, "error", str(e)[:80]); continue
     print("page", page, len(html), "bytes")
+    if "fact.finance" in page:
+        open(os.path.join(OUT, "fact_finance_brl1.html"), "w").write(html)
+        for m in re.findall(r'"(https?://[^"]*(?:api|reserve|por)[^"]*)"', html, re.I)[:40]:
+            print("   api?", m[:200])
     for m in re.findall(r'https?://[^"\'\s<>\\]+', html):
         if re.search(r"\.pdf|reserv|transpar|attest|relat|audit|proof", m, re.I):
             found[m] = page

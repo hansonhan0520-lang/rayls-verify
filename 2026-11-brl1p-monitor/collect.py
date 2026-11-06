@@ -59,6 +59,11 @@ T = {  # event topics (keccak256 of the signature)
     "ExecutorConfigSet": "0x779cb2dd9d2bb1be1737d05435d744facbfb84a2a4912e21379d39beddcdc805",
     "ReceiveLibrarySet": "0xcd6f92f5ac6185a5acfa02c92090746cec64d777269cbcd0ed031e396657a1c2",
     "SendLibrarySet": "0x4cff966ebee29a156dcb34cf72c1d06231fb1777f6bdf6e8089819232f002b1c",
+    "EnforcedOptionSet": "0xbe4864a8e820971c0247f5992e2da559595f7bf076a21cb5928d443d2a13b674",
+    "DefaultReceiveLibraryTimeoutSet_or_ReceiveLibraryTimeoutSet": "0x4e0a5bbfa0c11a64effb1ada324b5437a17272e1aed9320398715ef71bb20928",
+    "PayloadVerified": "0x2cb0eed7538baeae4c6fde038c0fd0384d27de0dd55a228c65847bda6aa1ab56",
+    "Approval": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+    "Initialized": "0xc7f505b2f371ae2175ee4913f4499e1f2633a7b5936321eed1cdaeb6115181d2",
 }
 NAME = {v: k for k, v in T.items()}
 ROLE = {"DEFAULT_ADMIN": "0" * 64,
@@ -503,7 +508,7 @@ def main():
     for nm_c, logs_ in (("BRL1.p", rl_token), ("adapter", rl_adapter)):
         for l in logs_:
             nm = NAME.get(l["topics"][0], l["topics"][0])
-            if nm not in ("OFTSent", "OFTReceived", "Transfer"):
+            if nm not in ("OFTSent", "OFTReceived", "Transfer", "Approval"):
                 cfg_rows.append({"chain": "rayls", "contract": nm_c, "event": nm, "block": l["block_number"],
                                  "time": utc(block_ts(RAYLS_RPC, l["block_number"], rcache)), "tx": l["transaction_hash"],
                                  "topics": " ".join(t for t in l["topics"][1:] if t), "data": (l["data"] or "")[:200]})
@@ -513,7 +518,7 @@ def main():
             for l in explorer_logs(a):
                 if ADAPTER[2:] in (l["data"] or "").lower() or any(ADAPTER[2:] in (t or "") for t in l["topics"]):
                     nm = NAME.get(l["topics"][0], l["topics"][0])
-                    if nm in ("PacketSent", "PacketDelivered", "PacketVerified") or l["topics"][0] in ("0x1ab700d4ced0c005b164c0f789fd09fcbb0156d4c2041b8a3bfbcd961cd1567f", "0x3cd5e48f9730b129dc7550f0fcea9c767b7be37837cd10e55eb35f734f4bca04", "0x0d87345f3d1c929caba93e1c3821b54ff3512e12b66aa3cfe54b6bcbc17e59b4"):
+                    if nm in ("PacketSent", "PacketDelivered", "PacketVerified", "PayloadVerified") or l["topics"][0] in ("0x1ab700d4ced0c005b164c0f789fd09fcbb0156d4c2041b8a3bfbcd961cd1567f", "0x3cd5e48f9730b129dc7550f0fcea9c767b7be37837cd10e55eb35f734f4bca04", "0x0d87345f3d1c929caba93e1c3821b54ff3512e12b66aa3cfe54b6bcbc17e59b4"):
                         continue
                     cfg_rows.append({"chain": "rayls", "contract": label, "event": nm, "block": l["block_number"],
                                      "time": utc(block_ts(RAYLS_RPC, l["block_number"], rcache)), "tx": l["transaction_hash"],
