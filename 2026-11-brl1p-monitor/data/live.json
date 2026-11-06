@@ -1,0 +1,69 @@
+{
+ "polygon_block": 96819674,
+ "rayls_block": 13938122,
+ "lockbox_brl1": 255291961901000000000000,
+ "lockbox_brl1_publicnode": 255291961901000000000000,
+ "brl1p_supply": 255291961901000000000000,
+ "brl1p_supply_explorer": 255291961901000000000000,
+ "roles": {
+  "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1": [
+   "DEFAULT_ADMIN",
+   "PAUSER",
+   "UPGRADER"
+  ],
+  "0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a": [
+   "MINTER",
+   "BURNER"
+  ]
+ },
+ "brl1p_impl": "0xcacba996ca4c2ac37144ba30bfebc5f7cdbd36d7",
+ "adapter_owner": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1",
+ "adapter_peer": "0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6",
+ "rayls_endpoint": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b",
+ "adapter_delegate": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1",
+ "rayls_receive_uln": {
+  "confirmations": 120,
+  "required": 3,
+  "optional": 0,
+  "threshold": 0,
+  "dvns": [
+   "0x396dc0a78f789586e2982fccd830c5954c193f3c",
+   "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd",
+   "0xd01ae6905d48315f7be10c7330aecf8360ef5b12"
+  ],
+  "optional_dvns": []
+ },
+ "rayls_send_uln": {
+  "confirmations": 10,
+  "required": 3,
+  "optional": 0,
+  "threshold": 0,
+  "dvns": [
+   "0x396dc0a78f789586e2982fccd830c5954c193f3c",
+   "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd",
+   "0xd01ae6905d48315f7be10c7330aecf8360ef5b12"
+  ],
+  "optional_dvns": []
+ },
+ "rayls_libs": {
+  "receive": "0xe1844c5d63a9543023008d332bd3d2e6f1fe1043",
+  "send": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
+ },
+ "brl1p_paused": false,
+ "dvn_registry": {
+  "0x396dc0a78f789586e2982fccd830c5954c193f3c": {
+   "canonicalName": "LayerZero Labs",
+   "id": "layerzero-labs"
+  },
+  "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": {
+   "canonicalName": "Twinstake",
+   "id": "nethermind"
+  },
+  "0xd01ae6905d48315f7be10c7330aecf8360ef5b12": {
+   "canonicalName": "Canary",
+   "id": "canary"
+  }
+ },
+ "supply_matches_rebuilt": true,
+ "lockbox_matches_rebuilt": true
+}

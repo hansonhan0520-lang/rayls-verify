@@ -1,0 +1,50 @@
+{
+ "run_utc": "2026-11-06T03:16:22Z",
+ "polygon_block": 96819674,
+ "rayls_block": 13938122,
+ "transfers": 18,
+ "polygon_to_rayls": 16,
+ "rayls_to_polygon": 2,
+ "all_checks_pass": 18,
+ "stray_lockbox_changes": 0,
+ "stray_supply_changes": 0,
+ "lz_scan_only": 0,
+ "lockbox_now": "255,291.961901",
+ "supply_now": "255,291.961901",
+ "min_gap": "0.000000",
+ "min_gap_time": "2026-10-14T09:50:16Z",
+ "supply_ever_above_lockbox": false,
+ "latency_p2r": [
+  248,
+  267,
+  293
+ ],
+ "latency_r2p": [
+  57,
+  63
+ ],
+ "polygon_providers_agree": true,
+ "archive_check": {
+  "drpc": {
+   "checked": 18,
+   "mismatched": 0
+  },
+  "tenderly": {
+   "checked": 18,
+   "mismatched": 0
+  }
+ },
+ "rayls_rpc_getlogs": {
+  "token": 0,
+  "adapter": 0,
+  "errors": 0
+ },
+ "rayls_explorer_logs": {
+  "brl1p": 51,
+  "adapter": 21
+ },
+ "daily_days": 24,
+ "config_events": 77,
+ "last_config_event": "2026-10-28T16:16:27Z",
+ "seconds": 341
+}

@@ -1,0 +1,397 @@
+{
+ "polygon": {
+  "chainName": "polygon",
+  "environment": "mainnet",
+  "dvns": {
+   "0xd56e4eab23cb81f43168f9f45211eb027b9ac7cc": {
+    "canonicalName": "Google",
+    "id": "google-cloud",
+    "version": 2
+   },
+   "0x5a54fe5234e811466d5366846283323c954310b2": {
+    "canonicalName": "TSS",
+    "id": "tss",
+    "version": 1
+   },
+   "0x23de2fe932d9043291f870324b74f820e11dc81a": {
+    "canonicalName": "LayerZero Labs",
+    "id": "layerzero-labs",
+    "version": 2
+   },
+   "0xabc9b1819cc4d9846550f928b985993cf6240439": {
+    "canonicalName": "StableLab",
+    "id": "stablelab",
+    "version": 2
+   },
+   "0x31f748a368a893bdb5abb67ec95f232507601a73": {
+    "canonicalName": "Twinstake",
+    "id": "nethermind",
+    "version": 2
+   },
+   "0x1bab20e7fdc79257729cb596bef85db76c44915e": {
+    "canonicalName": "MIM",
+    "id": "mim",
+    "version": 2
+   },
+   "0x25e0e650a78e6304a3983fc4b7ffc6544b1beea6": {
+    "canonicalName": "Horizen",
+    "id": "horizen-labs",
+    "version": 2
+   },
+   "0xf7ddee427507cdb6885e53caaaa1973b1fe29357": {
+    "canonicalName": "Nodes.Guru",
+    "id": "nodes-guru",
+    "version": 2
+   },
+   "0x247624e2143504730aec22912ed41f092498bef2": {
+    "canonicalName": "BWare",
+    "id": "bware-labs",
+    "version": 2,
+    "deprecated": true
+   },
+   "0x2ac038606fff3fb00317b8f0ccfb4081694acdd0": {
+    "canonicalName": "Planetarium Labs",
+    "id": "planetarium-labs",
+    "version": 2
+   },
+   "0xbd40c9047980500c46b8aed4462e2f889299febe": {
+    "canonicalName": "Blockhunters",
+    "id": "blockhunters",
+    "version": 2
+   },
+   "0x9eeee79f5dbc4d99354b5cb547c138af432f937b": {
+    "canonicalName": "P2P",
+    "id": "p2p",
+    "version": 2
+   },
+   "0x8fc629aa400d4d9c0b118f2685a49316552abf27": {
+    "canonicalName": "Portal",
+    "id": "portal",
+    "version": 2
+   },
+   "0x4d52f5bc932cf1a854381a85ad9ed79b8497c153": {
+    "canonicalName": "Delegate",
+    "id": "delegate",
+    "version": 2
+   },
+   "0xf0809f6e760a5452ee567975eda7a28da4a83d38": {
+    "canonicalName": "01node",
+    "id": "01node",
+    "version": 2
+   },
+   "0x2afa3787cd95fee5d5753cd717ef228eb259f4ea": {
+    "canonicalName": "Restake",
+    "id": "restake",
+    "version": 2
+   },
+   "0xd410ddb726991f372b69a05b006d2ae5a8cedbd6": {
+    "canonicalName": "BCW Group",
+    "id": "bcw",
+    "version": 2
+   },
+   "0xc6d46f63578635e4a7140cdf4d0eea0fd7bb50ec": {
+    "canonicalName": "Switchboard",
+    "id": "switchboard",
+    "version": 2
+   },
+   "0x047d9dbe4fc6b5c916f37237f547f9f42809935a": {
+    "canonicalName": "Gitcoin",
+    "id": "gitcoin",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xecb3ac94976f11a53ae74af1f36fb89e247faeef": {
+    "canonicalName": "Gitcoin",
+    "id": "gitcoin",
+    "version": 2
+   },
+   "0xa6f5ddbf0bd4d03334523465439d301080574742": {
+    "canonicalName": "Animoca-Blockdaemon",
+    "id": "animoca-blockdaemon",
+    "version": 2
+   },
+   "0xd1b5493e712081a6fbab73116405590046668f6b": {
+    "canonicalName": "Luganodes",
+    "id": "luganodes",
+    "version": 2
+   },
+   "0x54dd79f5ce72b51fcbbcb170dd01e32034323565": {
+    "canonicalName": "Shrapnel",
+    "id": "mercury",
+    "version": 2
+   },
+   "0x53bdce6dccf7505a55813022f53c43fabfef7b3a": {
+    "canonicalName": "StakingCabin",
+    "id": "stakingcabin",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xcd19d26710cacf8241583769f353ea7395159007": {
+    "canonicalName": "StakingCabin",
+    "id": "stakingcabin",
+    "version": 2
+   },
+   "0xa75abcc0fab6ae09c8fd808bec7be7e88fe31d6b": {
+    "canonicalName": "P-OPS",
+    "id": "p-ops-team",
+    "version": 2
+   },
+   "0x06b85533967179ed5bc9c754b84ae7d02f7ed830": {
+    "canonicalName": "Omni X",
+    "id": "omni-x",
+    "version": 2
+   },
+   "0xcd8ea69bbca0a2bb221aed59fa2704f01fc76a9f": {
+    "canonicalName": "Zenrock",
+    "id": "zenrock",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xc79f0b1bcb7cdae9f9ba547dcfc57cbfcd2993a5": {
+    "canonicalName": "Stargate",
+    "id": "stargate",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xa2d10677441230c4aed58030e4ea6ba7bfd80393": {
+    "canonicalName": "Omnicat",
+    "id": "omnicat",
+    "version": 2,
+    "deprecated": true
+   },
+   "0x8ddf05f9a5c488b4973897e278b58895bf87cb24": {
+    "canonicalName": "Polyhedra zkBridge",
+    "id": "polyhedra-network",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xe014fe8c4d5c23edb7ac4011f226e869ac7ef5cc": {
+    "canonicalName": "Polyhedra zkBridge",
+    "id": "polyhedra-network",
+    "version": 1,
+    "deprecated": true
+   },
+   "0x150a58e9e6bf69cceb1dba5ae97c166dc8792539": {
+    "canonicalName": "Chainlink",
+    "id": "ccip",
+    "version": 1
+   },
+   "0xc30291521305bc76115de7bca8034ea7147abe36": {
+    "canonicalName": "BitGo",
+    "id": "bitgo",
+    "version": 2,
+    "deprecated": true
+   },
+   "0x02152f4624596602dcbb8b8ead2988ad44edc865": {
+    "canonicalName": "BitGo",
+    "id": "bitgo",
+    "version": 2,
+    "deprecated": true
+   },
+   "0x7decc6df3af9cfc275e25d2f9703ecf7ad800d5d": {
+    "canonicalName": "Paxos",
+    "id": "paxos",
+    "version": 2,
+    "deprecated": true
+   },
+   "0x7bb8fae7f3e0ee0065fe685c597e67348b2a3adb": {
+    "canonicalName": "Paxos",
+    "id": "paxos",
+    "version": 2
+   },
+   "0x1e4ce74ccf5498b19900649d9196e64bab592451": {
+    "canonicalName": "Superform",
+    "id": "superform",
+    "version": 2
+   },
+   "0xa70c51c38d5a9990f3113a403d74eba01fce4ccb": {
+    "canonicalName": "LayerZero Labs",
+    "id": "layerzero-labs",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0xbcefdadb8d24b1d36c26b522235012cd4cf162f6": {
+    "canonicalName": "Twinstake",
+    "id": "nethermind",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0xab6d3d37d8dc309e7d8086b2e85a953b84ee5fa9": {
+    "canonicalName": "Animoca-Blockdaemon",
+    "id": "animoca-blockdaemon",
+    "version": 2,
+    "lzReadCompatible": true,
+    "deprecated": true
+   },
+   "0xf60c89799c85d8fab79519f7666dcde2a7c97cca": {
+    "canonicalName": "Nocturnal Labs",
+    "id": "nocturnal-labs",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0x66d771b8f938ccb82a1a9cb7a93671cb92016ab0": {
+    "canonicalName": "BCW Group",
+    "id": "bcw",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0xbabbb709b3cefe563f2ab14898a53301686d48b9": {
+    "canonicalName": "AltLayer",
+    "id": "altlayer",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0x13feb7234ff60a97af04477d6421415766753ba3": {
+    "canonicalName": "Canary",
+    "id": "canary",
+    "version": 2
+   },
+   "0x2cabf8f2c0aae35a771a1c19487684e94388b03a": {
+    "canonicalName": "Flowdesk",
+    "id": "flowdesk",
+    "version": 2
+   },
+   "0x43cfcc293cdf99f7d021f21ffd443f174ab0e843": {
+    "canonicalName": "LZDeadDVN",
+    "id": "lz-dead-dvn",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xdd3d71ff05d9206c69c667d22b3a0970009780e4": {
+    "canonicalName": "USDT0",
+    "id": "usdt0",
+    "version": 2
+   },
+   "0xa3858e2a9860c935fc9586a617e9b2a674c3e4c8": {
+    "canonicalName": "Muon",
+    "id": "muon",
+    "version": 2
+   },
+   "0x0a8618f71db88ab5d0caf0610ede19f0ab8817c5": {
+    "canonicalName": "Nansen",
+    "id": "nansen",
+    "version": 2
+   },
+   "0x5cccb8de6cdba9d2af9d84465653af7390fdf9dd": {
+    "canonicalName": "Deutsche Telekom",
+    "id": "deutsche-telekom",
+    "version": 2
+   },
+   "0xcf46153f01355036bf07e5f7fb1eb262f25dfedd": {
+    "canonicalName": "Bera",
+    "id": "bera",
+    "version": 2
+   },
+   "0xdab6e6ecb3513a8d2614ad75199b4b264a731050": {
+    "canonicalName": "Frax",
+    "id": "frax",
+    "version": 2
+   },
+   "0x5cff49d69d79d677dd3e5b38e048a0dcb6d86aaf": {
+    "canonicalName": "Horizen",
+    "id": "horizen-labs",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0x4c41b4edf85dee828c2cfcc80019cb2bbcfb69a5": {
+    "canonicalName": "Nodit",
+    "id": "nodit",
+    "version": 2
+   },
+   "0xf6cb110b0334825797b9b733060229c68e5d8bef": {
+    "canonicalName": "Wyoming",
+    "id": "wyoming",
+    "version": 2
+   },
+   "0x4066b6e7bfd761b579902e7e8d03f4feb9b9536e": {
+    "canonicalName": "Curve",
+    "id": "curve",
+    "version": 2,
+    "lzReadCompatible": true
+   },
+   "0x8b430df07ce9666fdffd99c1ea0153f6e178bcd6": {
+    "canonicalName": "Brale",
+    "id": "brale",
+    "version": 2
+   },
+   "0x2ac7f400d486f6b81660e7d279072e0c18e16733": {
+    "canonicalName": "Worldpay",
+    "id": "worldpay",
+    "version": 2
+   },
+   "0x14206011d192e4f41d694d21ac599d0e88c2c12a": {
+    "canonicalName": "Fidelity Center for Applied Technology",
+    "id": "fidelity",
+    "version": 2
+   },
+   "0x547bf6889b1095b7cc6e525a1f8e8fdb26134a38": {
+    "canonicalName": "Republic",
+    "id": "republic-crypto",
+    "version": 2
+   },
+   "0xab98becd7ed5494e7da7bd6c698a282f21492d6d": {
+    "canonicalName": "Quantoz",
+    "id": "quantoz",
+    "version": 2,
+    "deprecated": true
+   },
+   "0xa773b91c42fc8e77c37d7396b2814b8fa485b2c3": {
+    "canonicalName": "Quantoz",
+    "id": "quantoz",
+    "version": 2
+   },
+   "0xc58181b471163c5021a7b4206b4d8d176719c06a": {
+    "canonicalName": "Blockaid",
+    "id": "blockaid",
+    "version": 2
+   },
+   "0x0fa06167ba4829bbbb72471e7363405a4aba365e": {
+    "canonicalName": "FurtherFP",
+    "id": "FurtherFP",
+    "version": 2
+   },
+   "0x28a165dbdf00b1e85295d4d6678eb71af24693ee": {
+    "canonicalName": "Bridge",
+    "id": "bridge",
+    "version": 2
+   },
+   "0xe34a8d1c1e8ec397314ac019879df14de9bcf490": {
+    "canonicalName": "Canary Sponsored",
+    "id": "canary-sponsored",
+    "version": 2
+   },
+   "0xb16a4842182655c6c539c00b257d49a1e9571511": {
+    "canonicalName": "Canary Subsidized",
+    "id": "canary-subsidized",
+    "version": 2
+   }
+  }
+ },
+ "rayls": {
+  "chainName": "rayls",
+  "environment": "mainnet",
+  "dvns": {
+   "0x396dc0a78f789586e2982fccd830c5954c193f3c": {
+    "canonicalName": "LayerZero Labs",
+    "id": "layerzero-labs",
+    "version": 2
+   },
+   "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": {
+    "canonicalName": "Twinstake",
+    "id": "nethermind",
+    "version": 2
+   },
+   "0xd01ae6905d48315f7be10c7330aecf8360ef5b12": {
+    "canonicalName": "Canary",
+    "id": "canary",
+    "version": 2
+   },
+   "0x6788f52439aca6bff597d3eec2dc9a44b8fee842": {
+    "canonicalName": "LZDeadDVN",
+    "id": "lz-dead-dvn",
+    "version": 2,
+    "deprecated": true
+   }
+  }
+ }
+}
