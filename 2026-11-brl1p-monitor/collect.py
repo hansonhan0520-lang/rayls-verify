@@ -181,11 +181,19 @@ def explorer_logs(address):
             return out
 
 
+CHECKSUM = {LOCKBOX: "0x3Ea6BaC7d4138BcC126D0F17aE10122B3620abA6", ADAPTER: "0xE56dDf65E311CddB71f69c0aC4D27E58B239D69a"}
+
+
 def lz_messages(eid, oapp):
+    """LayerZero Scan, an index run by LayerZero Labs. It answered only for checksummed addresses."""
     out, token, pages = [], None, 0
     while True:
-        q = f"?limit=100" + (f"&nextToken={urllib.parse.quote(token)}" if token else "")
-        j = http(f"{LZ_SCAN}/messages/oapp/{eid}/{oapp}{q}")
+        q = (f"?nextToken={urllib.parse.quote(token)}" if token else "")
+        try:
+            j = http(f"{LZ_SCAN}/messages/oapp/{eid}/{CHECKSUM[oapp]}{q}")
+        except Exception as e:
+            log(f"    LayerZero Scan {eid}/{oapp}: {str(e)[:120]}")
+            return out
         out += j.get("data", [])
         token = j.get("nextToken")
         pages += 1
@@ -411,6 +419,17 @@ def main():
         live["brl1p_paused"] = int(call(RAYLS_RPC, BRL1P, "0x5c975abb"), 16) == 1
     except Exception:
         pass
+    try:
+        meta = http("https://metadata.layerzero-api.com/v1/metadata/dvns")
+        names = {}
+        for chain in ("rayls", "polygon"):
+            for a, v in ((meta.get(chain) or {}).get("dvns") or {}).items():
+                names[f"{chain}:{a.lower()}"] = {k: v.get(k) for k in ("canonicalName", "id", "deprecated", "lzReadCompatible") if k in v}
+        used = live["rayls_receive_uln"]["dvns"] + live["rayls_send_uln"]["dvns"]
+        live["dvn_registry"] = {a: names.get(f"rayls:{a}") for a in sorted(set(used))}
+        json.dump({k: v for k, v in meta.items() if k in ("rayls", "polygon")}, open(os.path.join(HERE, "raw", "dvn_metadata_rayls_polygon.json"), "w"), indent=1)
+    except Exception as e:
+        live["dvn_registry"] = str(e)[:100]
     live["supply_matches_rebuilt"] = live["brl1p_supply"] == supply
     live["lockbox_matches_rebuilt"] = live["lockbox_brl1"] == lockbox
     log(f"\n[3] Live state: lockbox {fmt(live['lockbox_brl1'])} (publicnode {fmt(live['lockbox_brl1_publicnode'])}), "
@@ -418,6 +437,8 @@ def main():
     log(f"    live equals rebuilt-from-events: lockbox {live['lockbox_matches_rebuilt']}, supply {live['supply_matches_rebuilt']}")
     log(f"    roles {live['roles']}; impl {live['brl1p_impl']}; adapter owner {live['adapter_owner']}; delegate {live['adapter_delegate']}")
     log(f"    Rayls receive ULN {live['rayls_receive_uln']}")
+    log(f"    Rayls send ULN {live['rayls_send_uln']}")
+    log(f"    DVN names in LayerZero's registry now: {live['dvn_registry']}")
 
     # ---- Polygon state at 00:00 UTC every day since the lockbox existed (archive, two providers)
     t0 = block_ts(p_url, LOCKBOX_FROM, pcache)
