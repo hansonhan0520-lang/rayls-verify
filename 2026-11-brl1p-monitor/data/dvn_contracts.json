@@ -277,7 +277,7 @@
   "paused": 0,
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
-   "0x87e46b0a": 800,
+   "0x87e46b0a": 808,
    "SetDstConfig": 6,
    "Withdraw": 1,
    "UpdateSigner": 3,
