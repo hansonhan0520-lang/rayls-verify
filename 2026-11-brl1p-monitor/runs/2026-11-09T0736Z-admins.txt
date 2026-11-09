@@ -1,0 +1,11 @@
+DVN admin check, run 2026-11-09T07:36:07Z
+rayls   0x396dc0a78f789586e2982fccd830c5954c193f3c ADMIN_ROLE: 0xb8ff877e True, 0xb52fa54f True
+rayls   0x8d77d35604a9f37f488e41d1d916b2a0088f82dd ADMIN_ROLE: 0xb8ff877e True, 0xb52fa54f True
+rayls   0xd01ae6905d48315f7be10c7330aecf8360ef5b12 ADMIN_ROLE: 0xb8ff877e True, 0xb52fa54f True
+polygon 0x23de2fe932d9043291f870324b74f820e11dc81a ADMIN_ROLE: 0xb8ff877e True, 0xb52fa54f True
+polygon 0x31f748a368a893bdb5abb67ec95f232507601a73 ADMIN_ROLE: 0xb8ff877e True, 0xb52fa54f True
+polygon 0x13feb7234ff60a97af04477d6421415766753ba3 ADMIN_ROLE: 0xb8ff877e True, 0xb52fa54f True
+rayls   0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb code none (plain account)  transactions sent 5932
+rayls   0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6 code none (plain account)  transactions sent 446
+polygon 0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb code none (plain account)  transactions sent 8881969
+polygon 0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6 code none (plain account)  transactions sent 1705
