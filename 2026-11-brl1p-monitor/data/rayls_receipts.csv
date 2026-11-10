@@ -1,19 +1,20 @@
-direction,nonce,rayls_tx,explorer_logs_for_brl1p_and_adapter,rpc_tx_found,rpc_receipt_found,rpc_error
-P->R,1,0x45fcbb7c3e601bbe5d4be574b17331b7d8512975a86dce57cbab1c6a0c34e8e9,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,2,0xfbce8286dc352cc461d7b60bb1cce4a9437a77b56474aa359185c9df46fb0a50,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,3,0xb8372c24dd8597851db538cc0fc4b7194e3c494a00f50780ce34c4d9e937d023,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-R->P,1,0x46831ef0111b6b6cb845d6e67a30a1bcfec0c5a36e7385f6548d6a39f7183caf,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,4,0xb6c208e2c947f9758c878927f2f119289821d5967d9338c2441dad83c3280b67,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,5,0x9e1ffb3a1ba7f5798a8a381e65128ddedf957168d5d8ae1a003e203edc785488,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,6,0xb984942db3bc60191f3a40848a60a622d156773e36fe0b92c831b8aed64eca0a,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,7,0x9d45bd23b504bed60bdefbc029541b928f9db29ffd44da4e7e78af78551b6dda,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,8,0x5262433a1617e2502e583effc6491b174ce6efd24b3e9acec0e4ab99c0d46b23,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,9,0xa18147bedd8828ba9f68c82168edf93bb28c8d991929d592717f330784dd6560,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,10,0xb47ac07d548d69c6f87f274d5351e11dea2de05a749a9958cd5e3b3d69b94cea,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,11,0x07f217792173db08b2f4afa5d78df1885525ccd3d4cfdee962c172cca5f33542,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-R->P,2,0xa668ada318930ae1ed11af098e78ce2c5a567857d7ae1723f6061d30d479775b,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,12,0xc12b04fe3768da6c0e5fe7e9cdaa85b445ebacddea32bf87cfae20a36c3ef658,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,13,0x39e44acb0655172f7bdcfeb1f4fd2d733cf1cffe05bf614e2c86696468300d8e,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,14,0xf8188f70ac526e104c57e1ec881228ac86e83e9b630cc68f8acd751e62ae42fe,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,15,0x0924ba01a5cd363115cdb4e6d8610410d0b3c7041702cfeb6843b0e9334cc40f,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
-P->R,16,0x96c533d7d8df0d5f80fbe91561ed17077778c69c77d7bb625106b7430d566b91,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result
+direction,nonce,rayls_tx,explorer_logs_for_brl1p_and_adapter,rpc_tx_found,rpc_receipt_found,rpc_error,rpc_status,rpc_logs_for_brl1p_and_adapter
+P->R,1,0x45fcbb7c3e601bbe5d4be574b17331b7d8512975a86dce57cbab1c6a0c34e8e9,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,2,0xfbce8286dc352cc461d7b60bb1cce4a9437a77b56474aa359185c9df46fb0a50,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,3,0xb8372c24dd8597851db538cc0fc4b7194e3c494a00f50780ce34c4d9e937d023,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+R->P,1,0x46831ef0111b6b6cb845d6e67a30a1bcfec0c5a36e7385f6548d6a39f7183caf,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,4,0xb6c208e2c947f9758c878927f2f119289821d5967d9338c2441dad83c3280b67,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,5,0x9e1ffb3a1ba7f5798a8a381e65128ddedf957168d5d8ae1a003e203edc785488,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,6,0xb984942db3bc60191f3a40848a60a622d156773e36fe0b92c831b8aed64eca0a,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,7,0x9d45bd23b504bed60bdefbc029541b928f9db29ffd44da4e7e78af78551b6dda,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,8,0x5262433a1617e2502e583effc6491b174ce6efd24b3e9acec0e4ab99c0d46b23,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,9,0xa18147bedd8828ba9f68c82168edf93bb28c8d991929d592717f330784dd6560,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,10,0xb47ac07d548d69c6f87f274d5351e11dea2de05a749a9958cd5e3b3d69b94cea,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,11,0x07f217792173db08b2f4afa5d78df1885525ccd3d4cfdee962c172cca5f33542,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+R->P,2,0xa668ada318930ae1ed11af098e78ce2c5a567857d7ae1723f6061d30d479775b,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,12,0xc12b04fe3768da6c0e5fe7e9cdaa85b445ebacddea32bf87cfae20a36c3ef658,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,13,0x39e44acb0655172f7bdcfeb1f4fd2d733cf1cffe05bf614e2c86696468300d8e,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,14,0xf8188f70ac526e104c57e1ec881228ac86e83e9b630cc68f8acd751e62ae42fe,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,15,0x0924ba01a5cd363115cdb4e6d8610410d0b3c7041702cfeb6843b0e9334cc40f,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,16,0x96c533d7d8df0d5f80fbe91561ed17077778c69c77d7bb625106b7430d566b91,2,True,False,eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result,,
+P->R,17,0x1266bfa404f2a84478b8b47b5f8dc85274731374cf6f92a17c9a00413cf4991f,2,True,True,,1,2

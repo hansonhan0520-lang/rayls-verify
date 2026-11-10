@@ -57,7 +57,8 @@
    "0xbd40c9047980500c46b8aed4462e2f889299febe": {
     "canonicalName": "Blockhunters",
     "id": "blockhunters",
-    "version": 2
+    "version": 2,
+    "deprecated": true
    },
    "0x9eeee79f5dbc4d99354b5cb547c138af432f937b": {
     "canonicalName": "P2P",
@@ -118,7 +119,8 @@
    "0x54dd79f5ce72b51fcbbcb170dd01e32034323565": {
     "canonicalName": "Shrapnel",
     "id": "mercury",
-    "version": 2
+    "version": 2,
+    "deprecated": true
    },
    "0x53bdce6dccf7505a55813022f53c43fabfef7b3a": {
     "canonicalName": "StakingCabin",
@@ -129,7 +131,8 @@
    "0xcd19d26710cacf8241583769f353ea7395159007": {
     "canonicalName": "StakingCabin",
     "id": "stakingcabin",
-    "version": 2
+    "version": 2,
+    "deprecated": true
    },
    "0xa75abcc0fab6ae09c8fd808bec7be7e88fe31d6b": {
     "canonicalName": "P-OPS",
@@ -301,7 +304,8 @@
    "0xf6cb110b0334825797b9b733060229c68e5d8bef": {
     "canonicalName": "Wyoming",
     "id": "wyoming",
-    "version": 2
+    "version": 2,
+    "deprecated": true
    },
    "0x4066b6e7bfd761b579902e7e8d03f4feb9b9536e": {
     "canonicalName": "Curve",

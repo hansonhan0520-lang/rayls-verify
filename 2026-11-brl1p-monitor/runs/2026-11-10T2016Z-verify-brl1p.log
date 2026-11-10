@@ -1,0 +1,50 @@
+BRL1.p backing check, run at 2026-11-10T20:16:24.120Z
+Polygon block 97090881 (2026-11-10T20:16:18.000Z)   Rayls block 14240449 (2026-11-10T20:16:18.000Z)
+
+[1] Stock: is every BRL1.p matched by BRL1 in the lockbox?
+  BRL1 held by lockbox   255,293.376896   (raw 255293376896000000000000)
+  BRL1.p total supply    255,293.376896   (raw 255293376896000000000000)
+  lockbox - supply       0.000000   OK: lockbox >= supply
+
+[2] Flows: do locks match mints and unlocks match burns?
+  Polygon into lockbox   17 transfers, 264,869.831242
+  Rayls minted           17 mints,     264,869.831242
+  Polygon out of lockbox 2 transfers, 9,576.454346
+  Rayls burned           2 burns,     9,576.454346
+
+[3] Wiring: do the two sides point only at each other?
+  lockbox.token()            0x5c067c80c00ecd2345b05e83a3e758ef799c40b5
+  lockbox.peers(30415)     0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a
+  adapter.token()            0xa069d3798feab32994ac5d98a9f011da6024f334
+  adapter.peers(30109)     0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6
+  BRL1.p RoleGranted events: 5, RoleRevoked events: 0
+    BURNER -> 0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a  (tx 0x9b656d894679ee0fb7468f387aa7de02c1717f89f134d500fb45d455b98d8aa2)
+    MINTER -> 0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a  (tx 0x55c5d0b917d1a43360fb42125b78b998041a47266b47a43ae54eb660041773c6)
+    UPGRADER -> 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1  (tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3)
+    PAUSER -> 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1  (tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3)
+    DEFAULT_ADMIN -> 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1  (tx 0x25606f96f47da164639900820df48c9a7c1af0fd39d36d2af119c5b31ec7a2d3)
+
+[4] Control: who can change the rules, and is it one key?
+  BRL1.p implementation 0xcacba996ca4c2ac37144ba30bfebc5f7cdbd36d7, Upgraded events: 1
+  0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a  roles now: MINTER, BURNER  (contract)
+  0x633ac5e2315b973417e8caa6b3ad2162e0461ce1  roles now: DEFAULT_ADMIN, PAUSER, UPGRADER  (plain wallet, no contract code)
+  lockbox.owner() 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1 (plain wallet, no contract code)
+  adapter.owner() 0x633ac5e2315b973417e8caa6b3ad2162e0461ce1 (plain wallet, no contract code)
+
+[5] Messages: who must sign off before the other side acts?
+  Polygon -> Rayls (checked on Rayls): 3 required DVNs, 0 optional, 120 source-chain confirmations
+    DVN 0x396dc0a78f789586e2982fccd830c5954c193f3c  LayerZero Labs
+    DVN 0x8d77d35604a9f37f488e41d1d916b2a0088f82dd  Twinstake
+    DVN 0xd01ae6905d48315f7be10c7330aecf8360ef5b12  Canary
+  Rayls -> Polygon (checked on Polygon): 3 required DVNs, 0 optional, 10 source-chain confirmations
+    DVN 0x13feb7234ff60a97af04477d6421415766753ba3  Canary
+    DVN 0x23de2fe932d9043291f870324b74f820e11dc81a  LayerZero Labs
+    DVN 0x31f748a368a893bdb5abb67ec95f232507601a73  Twinstake
+  DVN names from LayerZero's public registry: metadata.layerzero-api.com/v1/metadata/dvns
+
+[6] Issuer layer: can BRL1 itself freeze the lockbox?
+  BRL1.paused() false
+  BRL1 access registry 0x3ebcb1accf595579dd89fa57176c5803947edb31, lockbox hasAccess = true
+  BRL1 total supply on Polygon 17,882,561.540000
+
+finished 2026-11-10T20:17:39.669Z
