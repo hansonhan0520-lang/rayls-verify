@@ -1,0 +1,33 @@
+{
+ "run_utc": "2026-11-11 16:23 UTC",
+ "minter_owner": "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+ "minter_owner_kind": "plain account (112 txs sent)",
+ "minter_operator_events": {
+  "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0": true
+ },
+ "minter_operators_now": {
+  "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0": true
+ },
+ "eoa_burnFrom_lock_1_RLS": "succeeds",
+ "eoa_mint_1_RLS_to_test_address": "succeeds",
+ "eoa_upgradeToAndCall_same_implementation": "succeeds",
+ "minter_owner_burn_lock_1_RLS_via_minter": "succeeds",
+ "minter_owner_mint_1_RLS_via_minter": "succeeds",
+ "stranger_burn_lock_via_minter": "REVERT execution reverted: Not authorized 0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000",
+ "lock_admin_claim_now": "REVERT execution reverted 0xdb6a0954000000000000000000000000000000000000000000000000000000006cef4180",
+ "eth_rls_role_holders_among_known": {
+  "DEFAULT_ADMIN": [
+   "0x60f0e09e51704ea6e472f877f849269eede76309"
+  ],
+  "UPGRADER": [
+   "0x60f0e09e51704ea6e472f877f849269eede76309"
+  ],
+  "MINTER": [
+   "0x60f0e09e51704ea6e472f877f849269eede76309"
+  ],
+  "PAUSER": [
+   "0x60f0e09e51704ea6e472f877f849269eede76309"
+  ]
+ },
+ "eth_rls_implementation_slot_via_1967": "0x0000000000000000000000000000000000000000"
+}
