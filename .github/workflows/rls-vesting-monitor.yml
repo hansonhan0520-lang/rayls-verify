@@ -1,0 +1,35 @@
+name: rls-vesting-monitor
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "41 */6 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: rls-vesting-monitor
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: transparency portal snapshot
+        continue-on-error: true
+        run: python3 2026-11-rls-vesting/portal.py
+      - name: lock contract state and simulations
+        continue-on-error: true
+        run: python3 2026-11-rls-vesting/lock.py
+      - name: RLS roles, bridge and backing
+        continue-on-error: true
+        run: python3 2026-11-rls-vesting/roles.py
+      - name: what the control accounts can do (simulated)
+        continue-on-error: true
+        run: python3 2026-11-rls-vesting/powers.py
+      - name: commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add 2026-11-rls-vesting
+          git commit -m "rls-vesting-monitor run $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
