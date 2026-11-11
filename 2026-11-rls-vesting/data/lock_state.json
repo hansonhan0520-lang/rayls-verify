@@ -1,0 +1,111 @@
+{
+ "run_utc": "2026-11-11 16:04 UTC",
+ "block": 14293521,
+ "block_time": "2026-11-11 16:04 UTC",
+ "totalAmount": 1070493535000000000000000000,
+ "ownerCount": 3,
+ "adminCount": 5,
+ "totalClaimed": 0,
+ "totalBurned": 0,
+ "actualBalance": 1070493535000000000000000000,
+ "claimable": 0,
+ "stillLocked": 1070493535000000000000000000,
+ "nextUnlockTime": 1827619200,
+ "tranchesClaimed": 0,
+ "scheduleBasis": 1070493535000000000000000000,
+ "isFullyFunded": true,
+ "token": "0x07e17e17e17e17e17e17e17e17e17e17e17e17ea",
+ "unlock_count": 48,
+ "first_unlock": "2027-12-01 00:00 UTC",
+ "last_unlock": "2031-11-01 00:00 UTC",
+ "balance_via_token": 1070493535000000000000000000,
+ "runtime_code_bytes": 6175,
+ "tranche_amount": "22,301,948.645833",
+ "created_block": 6429939,
+ "created_tx": "0x169ab60459db87a3dc82f574e9ea544c15db09aa65f46a593c4abe06caf0e24e",
+ "created_time": "2026-08-06 11:30 UTC",
+ "roles_now": [
+  {
+   "account": "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+   "owner_now": true,
+   "admin_now": true,
+   "kind": "plain account",
+   "multisig": "",
+   "rayls_tx_count": 112
+  },
+  {
+   "account": "0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d",
+   "owner_now": false,
+   "admin_now": true,
+   "kind": "plain account",
+   "multisig": "",
+   "rayls_tx_count": 0
+  },
+  {
+   "account": "0x6b205d256e8a153cba8057e5655db56e0e47a511",
+   "owner_now": true,
+   "admin_now": true,
+   "kind": "plain account",
+   "multisig": "",
+   "rayls_tx_count": 2
+  },
+  {
+   "account": "0x8699069568402ce9b9a08a425db157202ca4b4c5",
+   "owner_now": true,
+   "admin_now": true,
+   "kind": "plain account",
+   "multisig": "",
+   "rayls_tx_count": 0
+  },
+  {
+   "account": "0xd04004a3715f8428674a01ffde2069c181d4b0fd",
+   "owner_now": false,
+   "admin_now": false,
+   "kind": "plain account",
+   "multisig": "",
+   "rayls_tx_count": 103
+  },
+  {
+   "account": "0xd5ad7b125796870ac729e644cd43646ccf716a3e",
+   "owner_now": false,
+   "admin_now": true,
+   "kind": "plain account",
+   "multisig": "",
+   "rayls_tx_count": 4
+  }
+ ],
+ "owners_now": [
+  "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+  "0x6b205d256e8a153cba8057e5655db56e0e47a511",
+  "0x8699069568402ce9b9a08a425db157202ca4b4c5"
+ ],
+ "admins_now": [
+  "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+  "0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d",
+  "0x6b205d256e8a153cba8057e5655db56e0e47a511",
+  "0x8699069568402ce9b9a08a425db157202ca4b4c5",
+  "0xd5ad7b125796870ac729e644cd43646ccf716a3e"
+ ],
+ "funding_in": "1,070,493,535.000000",
+ "funding_out": "0.000000",
+ "funders": [
+  "0xab5309be3d6e228288da1f68df3f993a550dec7c"
+ ],
+ "admin_used_for_simulation": "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+ "owner_used_for_simulation": "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+ "simulations": {
+  "claim_now_as_admin": "reverts NotYetVested(uint256) ['2027-12-01 00:00 UTC']",
+  "claim_now_as_stranger": "reverts NotAdmin(address) [48879]",
+  "sweep_now_as_admin": "reverts ScheduleNotSettled(uint256) ['1,070,493,535.000000']",
+  "burn_1_rls_as_stranger": "reverts NotAdmin(address) [48879]",
+  "burn_1_rls_as_admin": "succeeds",
+  "add_admin_as_stranger": "reverts NotOwner(address) [48879]",
+  "add_admin_as_owner": "succeeds",
+  "claim_as_admin_1s_before_first_date": "reverts NotYetVested(uint256) ['2027-12-01 00:00 UTC']",
+  "claim_as_admin_at_first_date": "succeeds, returns 22,301,948.645833 RLS",
+  "claim_as_admin_at_12th_date": "succeeds, returns 267,623,383.750000 RLS",
+  "claim_as_admin_at_last_date": "succeeds, returns 1,070,493,535.000000 RLS"
+ },
+ "rls_total_supply_on_rayls": "1,372,467,196.291250",
+ "lock_share_of_rayls_supply": 78.0
+}
