@@ -1,17 +1,26 @@
 {
- "run_utc": "2026-11-11 16:18 UTC",
+ "run_utc": "2026-11-11 16:20 UTC",
  "rayls_role_holders": {
   "DEFAULT_ADMIN": [
+   "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
    "0x6b205d256e8a153cba8057e5655db56e0e47a511"
   ],
-  "UPGRADER": [],
+  "UPGRADER": [
+   "0x0e301beef8daad28f8e38d9fce09112b78fe3161"
+  ],
   "MINTER": [
+   "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
    "0xe4854d190146cdfe82040b495aba43872a17f609"
   ],
-  "BURNER": [],
-  "PAUSER": []
+  "BURNER": [
+   "0x0e301beef8daad28f8e38d9fce09112b78fe3161"
+  ],
+  "PAUSER": [
+   "0x0e301beef8daad28f8e38d9fce09112b78fe3161"
+  ]
  },
  "rayls_role_holder_kinds": {
+  "0x0e301beef8daad28f8e38d9fce09112b78fe3161": "plain account (112 txs sent)",
   "0x6b205d256e8a153cba8057e5655db56e0e47a511": "plain account (2 txs sent)",
   "0xe4854d190146cdfe82040b495aba43872a17f609": "contract (1377 bytes)"
  },
@@ -19,6 +28,7 @@
  "rayls_rls_paused": "0x0000000000000000000000000000000000000000000000000000000000000000",
  "rayls_rls_bridge_paused": "0x0000000000000000000000000000000000000000000000000000000000000000",
  "burnFrom_simulations": {
+  "0x0e301beef8daad28f8e38d9fce09112b78fe3161": "succeeds",
   "0x6b205d256e8a153cba8057e5655db56e0e47a511": "REVERT execution reverted 0xfb8f41b20000000000000000000000006b205d256e8a153cba8057e5655db56e0e47a511000000000000000000000000000000000000000000000000000000000",
   "0xe4854d190146cdfe82040b495aba43872a17f609": "succeeds",
   "0x000000000000000000000000000000000000beef": "REVERT execution reverted 0xfb8f41b2000000000000000000000000000000000000000000000000000000000000beef000000000000000000000000000000000000000000000000000000000"
@@ -58,7 +68,7 @@
   "endpoint": "0x1a44076050125825900e736c501f859c50fe728c",
   "token": "0xb5f7b021a78f470d31d762c1dda05ea549904fbd",
   "peer": "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0",
-  "owner_kind": "Safe multisig, 4 of 1072108946082434008446075767782289904137534467964",
+  "owner_kind": "Safe multisig, 4 of 6",
   "delegate": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1",
   "receive_uln": {
    "confirmations": 1,
@@ -97,5 +107,15 @@
   "MINTER": [],
   "BURNER": [],
   "PAUSER": []
+ },
+ "safe_owners": {
+  "0x60f0e09e51704ea6e472f877f849269eede76309": [
+   "0xbbcb071ff70004646fcb11aa4199b106a0806f7c",
+   "0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d",
+   "0xe4223112d5279464510e3bf90c6af5723042e961",
+   "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
+   "0xd5ad7b125796870ac729e644cd43646ccf716a3e",
+   "0x6f890755e2ad91b570e75d3aedf3b28efe27955c"
+  ]
  }
 }
