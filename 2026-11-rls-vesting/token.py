@@ -209,4 +209,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        import traceback
+        LOG.append(traceback.format_exc())
+        os.makedirs(os.path.join(HERE, "runs"), exist_ok=True)
+        open(os.path.join(HERE, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-token-FAILED.txt"), "w").write("\n".join(LOG) + "\n")
+        raise
