@@ -1,0 +1,23 @@
+RLS token and bridge check, run 2026-11-11 16:16 UTC
+
+[1] RLS on Rayls
+    Rayls RLS: {"owner": "ERR {'code': 3, 'message': 'execution reverted'}", "endpoint": "ERR {'code': 3, 'message': 'execution reverted'}", "delegate": "0x0x", "owner_kind": "?", "implementation": "0x07e17e17e17e17e17e17e17e17e17e17e17e17eb", "proxy_admin_slot": "0x0000000000000000000000000000000000000000", "peer_ethereum": "none", "receive_from_ethereum": "0x", "send_to_ethereum": "0x", "peer_bsc": "none", "receive_from_bsc": "0x", "send_to_bsc": "0x"}
+    /smart-contracts/0x0000000000000000000000000000000000000000: HTTP 404 https://explorer.rayls.com/api/v2/smart-contracts/0x0000000000000000000
+    implementation 0x07e17e17e17e17e17e17e17e17e17e17e17e17eb: RLS verified True
+
+[2] The 5 August mints to the funder, traced through LayerZero Scan
+    {'rayls_tx': '0x98810cd5d3cbb239f46f49f6df695c361ccc4ace67fac5ebc2e76e39cb599bf9', 'time': '2026-08-05T19:06:00.000000Z', 'amount': '350,000,000.000000', 'guid': '0x2284397a56f0f4fff5606b93cbfffe1676fe4527f46c46dfb7056c24e2cfe366', 'status': 'DELIVERED', 'src_chain': 30101, 'src_tx': '0x4f58d156ffb0111e4b0d9fd9c540e5cc73096de2bd56c50dc672f6ffb9110a54', 'src_from': '0xab5309be3d6e228288da1f68df3f993a550dec7c', 'sender_oapp': '0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6'}
+    {'rayls_tx': '0x3192c84a78efdf9c38d8e07df2861bfd9677e8ca3b80f7cbdef81cda52b0b112', 'time': '2026-08-05T17:17:16.000000Z', 'amount': '350,000,000.000000', 'guid': '0x25e9ebbe39ea517d75286ac632a17ce133e52dfd86f5f6964c4aa6b51522813e', 'status': 'DELIVERED', 'src_chain': 30101, 'src_tx': '0x62460d28c087b2cd32f67ddb74dce9c86b7a82937f76ff67a321c6f2155b6755', 'src_from': '0xab5309be3d6e228288da1f68df3f993a550dec7c', 'sender_oapp': '0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6'}
+    {'rayls_tx': '0xd8c91988d1804ef6501c2da9f020f772fe7ecf3dd07208213634670ba7e95a2c', 'time': '2026-08-05T16:19:47.000000Z', 'amount': '370,493,535.000000', 'guid': '0xcf46033b42e2e8f76de982df5bfd74d03ccf8e385eb9b74dcc888ea333217b00', 'status': 'DELIVERED', 'src_chain': 30101, 'src_tx': '0x82ae2413d7129662f21bebbd85392691a90c893530482d95ee35aedd89c9b6bb', 'src_from': '0xab5309be3d6e228288da1f68df3f993a550dec7c', 'sender_oapp': '0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6'}
+
+[3] Ethereum hub
+    RLS total supply on Ethereum: {'publicnode': '9,931,411,076.814720', 'tenderly': '9,931,411,076.814720'}
+    adapter none: token None, locked None
+    Ethereum RLS token: implementation slot None, owner() None
+
+[4] BSC
+    RLS on BSC: supply 195,014,762.160717, peer on Ethereum ERR {'code': 3, 'message': 'execution reverted'}
+
+[5] invariant not computed: 'eth_adapter_locked'
+
+finished 2026-11-11 16:16 UTC
