@@ -74,7 +74,7 @@ rls = lambda wei: f"{wei / 10**18:,.6f}" if isinstance(wei, int) else wei
 
 
 def decode_uln(h):
-    if not isinstance(h, str) or not h.startswith("0x"):
+    if not isinstance(h, str) or not h.startswith("0x") or len(h) < 2 + 64 * 9:
         return h
     t = [h[2 + i:66 + i] for i in range(0, len(h) - 2, 64)][3:]
     rs, os_ = int(t[4], 16) // 32, int(t[5], 16) // 32
@@ -85,7 +85,8 @@ def decode_uln(h):
 
 def oapp_view(url, oapp, remote_eids, label):
     v = {"owner": addr(call(url, oapp, "0x8da5cb5b")), "endpoint": addr(call(url, oapp, "0x5e280f11"))}
-    v["delegate"] = addr(call(url, EP, "0x587cde1e" + w(oapp)))
+    ep = v["endpoint"] if isinstance(v["endpoint"], str) and v["endpoint"].startswith("0x") and len(v["endpoint"]) == 42 else EP
+    v["delegate"] = addr(call(url, ep, "0x587cde1e" + w(oapp)))
     code = rpc(url, "eth_getCode", [v["owner"], "latest"]) if v["owner"].startswith("0x") and len(v["owner"]) == 42 else "?"
     v["owner_kind"] = "plain account" if code == "0x" else ("contract" if code != "?" else "?")
     if v["owner_kind"] == "contract":
@@ -98,12 +99,12 @@ def oapp_view(url, oapp, remote_eids, label):
     for name, eid in remote_eids.items():
         p = call(url, oapp, "0xbb0b6a53" + u32(eid))
         v[f"peer_{name}"] = addr(p) if isinstance(p, str) and p.startswith("0x") and int(p, 16) else "none"
-        rl = call(url, EP, "0x402f8468" + w(oapp) + u32(eid))
-        sl = call(url, EP, "0xb96a277f" + w(oapp) + u32(eid))
+        rl = call(url, ep, "0x402f8468" + w(oapp) + u32(eid))
+        sl = call(url, ep, "0xb96a277f" + w(oapp) + u32(eid))
         if isinstance(rl, str) and rl.startswith("0x"):
-            v[f"receive_from_{name}"] = decode_uln(call(url, EP, "0x2b3197b9" + w(oapp) + w(addr(rl[:66])) + u32(eid) + u32(2)))
+            v[f"receive_from_{name}"] = decode_uln(call(url, ep, "0x2b3197b9" + w(oapp) + w(addr(rl[:66])) + u32(eid) + u32(2)))
         if isinstance(sl, str) and sl.startswith("0x"):
-            v[f"send_to_{name}"] = decode_uln(call(url, EP, "0x2b3197b9" + w(oapp) + w(addr(sl)) + u32(eid) + u32(2)))
+            v[f"send_to_{name}"] = decode_uln(call(url, ep, "0x2b3197b9" + w(oapp) + w(addr(sl)) + u32(eid) + u32(2)))
     log(f"    {label}: {json.dumps(v)}")
     return v
 
