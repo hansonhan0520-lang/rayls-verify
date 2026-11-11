@@ -1,0 +1,24 @@
+name: rls-vesting-adhoc
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: script in 2026-11-rls-vesting to run
+        default: probe.py
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet pycryptodome && python3 2026-11-rls-vesting/${{ inputs.script }}
+      - name: commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add 2026-11-rls-vesting
+          git commit -m "rls-vesting ${{ inputs.script }} $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
