@@ -1,0 +1,23 @@
+RLS roles and bridge, run 2026-11-11 16:18 UTC
+
+[1] Rayls RLS: 7168 logs scanned, 2 role/upgrade events
+    2026-05-29 20:48 UTC RoleGranted MINTER        0xe4854d190146cdfe82040b495aba43872a17f609 by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    2026-09-16 17:47 UTC RoleGranted DEFAULT_ADMIN 0x6b205d256e8a153cba8057e5655db56e0e47a511 by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    holders now: {"DEFAULT_ADMIN": ["0x6b205d256e8a153cba8057e5655db56e0e47a511"], "UPGRADER": [], "MINTER": ["0xe4854d190146cdfe82040b495aba43872a17f609"], "BURNER": [], "PAUSER": []}
+    0x6b205d256e8a153cba8057e5655db56e0e47a511: plain account (2 txs sent)
+    0xe4854d190146cdfe82040b495aba43872a17f609: contract (1377 bytes)
+    implementation 0x07e17e17e17e17e17e17e17e17e17e17e17e17eb
+
+[2] Simulated burnFrom(lock, 1 RLS), eth_call only
+    from 0x6b205d256e8a153cba8057e5655db56e0e47a511: REVERT execution reverted 0xfb8f41b20000000000000000000000006b205d256e8a153cba8057e5655db56e0e47a511000000000000000000000000000000000000000000000000000000000
+    from 0xe4854d190146cdfe82040b495aba43872a17f609: succeeds
+    from 0x000000000000000000000000000000000000beef: REVERT execution reverted 0xfb8f41b2000000000000000000000000000000000000000000000000000000000000beef000000000000000000000000000000000000000000000000000000000
+
+[3] LayerZero bridge for RLS
+    Rayls adapter: {"address": "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0", "owner": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1", "endpoint": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b", "token": "0x07e17e17e17e17e17e17e17e17e17e17e17e17ea", "peer": "0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6", "owner_kind": "plain account (389 txs sent)", "delegate": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1", "receive_uln": {"confirmations": 15, "required": 3, "optional": 0, "dvns": ["0x396dc0a78f789586e2982fccd830c5954c193f3c", "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd", "0xd01ae6905d48315f7be10c7330aecf8360ef5b12"]}, "send_uln": {"confirmations": 1, "required": 3, "optional": 0, "dvns": ["0x396dc0a78f789586e2982fccd830c5954c193f3c", "0x8d77d35604a9f37f488e41d1d916b2a0088f82dd", "0xd01ae6905d48315f7be10c7330aecf8360ef5b12"]}}
+    Ethereum adapter: {"address": "0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6", "owner": "0x60f0e09e51704ea6e472f877f849269eede76309", "endpoint": "0x1a44076050125825900e736c501f859c50fe728c", "token": "0xb5f7b021a78f470d31d762c1dda05ea549904fbd", "peer": "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0", "owner_kind": "Safe multisig, 4 of 1072108946082434008446075767782289904137534467964", "delegate": "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1", "receive_uln": {"confirmations": 1, "required": 3, "optional": 0, "dvns": ["0x589dedbd617e0cbcb916a9223f4d1300c294236b", "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd", "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5"]}, "send_uln": {"confirmations": 15, "required": 3, "optional": 0, "dvns": ["0x589dedbd617e0cbcb916a9223f4d1300c294236b", "0xa4fe5a5b9a846458a70cd0748228aed3bf65c2cd", "0xa59ba433ac34d2927232918ef5b2eaafcf130ba5"]}}
+    RLS locked in the Ethereum adapter: {'publicnode': '1,567,482,119.800718', 'tenderly': '1,567,482,119.800718'}; RLS supply on Rayls 1,372,467,196.291250
+    Ethereum RLS total supply {'publicnode': '9,931,411,076.814720', 'tenderly': '9,931,411,076.814720'}, implementation slot 0x0000000000000000000000000000000000000000
+    Ethereum RLS roles held by the same accounts: {"DEFAULT_ADMIN": [], "UPGRADER": [], "MINTER": [], "BURNER": [], "PAUSER": []}
+
+finished 2026-11-11 16:19 UTC
