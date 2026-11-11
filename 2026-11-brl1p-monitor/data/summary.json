@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-10T19:50:40Z",
- "polygon_block": 97089846,
- "rayls_block": 14239292,
+ "run_utc": "2026-11-11T06:41:02Z",
+ "polygon_block": 97115861,
+ "rayls_block": 14268324,
  "transfers": 19,
  "polygon_to_rayls": 17,
  "rayls_to_polygon": 2,
@@ -35,16 +35,16 @@
   }
  },
  "rayls_rpc_getlogs": {
-  "token": 6,
+  "token": 7,
   "adapter": 1,
   "errors": 0
  },
  "rayls_explorer_logs": {
-  "brl1p": 57,
+  "brl1p": 58,
   "adapter": 22
  },
- "daily_days": 28,
+ "daily_days": 29,
  "config_events": 18,
  "last_config_event": "2026-10-13T18:10:25Z",
- "seconds": 474
+ "seconds": 328
 }
