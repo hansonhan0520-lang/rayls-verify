@@ -1,0 +1,18 @@
+RLS token and bridge check, run 2026-11-11 16:15 UTC
+
+[1] RLS on Rayls
+Traceback (most recent call last):
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-rls-vesting/rls_token.py", line 213, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-rls-vesting/rls_token.py", line 121, in main
+    S["rayls"] = oapp_view(RAYLS, RLS_RAYLS, {"ethereum": EID["ethereum"], "bsc": EID["bsc"]}, "Rayls RLS")
+                 ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-rls-vesting/rls_token.py", line 104, in oapp_view
+    v[f"receive_from_{name}"] = decode_uln(call(url, EP, "0x2b3197b9" + w(oapp) + w(addr(rl[:66])) + u32(eid) + u32(2)))
+                                ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-rls-vesting/rls_token.py", line 80, in decode_uln
+    rs, os_ = int(t[4], 16) // 32, int(t[5], 16) // 32
+                  ~^^^
+IndexError: list index out of range
+
