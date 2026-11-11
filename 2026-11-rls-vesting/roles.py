@@ -36,6 +36,11 @@ T_UPGRADED = "0xbc7cd75a20ee27fd9adebab32041f755214dbc6bffa90cc0225b39da2e5c2d3b
 SLOT_IMPL = "0x360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc"
 UA = {"User-Agent": "rayls-verify-monitor", "Content-Type": "application/json"}
 LOG = []
+OWNERS_OF = {}
+EXTRA = ["0x0e301beef8daad28f8e38d9fce09112b78fe3161", "0x8699069568402ce9b9a08a425db157202ca4b4c5", "0x6b205d256e8a153cba8057e5655db56e0e47a511",
+         "0xd5ad7b125796870ac729e644cd43646ccf716a3e", "0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d", "0xd04004a3715f8428674a01ffde2069c181d4b0fd",
+         "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1", "0xab5309be3d6e228288da1f68df3f993a550dec7c", "0xe4854d190146cdfe82040b495aba43872a17f609",
+         "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0", "0x60f0e09e51704ea6e472f877f849269eede76309"]
 
 
 def log(s=""):
@@ -98,7 +103,9 @@ def kind(url, a):
     th = call(url, a, "0xe75235b8")
     if th.startswith("0x") and len(th) == 66:
         ow = call(url, a, "0xa0e67e2b")
-        cnt = int(ow[130:194], 16) if ow.startswith("0x") else "?"
+        cnt = int(ow[66:130], 16) if ow.startswith("0x") else "?"
+        owners = ["0x" + ow[130 + 64 * i:194 + 64 * i][-40:] for i in range(cnt)] if isinstance(cnt, int) else []
+        OWNERS_OF[a] = owners
         return f"Safe multisig, {int(th, 16)} of {cnt}"
     return f"contract ({(len(code) - 2) // 2} bytes)"
 
@@ -158,6 +165,7 @@ def main():
         if t0 in (T_GRANT, T_REVOKE):
             acct = "0x" + l["topics"][2][-40:]
             people.add(acct)
+            people.add("0x" + l["topics"][3][-40:])
             changes.append({"block": l["block_number"], "tx": l["transaction_hash"], "event": "RoleGranted" if t0 == T_GRANT else "RoleRevoked",
                             "role": RNAME.get(l["topics"][1], l["topics"][1]), "account": acct, "by": "0x" + l["topics"][3][-40:]})
         elif t0 == T_UPGRADED:
@@ -173,7 +181,7 @@ def main():
     log(f"\n[1] Rayls RLS: {len(logs)} logs scanned, {len(changes)} role/upgrade events")
     for c in changes:
         log(f"    {c['time']} {c['event']:11s} {c['role']:13s} {c['account']} by {c['by']}")
-    people |= {ADAPTER_RAYLS}
+    people |= set(EXTRA)
     holders = {}
     for r, h in ROLES.items():
         holders[r] = [a for a in sorted(people) if call(RAYLS, RLS, "0x91d14854" + h[2:] + w(a)) == "0x" + "0" * 63 + "1"]
@@ -211,6 +219,27 @@ def main():
     log(f"    RLS locked in the Ethereum adapter: {S['eth_locked_in_adapter']}; RLS supply on Rayls {S['rayls_rls_supply']}")
     log(f"    Ethereum RLS total supply {S['eth_rls_total_supply']}, implementation slot {S['eth_rls_implementation_slot']}")
     log(f"    Ethereum RLS roles held by the same accounts: {json.dumps(eh)}")
+    S["safe_owners"] = OWNERS_OF
+    log(f"    Safe owners: {json.dumps(OWNERS_OF)}")
+    # the MINTER contract on Rayls: its code and verified source, if any
+    m = holders["MINTER"]
+    for a in m:
+        try:
+            json.dump(http(f"{API}/smart-contracts/{a}"), open(os.path.join(HERE, "raw", "roles", f"minter_{a[:10]}.json"), "w"))
+        except Exception as e:
+            log(f"    source of {a}: {str(e)[:80]}")
+        json.dump(http(f"{API}/addresses/{a}"), open(os.path.join(HERE, "raw", "roles", f"minter_{a[:10]}_address.json"), "w"))
+        open(os.path.join(HERE, "raw", "roles", f"minter_{a[:10]}_code.hex"), "w").write(rpc(RAYLS, "eth_getCode", [a, "latest"]))
+    # Ethereum-side token and adapter source, from Sourcify if it has them
+    for a, nm in ((RLS_ETH, "eth_rls"), (ADAPTER_ETH, "eth_adapter")):
+        for u in (f"https://sourcify.dev/server/v2/contract/1/{a}?fields=all", f"https://sourcify.dev/server/files/any/1/{a}"):
+            try:
+                json.dump(http(u), open(os.path.join(HERE, "raw", "roles", f"sourcify_{nm}.json"), "w"))
+                log(f"    sourcify {nm}: saved")
+                break
+            except Exception as e:
+                log(f"    sourcify {nm}: {str(e)[:60]}")
+        open(os.path.join(HERE, "raw", "roles", f"{nm}_code.hex"), "w").write(rpc(ETH["publicnode"], "eth_getCode", [a, "latest"]))
     json.dump(S, open(os.path.join(HERE, "data", "roles_state.json"), "w"), indent=1)
     log(f"\nfinished {utc(time.time())}")
     open(os.path.join(HERE, "runs", f"{stamp}-roles.txt"), "w").write("\n".join(LOG) + "\n")
