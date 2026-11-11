@@ -205,7 +205,7 @@ def main():
     S["rayls_supply"] = rls(S["rayls_supply"])
     json.dump(S, open(os.path.join(HERE, "data", "token_state.json"), "w"), indent=1, default=str)
     log(f"\nfinished {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}")
-    open(os.path.join(HERE, "runs", f"{stamp}-token.txt"), "w").write("\n".join(LOG) + "\n")
+    open(os.path.join(HERE, "runs", f"{stamp}-rls_token.txt"), "w").write("\n".join(LOG) + "\n")
 
 
 if __name__ == "__main__":
@@ -215,5 +215,5 @@ if __name__ == "__main__":
         import traceback
         LOG.append(traceback.format_exc())
         os.makedirs(os.path.join(HERE, "runs"), exist_ok=True)
-        open(os.path.join(HERE, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-token-FAILED.txt"), "w").write("\n".join(LOG) + "\n")
+        open(os.path.join(HERE, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-rls_token-FAILED.txt"), "w").write("\n".join(LOG) + "\n")
         raise
