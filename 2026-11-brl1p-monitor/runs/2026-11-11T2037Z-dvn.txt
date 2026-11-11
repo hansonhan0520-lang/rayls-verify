@@ -1,0 +1,33 @@
+DVN check, run 2026-11-11T20:37:56Z; 20 transfers from data/transfers.csv
+Rayls: 54 PayloadVerified events for the adapter on receive library 0xe1844c5d63a9543023008d332bd3d2e6f1fe1043
+Polygon receive library 0x1322871e4ab09bc7f5717189434f97bbd9546e95: 6 PayloadVerified events for the lockbox
+
+[1] Verifications per message (required set on Rayls: ['0x396dc0a78f789586e2982fccd830c5954c193f3c', '0x8d77d35604a9f37f488e41d1d916b2a0088f82dd', '0xd01ae6905d48315f7be10c7330aecf8360ef5b12'])
+    Polygon->Rayls messages with all three required DVNs on record: 18 of 18
+    Rayls->Polygon messages with verifications found: 2 of 2, [['0x13feb7234ff60a97af04477d6421415766753ba3', '0x23de2fe932d9043291f870324b74f820e11dc81a', '0x31f748a368a893bdb5abb67ec95f232507601a73'], ['0x13feb7234ff60a97af04477d6421415766753ba3', '0x23de2fe932d9043291f870324b74f820e11dc81a', '0x31f748a368a893bdb5abb67ec95f232507601a73']]
+    0x13feb7234ff60a97af04477d6421415766753ba3 Canary (id canary): 2 verifications, seconds after source min/median/max 32/33/33, confirmations [10]
+    0x23de2fe932d9043291f870324b74f820e11dc81a LayerZero Labs (id layerzero-labs): 2 verifications, seconds after source min/median/max 21/24/24, confirmations [10]
+    0x31f748a368a893bdb5abb67ec95f232507601a73 Twinstake (id nethermind): 2 verifications, seconds after source min/median/max 21/22/22, confirmations [10]
+    0x396dc0a78f789586e2982fccd830c5954c193f3c LayerZero Labs (id layerzero-labs): 18 verifications, seconds after source min/median/max 232/238/253, confirmations [120]
+    0x8d77d35604a9f37f488e41d1d916b2a0088f82dd Twinstake (id nethermind): 18 verifications, seconds after source min/median/max 232/237/249, confirmations [120]
+    0xd01ae6905d48315f7be10c7330aecf8360ef5b12 Canary (id canary): 18 verifications, seconds after source min/median/max 232/238/253, confirmations [120]
+
+[2] DVN contracts (Polygon events searched from block 87732730, 2026-06-01, to 97149383; Rayls: all explorer logs)
+    rayls   0x396dc0a78f789586e2982fccd830c5954c193f3c LayerZero Labs (id layerzero-labs): quorum 2 of 3 signers, 171 logs {'SetDstConfig': 164, 'SetWorkerLib': 1, 'SetDefaultMultiplierBps': 1, 'RoleGranted': 5}; last admin event 2026-05-21T22:24:24Z SetWorkerLib
+    rayls   0x8d77d35604a9f37f488e41d1d916b2a0088f82dd Twinstake (id nethermind): quorum 1 of 2 signers, 154 logs {'UpdateSigner': 3, 'SetDstConfig': 145, 'SetWorkerLib': 1, 'RoleGranted': 5}; last admin event 2026-10-15T00:30:01Z UpdateSigner
+        {'event': 'UpdateSigner', 'tx': '0x1247af643c3c64cbe52e7e62f41a43bc110f34dbed3fb54c86693a54c8113dca', 'block': 12507128, 'time': '2026-10-14T19:55:58Z', 'signer': '0x86f0f839417da25586832187967fb830b9bc1d75', 'active': True}
+        {'event': 'UpdateSigner', 'tx': '0xd5a8b01df9eda0b5dabd110ec156269e26ec6f738e1b371c67a3fb50356e56ea', 'block': 12508822, 'time': '2026-10-14T20:33:30Z', 'signer': '0x598ca3934788fdf2e8dc31a749a45609c54e64f7', 'active': True}
+        {'event': 'UpdateSigner', 'tx': '0x545c5b6ed5635c3cd47cf7d47ba5bd8521aa55160d6ed9cafb6aeeb3579ab407', 'block': 12519503, 'time': '2026-10-15T00:30:01Z', 'signer': '0xbbd4502c1509b15697772555d03b7eb37f2895c9', 'active': False}
+    rayls   0xd01ae6905d48315f7be10c7330aecf8360ef5b12 Canary (id canary): quorum 1 of 1 signers, 470 logs {'Withdraw': 1, 'SetDstConfig': 463, 'SetWorkerLib': 1, 'RoleGranted': 5}; last admin event 2026-05-20T19:08:40Z SetWorkerLib
+    polygon 0x13feb7234ff60a97af04477d6421415766753ba3 Canary (id canary): quorum 1 of 1 signers, 339 logs {'SetDstConfig': 325, 'Withdraw': 12, '0xd6d90193': 2}; last admin event none in range
+    polygon 0x23de2fe932d9043291f870324b74f820e11dc81a LayerZero Labs (id layerzero-labs): quorum 2 of 3 signers, 25 logs {'SetDstConfig': 20, 'Withdraw': 4, 'RoleGranted': 1}; last admin event 2026-09-11T18:27:25Z RoleGranted
+        {'event': 'RoleGranted', 'tx': '0x82170f609b05450948e50c27258dcc3fd9ec75638178f852afccc538b0f22af8', 'block': 93630808, 'time': '2026-09-11T18:27:25Z', 'role': 'ADMIN_ROLE', 'account': '0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6'}
+    polygon 0x31f748a368a893bdb5abb67ec95f232507601a73 Twinstake (id nethermind): quorum 1 of 2 signers, 905 logs {'0x87e46b0a': 894, 'SetDstConfig': 6, 'Withdraw': 1, 'UpdateSigner': 3, '0xd6d90193': 1}; last admin event 2026-10-15T00:30:01Z UpdateSigner
+        {'event': 'UpdateSigner', 'tx': '0x3a7b742098f846f218d3e06f2a8d03b27f720f7ba7d346d40043131c295f32ce', 'block': 95534996, 'time': '2026-10-14T19:56:58Z', 'signer': '0x86f0f839417da25586832187967fb830b9bc1d75', 'active': True}
+        {'event': 'UpdateSigner', 'tx': '0x30fc305e5017b211d9d4550d678bfa664bc934b1d3b8517f277c15c9d396a319', 'block': 95536458, 'time': '2026-10-14T20:33:31Z', 'signer': '0x598ca3934788fdf2e8dc31a749a45609c54e64f7', 'active': True}
+        {'event': 'UpdateSigner', 'tx': '0x019cbf6dc4ca1b9f14bfa579daafc401152d17d9ebb6a7acefae9a2991733544', 'block': 95545917, 'time': '2026-10-15T00:30:01Z', 'signer': '0xbbd4502c1509b15697772555d03b7eb37f2895c9', 'active': False}
+
+[3] Official Rayls RPC: transaction found 20 of 20, receipt found 2 of 20, receipt logs equal explorer logs 2 of 20
+    RPC errors seen: ['eth_getTransactionReceipt on https://mainnet-rpc.rayls.com: null result']
+
+finished 2026-11-11T20:54:25Z

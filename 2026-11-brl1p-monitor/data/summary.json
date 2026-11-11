@@ -1,16 +1,16 @@
 {
- "run_utc": "2026-11-11T06:41:02Z",
- "polygon_block": 97115861,
- "rayls_block": 14268324,
- "transfers": 19,
- "polygon_to_rayls": 17,
+ "run_utc": "2026-11-11T20:30:54Z",
+ "polygon_block": 97149054,
+ "rayls_block": 14305405,
+ "transfers": 20,
+ "polygon_to_rayls": 18,
  "rayls_to_polygon": 2,
- "all_checks_pass": 19,
+ "all_checks_pass": 20,
  "stray_lockbox_changes": 0,
  "stray_supply_changes": 0,
  "lz_scan_only": 0,
- "lockbox_now": "255,293.376896",
- "supply_now": "255,293.376896",
+ "lockbox_now": "255,319.726757",
+ "supply_now": "255,319.726757",
  "min_gap": "0.000000",
  "min_gap_time": "2026-10-14T09:50:16Z",
  "supply_ever_above_lockbox": false,
@@ -26,25 +26,25 @@
  "polygon_providers_agree": true,
  "archive_check": {
   "drpc": {
-   "checked": 19,
+   "checked": 20,
    "mismatched": 0
   },
   "tenderly": {
-   "checked": 19,
+   "checked": 20,
    "mismatched": 0
   }
  },
  "rayls_rpc_getlogs": {
-  "token": 7,
-  "adapter": 1,
+  "token": 25,
+  "adapter": 2,
   "errors": 0
  },
  "rayls_explorer_logs": {
-  "brl1p": 58,
-  "adapter": 22
+  "brl1p": 76,
+  "adapter": 23
  },
  "daily_days": 29,
  "config_events": 18,
  "last_config_event": "2026-10-13T18:10:25Z",
- "seconds": 328
+ "seconds": 423
 }
