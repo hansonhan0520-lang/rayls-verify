@@ -1,5 +1,5 @@
 {
- "run_utc": "2026-11-12T07:47:37Z",
+ "run_utc": "2026-11-12T20:32:42Z",
  "reports": [
   {
    "report": "2025-04-14",
@@ -22,6 +22,6 @@
    "matches": true
   }
  ],
- "supply_now": "17,882,561.540000",
- "supply_now_block": 97176125
+ "supply_now": "19,082,561.540000",
+ "supply_now_block": 97206728
 }
