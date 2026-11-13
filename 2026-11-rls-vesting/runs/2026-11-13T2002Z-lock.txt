@@ -1,0 +1,46 @@
+RLS lock check, run 2026-11-13 20:02 UTC, Rayls block 14432919 (2026-11-13 20:01 UTC)
+
+[1] Terms: token 0x07e17e17e17e17e17e17e17e17e17e17e17e17ea, totalAmount 1,070,493,535.000000 RLS, 48 unlock dates, 2027-12-01 00:00 UTC to 2031-11-01 00:00 UTC
+    held 1,070,493,535.000000 (token balanceOf 1,070,493,535.000000), fully funded True, claimed 0.000000, burned 0.000000, claimable now 0.000000, next unlock 2027-12-01 00:00 UTC
+    gaps between dates (days): [28, 29, 30, 31]; day-of-month and time: ['01 00:00']
+
+[2] Created 2026-08-06 11:30 UTC (block 6429939, tx 0x169ab60459db87a3dc82f574e9ea544c15db09aa65f46a593c4abe06caf0e24e); 10 role changes
+    2026-08-06 11:30 UTC  OwnerAdded   0xd04004a3715f8428674a01ffde2069c181d4b0fd by 0xd04004a3715f8428674a01ffde2069c181d4b0fd
+    2026-08-06 11:39 UTC  AdminAdded   0x0e301beef8daad28f8e38d9fce09112b78fe3161 by 0xd04004a3715f8428674a01ffde2069c181d4b0fd
+    2026-08-06 11:39 UTC  OwnerAdded   0x0e301beef8daad28f8e38d9fce09112b78fe3161 by 0xd04004a3715f8428674a01ffde2069c181d4b0fd
+    2026-08-06 11:40 UTC  AdminAdded   0x8699069568402ce9b9a08a425db157202ca4b4c5 by 0xd04004a3715f8428674a01ffde2069c181d4b0fd
+    2026-08-06 11:40 UTC  OwnerAdded   0x8699069568402ce9b9a08a425db157202ca4b4c5 by 0xd04004a3715f8428674a01ffde2069c181d4b0fd
+    2026-08-06 11:42 UTC  OwnerRemoved 0xd04004a3715f8428674a01ffde2069c181d4b0fd by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    2026-08-06 11:43 UTC  AdminAdded   0xd5ad7b125796870ac729e644cd43646ccf716a3e by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    2026-08-06 11:44 UTC  AdminAdded   0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    2026-09-16 18:02 UTC  AdminAdded   0x6b205d256e8a153cba8057e5655db56e0e47a511 by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    2026-09-16 18:02 UTC  OwnerAdded   0x6b205d256e8a153cba8057e5655db56e0e47a511 by 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    now: 3 owners ['0x0e301beef8daad28f8e38d9fce09112b78fe3161', '0x6b205d256e8a153cba8057e5655db56e0e47a511', '0x8699069568402ce9b9a08a425db157202ca4b4c5'], 5 admins ['0x0e301beef8daad28f8e38d9fce09112b78fe3161', '0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d', '0x6b205d256e8a153cba8057e5655db56e0e47a511', '0x8699069568402ce9b9a08a425db157202ca4b4c5', '0xd5ad7b125796870ac729e644cd43646ccf716a3e']
+    0x0e301beef8daad28f8e38d9fce09112b78fe3161: owner True, admin True, plain account , 112 txs sent
+    0x5dd644b83afc71ac224aca6aa7c03b1adfe8d44d: owner False, admin True, plain account , 0 txs sent
+    0x6b205d256e8a153cba8057e5655db56e0e47a511: owner True, admin True, plain account , 2 txs sent
+    0x8699069568402ce9b9a08a425db157202ca4b4c5: owner True, admin True, plain account , 0 txs sent
+    0xd04004a3715f8428674a01ffde2069c181d4b0fd: owner False, admin False, plain account , 103 txs sent
+    0xd5ad7b125796870ac729e644cd43646ccf716a3e: owner False, admin True, plain account , 4 txs sent
+
+[3] RLS transfers: 3; in 1,070,493,535.000000, out 0.000000; from ['0xab5309be3d6e228288da1f68df3f993a550dec7c']
+    2026-08-06T11:46:47.000000Z 0xab5309be3d6e228288da1f68df3f993a550dec7c -> 0x1463889d3a5eaaee3f066d1cf438a8957f7db98e 10.000000 tx 0x564578a44d1e3170467d41caabaa7b2cd337fc2f75fa636c3fd38ca641ca9335
+    2026-08-06T11:49:11.000000Z 0xab5309be3d6e228288da1f68df3f993a550dec7c -> 0x1463889d3a5eaaee3f066d1cf438a8957f7db98e 500,000,000.000000 tx 0x9b12168fe5286e3b5c582370f67c310fb84588234644b964d2dab4b7773c17d0
+    2026-08-06T11:50:07.000000Z 0xab5309be3d6e228288da1f68df3f993a550dec7c -> 0x1463889d3a5eaaee3f066d1cf438a8957f7db98e 570,493,525.000000 tx 0x09b5607938e8e8dd439f32e9c490ee502e15e8939e170778395215c8c30f9a59
+
+[4] Simulations (eth_call, nothing sent). admin used: 0x0e301beef8daad28f8e38d9fce09112b78fe3161, owner used: 0x0e301beef8daad28f8e38d9fce09112b78fe3161
+    claim_now_as_admin                       reverts NotYetVested(uint256) ['2027-12-01 00:00 UTC']
+    claim_now_as_stranger                    reverts NotAdmin(address) [48879]
+    sweep_now_as_admin                       reverts ScheduleNotSettled(uint256) ['1,070,493,535.000000']
+    burn_1_rls_as_stranger                   reverts NotAdmin(address) [48879]
+    burn_1_rls_as_admin                      succeeds
+    add_admin_as_stranger                    reverts NotOwner(address) [48879]
+    add_admin_as_owner                       succeeds
+    claim_as_admin_1s_before_first_date      reverts NotYetVested(uint256) ['2027-12-01 00:00 UTC']
+    claim_as_admin_at_first_date             succeeds, returns 22,301,948.645833 RLS
+    claim_as_admin_at_12th_date              succeeds, returns 267,623,383.750000 RLS
+    claim_as_admin_at_last_date              succeeds, returns 1,070,493,535.000000 RLS
+
+[5] RLS on Rayls: total supply 1,376,174,564.894676; the lock holds 77.79% of it
+
+finished 2026-11-13 20:02 UTC
