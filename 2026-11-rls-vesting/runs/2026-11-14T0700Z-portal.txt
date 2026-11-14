@@ -1,0 +1,35 @@
+portal fetch 2026-11-14T0700Z
+overview: http 200, 3136 bytes, sha256 4e551b37aedfc322, last-modified None
+   {"window":"30d","asOf":"2026-11-14T06:56:46.742Z","month":"Nov","current":{"privacyRevenue":0,"privacyTransactionRevenue":0,"privacyTransactionVolume":0,"privateEnygmaTransactions":0,"activePrivacyNodes":0,"publicTvl":2489836.50965741,"publicTransactionVolume":10053820.8413282,"publicTransactionFees":1077.968982970791,"publicAverageTransactionCost":0.0034298187017627597,"publicAverageFinalitySeconds":1.33775,"publicTransactionCount":363449,"publicValidators":8,"validatorCountries":0,"rpcEndpoints":0,"publicTotalWallets":2172,"rlsPriceUsd":0.0017074516666666668,"rlsFdvUsd":16957404.39545909,"rls24hVolumeUsd":563097.4961516137,"circulatingSupply":2114655296.591173,"trueCirculatingSupply":2114655296.591173,"stakedRlsPercent":13.667532348128535,"rlsHolders":51258,"totalBurnedRls":68588923.1852805,"rlsTotalStaked":289021196.713012,"totalSupply":9931411076.81472,"usdrMarketCapUsd":25342.245494933504,"usdrHolders":1258},"previous":{"privacyRevenue":0,"privacyTransactionRevenue":0,"privacyTransactionVolume":0,"privateEnygmaTransactions":0,"activePrivacyNodes":0,"publicTvl":2781545.672932947,"publicTransactionVolume":9832909.989554048,"publicTransactionFees":969.7305605916944,"publicAverageTransactionCost":0.0043829666920279925,"publicAverageFinalitySeconds":1.3283617021276595,"publicTransactionCount":329079,"publicValidators":7,"validatorCountries":0,"rpcEndpoints":0,"publicTotalWallets":1977,"rlsPriceUsd":0.0021484953571428572,"rlsFdvUsd":21359208.2111436,"rls24hVolumeUsd":304336.75,"circulatingSupply":1874086353.8798485,"trueCirculatingSupply":1874086353.8798485,"stakedRlsPercent":12.121567593599226,"rlsHolders":51181,"totalBurnedRls":58527173.3852805,"rlsTotalStaked":227168644.147965,"totalSupply":9941472826.61472,"usdrMarketCapUsd":25491.938827933503,"usdrHolders":1236},"changes":{"privacyRevenue":null,"privacyTransactionRevenue":null,"privacyTransactionVolume":null,"privateEnygmaTransactions":null,"activePrivacyNodes":null,"publicTvl":{"change":"-10.5%","direction":"down"},"publicTransactionVolume":{"change":"+2.2%","direction":"up"},"publicTransactionFees":{"change":"+11.2%","direction":"up"},"publicAverageTransactionCost":{"change":"-21.7%","direction":"down"},"publicAverageFinalitySeconds":{"change":"+0.7%","direction":"up"},"publicTransactionCount":{"change":"+10.4%","direction":"up"},"publicValidators":{"change":"+14.3%","direction":"up"},"validatorCountries":null,"rpcEndpoints":null,"publicTotalWallets":{"change":"+9.9%","direction":"up"},"rlsPriceUsd":{"change":"-20.5%","direction":"down"},"rlsFdvUsd":{"change":"-20.6%","direction":"down"},"rls24hVolumeUsd":{"change":"+85.0%","direction":"up"},"circulatingSupply":{"change":"+12.8%","direction":"up"},"trueCirculatingSupply":{"change":"+12.8%","direction":"up"},"stakedRlsPercent":{"change":"+12.8%","direction":"up"},"rlsHolders":{"change":"+0.2%","direction":"up"},"totalBurnedRls":{"change":"+17.2%","direction":"up"},"rlsTotalStaked":{"change":"+27.2%","direction":"up"},"totalSupply":{"change":
+series: http 200, 42413 bytes, sha256 ea4e5a6113fe390a, last-modified None
+composition_publicTvl: http 200, 59376 bytes, sha256 1bacaf35f14c02bb, last-modified None
+metric_overrides: http 200, 1932 bytes, sha256 db6c67e0f51da572, last-modified Thu, 05 Nov 2026 09:52:50 GMT
+   [
+  { "metric": "privacyRevenue", "month": "2026-01", "value": 211000 },
+  { "metric": "privacyRevenue", "month": "2026-02", "value": 386000 },
+  { "metric": "privacyRevenue", "month": "2026-03", "value": 561000 },
+  { "metric": "privacyRevenue", "month": "2026-04", "value": 718800 },
+  { "metric": "privacyRevenue", "month": "2026-05", "value": 876600 },
+  { "metric": "privacyRevenue", "month": "2026-06", "value": 1042165 },
+  { "metric": "privacyRevenue", "month": "2026-07", "value": 1206865 },
+  { "metric": "privacyRevenue", "month": "2026-08", "value": 1371565 },
+  { "metric": "privacyRevenue", "month": "2026-09", "value": 1513065 },
+  { "metric": "privacyRevenue", "month": "2026-10", "value": 1638606 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-01", "value": 12000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-02", "value": 24000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-03", "value": 36000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-04", "value": 48000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-05", "value": 60000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-06", "value": 72000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-07", "value": 84000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-08", "value": 96000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-09", "value": 108000 },
+  { "metric": "privacyTransactionRevenue", "month": "2026-10", "value": 120000 },
+  { "metric": "validatorCountries", "month": "2026-05", "value": 3 },
+  { "metric": "validatorCountries", "month": "2026-06", "value": 3 },
+  { "metric": "rpcEndpoints", "month": "2026-05", "value": 1 },
+  { "metric": "rpcEndpoints", "month": "2026-06", "value": 2 },
+  { "metric": "rpcEndpoints", "month": "2026-10", "value": 3 },
+  { "metric": "activePrivacyNodes", "month": "2026-06", "value": 4 }
+]
+
