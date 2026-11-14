@@ -211,6 +211,14 @@ def main():
     S["eth_rls_total_supply"] = {n: rls(int(call(u, RLS_ETH, "0x18160ddd"), 16)) for n, u in ETH.items()}
     S["eth_rls_implementation_slot"] = addr(rpc(ETH["publicnode"], "eth_getStorageAt", [RLS_ETH, SLOT_IMPL, "latest"]))
     S["rayls_rls_supply"] = rls(int(call(RAYLS, RLS, "0x18160ddd"), 16))
+    bsc = call("https://bsc-rpc.publicnode.com", "0x17ea10b6ae4fde59fdbf471bd28ab9710f508816", "0x18160ddd")
+    S["bsc_rls_supply"] = rls(int(bsc, 16)) if bsc.startswith("0x") else bsc
+    try:
+        f = lambda x: float(x.replace(",", ""))
+        S["hub_locked_minus_rayls_and_bsc"] = f"{f(S['eth_locked_in_adapter']['publicnode']) - f(S['rayls_rls_supply']) - f(S['bsc_rls_supply']):,.6f}"
+    except Exception as e:
+        S["hub_locked_minus_rayls_and_bsc"] = str(e)[:80]
+    log(f"    RLS on BSC {S['bsc_rls_supply']}; Ethereum adapter locked minus (Rayls + BSC supply): {S['hub_locked_minus_rayls_and_bsc']}")
     eh = {}
     for r, h in ROLES.items():
         cands = sorted(set(sum(holders.values(), [])) | {ADAPTER_ETH})
