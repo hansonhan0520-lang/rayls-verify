@@ -1,5 +1,5 @@
 {
- "run_utc": "2026-11-14 02:57 UTC",
+ "run_utc": "2026-11-14 03:00 UTC",
  "rayls_role_holders": {
   "DEFAULT_ADMIN": [
    "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
@@ -101,6 +101,8 @@
  },
  "eth_rls_implementation_slot": "0x0000000000000000000000000000000000000000",
  "rayls_rls_supply": "1,376,174,564.894676",
+ "bsc_rls_supply": "195,014,762.160717",
+ "hub_locked_minus_rayls_and_bsc": "161.348751",
  "eth_role_holders_among_rayls_holders": {
   "DEFAULT_ADMIN": [],
   "UPGRADER": [],
