@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-15 19:06 UTC",
- "block": 14558980,
- "block_time": "2026-11-15 19:06 UTC",
+ "run_utc": "2026-11-16 07:16 UTC",
+ "block": 14591586,
+ "block_time": "2026-11-16 07:16 UTC",
  "totalAmount": 1070493535000000000000000000,
  "ownerCount": 3,
  "adminCount": 5,
@@ -106,6 +106,6 @@
   "claim_as_admin_at_12th_date": "succeeds, returns 267,623,383.750000 RLS",
   "claim_as_admin_at_last_date": "succeeds, returns 1,070,493,535.000000 RLS"
  },
- "rls_total_supply_on_rayls": "1,381,173,564.894676",
- "lock_share_of_rayls_supply": 77.51
+ "rls_total_supply_on_rayls": "1,387,334,898.661370",
+ "lock_share_of_rayls_supply": 77.16
 }
