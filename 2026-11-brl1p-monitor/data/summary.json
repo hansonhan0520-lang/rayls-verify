@@ -1,21 +1,21 @@
 {
- "run_utc": "2026-11-16T06:44:23Z",
- "polygon_block": 97403986,
- "rayls_block": 14590158,
- "transfers": 20,
- "polygon_to_rayls": 18,
+ "run_utc": "2026-11-16T22:16:50Z",
+ "polygon_block": 97441284,
+ "rayls_block": 14631856,
+ "transfers": 21,
+ "polygon_to_rayls": 19,
  "rayls_to_polygon": 2,
- "all_checks_pass": 20,
+ "all_checks_pass": 21,
  "stray_lockbox_changes": 0,
  "stray_supply_changes": 0,
  "lz_scan_only": 0,
- "lockbox_now": "255,319.726757",
- "supply_now": "255,319.726757",
+ "lockbox_now": "255,339.726757",
+ "supply_now": "255,339.726757",
  "min_gap": "0.000000",
  "min_gap_time": "2026-10-14T09:50:16Z",
  "supply_ever_above_lockbox": false,
  "latency_p2r": [
-  248,
+  213,
   267,
   293
  ],
@@ -26,25 +26,25 @@
  "polygon_providers_agree": true,
  "archive_check": {
   "drpc": {
-   "checked": 20,
+   "checked": 21,
    "mismatched": 0
   },
   "tenderly": {
-   "checked": 20,
+   "checked": 21,
    "mismatched": 0
   }
  },
  "rayls_rpc_getlogs": {
-  "token": 39,
-  "adapter": 2,
+  "token": 43,
+  "adapter": 3,
   "errors": 0
  },
  "rayls_explorer_logs": {
-  "brl1p": 95,
-  "adapter": 23
+  "brl1p": 101,
+  "adapter": 24
  },
  "daily_days": 34,
  "config_events": 18,
  "last_config_event": "2026-10-13T18:10:25Z",
- "seconds": 719
+ "seconds": 706
 }

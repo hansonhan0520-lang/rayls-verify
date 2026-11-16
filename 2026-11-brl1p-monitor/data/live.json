@@ -1,10 +1,10 @@
 {
- "polygon_block": 97403986,
- "rayls_block": 14590158,
- "lockbox_brl1": 255319726757000000000000,
- "lockbox_brl1_publicnode": 255319726757000000000000,
- "brl1p_supply": 255319726757000000000000,
- "brl1p_supply_explorer": 255319726757000000000000,
+ "polygon_block": 97441284,
+ "rayls_block": 14631856,
+ "lockbox_brl1": 255339726757000000000000,
+ "lockbox_brl1_publicnode": 255339726757000000000000,
+ "brl1p_supply": 255339726757000000000000,
+ "brl1p_supply_explorer": 255339726757000000000000,
  "roles": {
   "0x633ac5e2315b973417e8caa6b3ad2162e0461ce1": [
    "DEFAULT_ADMIN",
