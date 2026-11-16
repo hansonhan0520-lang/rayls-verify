@@ -1,0 +1,48 @@
+role holder sent 396 transactions to 41 targets
+   0x8fff24202c1360324571df9ca8aff5137a963492: {'reportDeployedCapital': 69, 'setContractURI': 36}
+   0x2bdbd4001eaf67077105b388a5cf2df26c65f1b7: {'reportDeployedCapital': 62, 'setContractURI': 24}
+   0xe14c117ea3eba1728cc8003590c04eb641f1e268: {'burn': 16, 'mint': 30, 'setWhitelistEnabled': 1}
+   0x91e60e0613810449d098b0b5ec8b51a0fe8c8985: {'0x5fbfb9cf': 35}
+   0x85842da474e6e943f3980dea69bd80deb1883803: {'0xb61d27f6': 11}
+   0xc2ffea55357abe49c5ad4d7e8241f033ff4cc342: {'0xb61d27f6': 9}
+   0x84035676fa725c25346f91e17e4a9f1b41ab1f4f: {'reportDeployedCapital': 4, 'setContractURI': 4}
+   0x870c2c4cfaf895f55163385813164e5808ae7029: {'reportDeployedCapital': 6, 'setContractURI': 2}
+   0xa9d16bbbbd38a5b59c80d988eb8907054b032fbb: {'0xb61d27f6': 8}
+   0xb2a452ff403465ffcb7a11e9a97b907821f38424: {'0xb61d27f6': 6}
+   0xed1b658021da546598f866beea166dbd29a92382: {'0xb61d27f6': 6}
+   0xa76efe7ee3846d00f73a0f6ee3134bbc323e5f19: {'0xb61d27f6': 6}
+   0x9b170c46e8f8b9e7706abca1045828de45619e10: {'0xb61d27f6': 6}
+   0xb17e47aa92d355ca59d628993de746a20f8f43c1: {'0xb61d27f6': 5}
+   0x8f5211b6007686e47311835ae51c8bb05f5bb2d9: {'0xb61d27f6': 4}
+   0xba5ed099633d3b313e4d5f7bdc1305d3c28ba5ed: {'0x9c36a286': 4}
+   0x8991839c283a8ba1181e2e4ed6e2abbf8ba4b0de: {'0xb61d27f6': 4}
+   0xe6dfedc5425ec7f61af5d334eddb990581037913: {'?': 3}
+   0x4e59b44847b379578588920ca78fbf26c0b4956c: {'0x0138bcda': 1, '0x00000000': 1, '0x90d8084d': 1}
+   0xf9b455aff1082bd657a92f6049ac930e9fd59ced: {'?': 2}
+   0x33b2329e092eef47ec0cfa4d1bfaf64d3972cb9f: {'0xb5ca1755': 2}
+   0x7aa92401df4c0f52e744bb5c9d96caf5ab07d026: {'0xa3f8289e': 1, '0x13250168': 1}
+   0x6fc4d1820bca89d81e286bbc0291dd08c4d58520: {'0xb61d27f6': 2}
+   0x87cc2e551281597e64dd1cc32d52decb58cf8eed: {'0xb61d27f6': 2}
+   0xa94945be8f1f9fbc4fa3c4ffbc3b5235a3a4b495: {'0xb61d27f6': 2}
+   0x976221713c837a67be173c3bcf11b170566dc4d9: {'0xb61d27f6': 2}
+   0x0d11190f2b93c4571f05bb903409a528894d8944: {'0xb61d27f6': 2}
+   0xd56bde13e50caa8f7d835a842ae683df93d25210: {'0xb61d27f6': 2}
+   0x6b9ac9ebbc85e9b9259f7dd4bc5d8717c6a94e68: {'0xcdcb760a': 2}
+   0xa069d3798feab32994ac5d98a9f011da6024f334: {'transfer': 1}
+   0x4d41b6731dd05e4e784b62b0b18670c5d4d50078: {'?': 1}
+   created:0x870c2c4cfaf895f55163385813164e5808ae7029: {'?': 1}
+   0x6a05c0a11aae5366f0a2520695b516ff6372f26c: {'mint': 1}
+   0x424cdecec00bfe64be85f2d53a3e49ee28d05f05: {'mint': 1}
+   created:0x84035676fa725c25346f91e17e4a9f1b41ab1f4f: {'?': 1}
+   0x36f480c489f4cf6aacf91c7605504a840060e376: {'mint': 1}
+   created:0x2bdbd4001eaf67077105b388a5cf2df26c65f1b7: {'?': 1}
+   created:0x7aa92401df4c0f52e744bb5c9d96caf5ab07d026: {'?': 1}
+   created:0x539381daa5012b8e8cf91b79cd21865020cb7518: {'?': 1}
+   created:0x8fff24202c1360324571df9ca8aff5137a963492: {'?': 1}
+   0xed456e05caab11d66c4c797dd6c1d6f9a7f352b5: {'?': 1}
+vault 0x2bdbd4001eaf67077105b388a5cf2df26c65f1b7: {"name": "AMC TIDC", "symbol": "AMC01", "asset": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "totalAssets": 209638824450, "totalSupply": 190533230812, "decimals": 6, "deployedCapital": 209638824450, "owner": "REVERT execution reverted ", "paused": 0, "manager": "REVERT execution reverted ", "contract_name": "RwaVaultV3", "verified": true, "token_balances": []}
+vault 0x84035676fa725c25346f91e17e4a9f1b41ab1f4f: {"name": "Giru 01", "symbol": "GIRU01", "asset": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "totalAssets": 1000761820, "totalSupply": 1000000000, "decimals": 6, "deployedCapital": 1000761820, "owner": "REVERT execution reverted ", "paused": 0, "manager": "REVERT execution reverted ", "contract_name": "RwaVaultV3", "verified": false, "token_balances": []}
+vault 0x870c2c4cfaf895f55163385813164e5808ae7029: {"name": "TokenOne TIDC02", "symbol": "TKONE02", "asset": "0xa069d3798feab32994ac5d98a9f011da6024f334", "totalAssets": 10029133244771021811, "totalSupply": 10011068130398872492, "decimals": 18, "deployedCapital": 10765422285485408, "owner": "REVERT execution reverted ", "paused": 0, "manager": "REVERT execution reverted ", "contract_name": "RwaVaultV3", "verified": true, "token_balances": [["BRL1.p", "0xA069d3798FEAb32994aC5D98A9F011DA6024f334", "10018367822485536403"]]}
+vault 0x8fff24202c1360324571df9ca8aff5137a963492: {"name": "TokenOne TIDC", "symbol": "TKONE01", "asset": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "totalAssets": 169424349101, "totalSupply": 166312028806, "decimals": 6, "deployedCapital": 124424349101, "owner": "REVERT execution reverted ", "paused": 0, "manager": "REVERT execution reverted ", "contract_name": "RwaVaultV3", "verified": true, "token_balances": [["BRLT", "0xe14c117Ea3Eba1728cc8003590c04eb641F1e268", "45000000000"]]}
+wallet_impl 0x68641de71cfea5a5d0d29712449ee254bb1400c2: None verified None
+compliance_impl 0x539381daa5012b8e8cf91b79cd21865020cb7518: None verified None
