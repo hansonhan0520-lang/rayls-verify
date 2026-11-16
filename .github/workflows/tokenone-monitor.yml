@@ -1,0 +1,26 @@
+name: tokenone-monitor
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "13 */6 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: tokenone-monitor
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: debentures, holders, roles, compliance, simulations
+        continue-on-error: true
+        run: python3 2026-11-tokenone/tokenone.py
+      - name: commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add 2026-11-tokenone
+          git commit -m "tokenone-monitor run $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
