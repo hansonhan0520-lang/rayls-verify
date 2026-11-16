@@ -1,0 +1,14 @@
+candidates from search: 4
+   0x36f480c489f4cf6aacf91c7605504a840060e376 {'name': 'NF01', 'symbol': 'NF01', 'type': 'ERC-20', 'query': 'NF0'}
+   0x424cdecec00bfe64be85f2d53a3e49ee28d05f05 {'name': 'NF02', 'symbol': 'NF02', 'type': 'ERC-20', 'query': 'NF0'}
+   0x6a05c0a11aae5366f0a2520695b516ff6372f26c {'name': 'NF03', 'symbol': 'NF03', 'type': 'ERC-20', 'query': 'NF0'}
+   0x6a466cc6841363873ddd048cb2dbe7b8d9bb7956 {'name': 'Token One Test 1', 'symbol': 'TKNONETest1', 'type': 'ERC-20', 'query': 'Token One'}
+   bundle mention: 'd:"external-card",title:"Card",children:[P("external-name","Name",u.jsx(hr,{id:"external-name",value:a,onChange:M=>o(M.target.value),maxLength:Kwi,placeholder:"TokenOne TIDC",disabled:S})),u.jsxs("div",{className:"grid grid-cols-1 gap-3 sm:grid-cols-2",children:[P("external-status","Status pill",u.jsx(hr,{id:"external-status",value:s,onChange:M=>l(M.target.v'
+   token 0x36f480c489f4cf6aacf91c7605504a840060e376: NF01 NF01 supply 10000000000000 decimals 6 holders 1
+   contract 0x36f480c489f4cf6aacf91c7605504a840060e376: CompliantERC20 verified True proxy None
+   token 0x424cdecec00bfe64be85f2d53a3e49ee28d05f05: NF02 NF02 supply 20000000000000 decimals 6 holders 1
+   contract 0x424cdecec00bfe64be85f2d53a3e49ee28d05f05: None verified None proxy None
+   token 0x6a05c0a11aae5366f0a2520695b516ff6372f26c: NF03 NF03 supply 5000000000000 decimals 6 holders 1
+   contract 0x6a05c0a11aae5366f0a2520695b516ff6372f26c: None verified None proxy None
+   token 0x6a466cc6841363873ddd048cb2dbe7b8d9bb7956: Token One Test 1 TKNONETest1 supply 11291890547263682 decimals 18 holders 2
+   contract 0x6a466cc6841363873ddd048cb2dbe7b8d9bb7956: None verified None proxy eip1967
