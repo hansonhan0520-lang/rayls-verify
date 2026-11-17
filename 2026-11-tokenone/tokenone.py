@@ -5,11 +5,13 @@ Read-only, standard library only. Simulated transactions use eth_call and are di
 
 Answers, for each token:
   * supply and every holder now, read from the official RPC (balanceOf), not only the explorer
-  * whether any transfer other than the mint ever happened, checked three ways:
+  * whether any transfer other than the mint ever happened, using:
       (a) every event log the explorer has for the contract, by type
       (b) every transaction sent to the contract, by method
-      (c) eth_getLogs for Transfer on the official RPC over the contract's whole life
-    and, as a state check, whether the holder's balance still equals the total supply
+      (c) the official RPC's current balanceOf for every discovered holder, summed against supply
+    eth_getLogs is also recorded as a diagnostic, not as proof of absence: this RPC has
+    returned zero even for blocks containing a mint visible in the explorer. The script
+    explicitly records whether its count matches the explorer instead of hiding that mismatch.
   * who holds each role (admin, issuer, enforcer, pauser), and whether those are plain accounts
   * which compliance module gates transfers, and what it allows
   * simulated transfer from the holder to an unrelated address; whether NF02/NF03 run NF01's code
@@ -185,6 +187,7 @@ def main():
                 rpc_err += 1
         t["rpc_getlogs_transfer_events"] = rpc_hits
         t["rpc_getlogs_errors"] = rpc_err
+        t["rpc_getlogs_matches_explorer_transfer_count"] = (rpc_hits == len(transfers)) if rpc_err == 0 else None
         t["first_block"] = first_block
         # state check: who holds it now, per the official RPC
         hold = explorer_all(f"/tokens/{a}/holders")
@@ -202,7 +205,9 @@ def main():
         log(f"\n[{sym}] {a} '{t['name']}': supply {t['total_supply']:,.6f}, decimals {t['decimals']}, paused {t['paused']}, compliance {t['compliance']}")
         log(f"    explorer events {counts}; transactions to contract: {[(x['method'], x['time']) for x in t['explorer_transactions']]}")
         log(f"    mints {[(m['to'], m['amount'], m['block']) for m in t['mints']]}; transfers other than mint: {len(t['transfers_excluding_mint'])}")
-        log(f"    official RPC eth_getLogs Transfer events from block {first_block}: {rpc_hits} (errors {rpc_err})")
+        log(f"    official RPC eth_getLogs Transfer events from block {first_block}: {rpc_hits} (errors {rpc_err}); explorer has {len(transfers)}; match: {t['rpc_getlogs_matches_explorer_transfer_count']}")
+        if t["rpc_getlogs_matches_explorer_transfer_count"] is False:
+            log("    WARNING: RPC log search disagrees with known explorer history; it is not used as absence evidence")
         log(f"    holders now (RPC balanceOf): {t['holders_now']}; sum equals supply: {t['holders_sum_equals_supply']}")
 
     # roles
@@ -249,10 +254,11 @@ def main():
         log(f"    {sym}: compliance {c} ({t['compliance_kind']})")
         for k, v in sims.items():
             log(f"        {k}: {v}")
-        try:
-            json.dump(http(f"{API}/smart-contracts/{c}"), open(os.path.join(HERE, "raw", "tokens", f"compliance_{c[:10]}.json"), "w"))
-        except Exception as e:
-            log(f"        compliance source: {str(e)[:60]}")
+        if c and c != "0x" + "0" * 40:
+            try:
+                json.dump(http(f"{API}/smart-contracts/{c}"), open(os.path.join(HERE, "raw", "tokens", f"compliance_{c[:10]}.json"), "w"))
+            except Exception as e:
+                log(f"        compliance source: {str(e)[:60]}")
 
     # do NF02 and NF03 run NF01's code? compare runtime bytecode ignoring immutables and metadata
     def norm(code):
