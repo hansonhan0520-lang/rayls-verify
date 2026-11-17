@@ -1,0 +1,28 @@
+RWA vault audit, run 2026-11-17 09:23 UTC, Rayls block 14661584
+
+[AMC01] 0x2bdbd4001eaf67077105b388a5cf2df26c65f1b7
+    idle 1000 BRLT; deployed 209638.82445; total 210638.82445
+    withdrawals 208081; returns 11; manager burns 208081
+    totalAssets formula matches: True; events read: 124
+
+[GIRU01] 0x84035676fa725c25346f91e17e4a9f1b41ab1f4f
+    idle 0 BRLT; deployed 1000.76182; total 1000.76182
+    withdrawals 1000; returns 0; manager burns 1000
+    totalAssets formula matches: True; events read: 17
+
+[TKONE02] 0x870c2c4cfaf895f55163385813164e5808ae7029
+    idle 10.018367822485536403 BRL1.p; deployed 0.010765422285485408; total 10.029133244771021811
+    withdrawals 4.817400199104031855; returns 4.809; manager burns 0
+    totalAssets formula matches: True; events read: 48
+
+[TKONE01] 0x8fff24202c1360324571df9ca8aff5137a963492
+    idle 45000 BRLT; deployed 124424.349101; total 169424.349101
+    withdrawals 123677.784998; returns 20; manager burns 123657.78
+    totalAssets formula matches: True; events read: 154
+
+[VaultSeed] balance 255276.47899 BRL1.p; 12 incoming, 0 outgoing; lock end 2026-11-19T23:59:59+00:00
+
+BRLT vault totals: withdrawn 332758.784998; returned 31; manager burns 332738.78
+Withdrawn less burns is arithmetic only, not a residual-balance claim: 20.004998
+All reconciliation checks passed: True
+finished 2026-11-17 09:27 UTC

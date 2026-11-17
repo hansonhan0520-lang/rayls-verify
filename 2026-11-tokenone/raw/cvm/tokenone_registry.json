@@ -1,0 +1,33 @@
+{
+ "checked_utc": "2026-11-17 09:16 UTC",
+ "source": "https://web.cvm.gov.br/app/crowdfunding-web/#/consultaPublica",
+ "endpoint": "https://web.cvm.gov.br/app/crowdfunding-web/consultarRegistro/getRegistrosCrowdfunding",
+ "filter": {
+  "filtroRegistroBean": {
+   "denominacaoSocial": {
+    "nome": "TOKENONE"
+   }
+  },
+  "filtroSituacaoCrowdfunding": []
+ },
+ "entries": [
+  {
+   "id": 165752,
+   "dataRegistro": "2026-02-04T14:35:26.333Z",
+   "numeroRegistro": "37728588000104",
+   "numeroRegistroFormatado": "37.728.588/0001-04",
+   "denominacaoSocial": "TokenOne LTDA",
+   "tipoSituacaoRegistro": {
+    "id": 7,
+    "descricao": "Em Funcionamento Normal",
+    "idTipoSituacaoCorp": 10,
+    "mostrarTipoPj": false
+   },
+   "tipoSituacaoRegistroDescricao": "Em Funcionamento Normal",
+   "codigoCVM": 1244,
+   "numeroProcesso": "19957.017805/2025-88",
+   "dataSolicitacaoRegistro": "2025-12-05T14:35:22.737Z"
+  }
+ ],
+ "note": "Platform registration only. It is not a CVM review of NF01, NF02 or NF03."
+}
