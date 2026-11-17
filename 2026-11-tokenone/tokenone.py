@@ -21,6 +21,9 @@ import csv, json, os, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+# Default output is the publication folder. Scheduled checks set a temporary
+# output root so they never overwrite the fixed article snapshot or commit raw logs.
+OUT_ROOT = os.environ.get("RAYLS_AUDIT_OUT", HERE)
 RPC = "https://mainnet-rpc.rayls.com"
 API = "https://explorer.rayls.com/api/v2"
 UA = {"User-Agent": "rayls-verify-monitor", "Content-Type": "application/json"}
@@ -124,7 +127,7 @@ def explorer_all(path):
 def main():
     stamp = time.strftime("%Y-%m-%dT%H%MZ", time.gmtime())
     for d in ("data", "raw/tokens", "runs"):
-        os.makedirs(os.path.join(HERE, d), exist_ok=True)
+        os.makedirs(os.path.join(OUT_ROOT, d), exist_ok=True)
     head = int(rpc("eth_blockNumber", []), 16)
     S = {"run_utc": utc(time.time()), "rayls_block": head, "tokens": {}}
     log(f"TokenOne debentures, run {S['run_utc']}, Rayls block {head}")
@@ -140,13 +143,13 @@ def main():
         t["paused"] = call(a, "0x5c975abb") == TRUE
         t["compliance"] = addr(call(a, "0x6290865d"))
         codes[sym] = rpc("eth_getCode", [a, "latest"])
-        open(os.path.join(HERE, "raw", "tokens", f"{sym}_runtime.hex"), "w").write(codes[sym])
+        open(os.path.join(OUT_ROOT, "raw", "tokens", f"{sym}_runtime.hex"), "w").write(codes[sym])
 
         # (a) every event the explorer has, (b) every transaction to the contract
         logs = explorer_all(f"/addresses/{a}/logs")
         txs = explorer_all(f"/addresses/{a}/transactions")
-        json.dump(logs, open(os.path.join(HERE, "raw", "tokens", f"{sym}_logs.json"), "w"))
-        json.dump(txs, open(os.path.join(HERE, "raw", "tokens", f"{sym}_transactions.json"), "w"))
+        json.dump(logs, open(os.path.join(OUT_ROOT, "raw", "tokens", f"{sym}_logs.json"), "w"))
+        json.dump(txs, open(os.path.join(OUT_ROOT, "raw", "tokens", f"{sym}_transactions.json"), "w"))
         counts = {}
         transfers = []
         for l in logs:
@@ -256,7 +259,7 @@ def main():
             log(f"        {k}: {v}")
         if c and c != "0x" + "0" * 40:
             try:
-                json.dump(http(f"{API}/smart-contracts/{c}"), open(os.path.join(HERE, "raw", "tokens", f"compliance_{c[:10]}.json"), "w"))
+                json.dump(http(f"{API}/smart-contracts/{c}"), open(os.path.join(OUT_ROOT, "raw", "tokens", f"compliance_{c[:10]}.json"), "w"))
             except Exception as e:
                 log(f"        compliance source: {str(e)[:60]}")
 
@@ -273,13 +276,13 @@ def main():
         S["bytecode"][sym] = {"bytes": len(o) // 2, "nf01_bytes": len(base) // 2, "bytes_differing": diff,
                               "same_length": len(o) == len(base)}
         log(f"    {sym} vs NF01 runtime code: {S['bytecode'][sym]}")
-    with open(os.path.join(HERE, "data", "events.csv"), "w", newline="") as f:
+    with open(os.path.join(OUT_ROOT, "data", "events.csv"), "w", newline="") as f:
         cw = csv.DictWriter(f, fieldnames=["token", "block", "tx", "event", "frm", "to", "amount", "role", "account", "by"])
         cw.writeheader()
         cw.writerows(events_rows)
-    json.dump(S, open(os.path.join(HERE, "data", "tokens.json"), "w"), indent=1, default=str)
+    json.dump(S, open(os.path.join(OUT_ROOT, "data", "tokens.json"), "w"), indent=1, default=str)
     log(f"\nfinished {utc(time.time())}")
-    open(os.path.join(HERE, "runs", f"{stamp}-tokenone.txt"), "w").write("\n".join(LOG) + "\n")
+    open(os.path.join(OUT_ROOT, "runs", f"{stamp}-tokenone.txt"), "w").write("\n".join(LOG) + "\n")
 
 
 if __name__ == "__main__":
@@ -288,6 +291,6 @@ if __name__ == "__main__":
     except Exception:
         import traceback
         LOG.append(traceback.format_exc())
-        os.makedirs(os.path.join(HERE, "runs"), exist_ok=True)
-        open(os.path.join(HERE, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-tokenone-FAILED.txt"), "w").write("\n".join(LOG) + "\n")
+        os.makedirs(os.path.join(OUT_ROOT, "runs"), exist_ok=True)
+        open(os.path.join(OUT_ROOT, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-tokenone-FAILED.txt"), "w").write("\n".join(LOG) + "\n")
         raise
