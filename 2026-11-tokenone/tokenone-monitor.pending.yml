@@ -1,0 +1,95 @@
+name: tokenone-monitor
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/tokenone-monitor.yml"
+      - "2026-11-tokenone/*.py"
+  schedule:
+    - cron: "13 */6 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: tokenone-monitor
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: install Keccak dependency for the vault audit
+        run: python3 -m pip install --quiet pycryptodome
+      - name: debentures, holders, roles, compliance, simulations
+        id: debentures
+        continue-on-error: true
+        env:
+          RAYLS_AUDIT_OUT: ${{ runner.temp }}/tokenone-monitor
+        run: |
+          set -o pipefail
+          mkdir -p 2026-11-tokenone/runs
+          python3 2026-11-tokenone/tokenone.py 2>&1 | tee "2026-11-tokenone/runs/$(date -u +%Y-%m-%dT%H%MZ)-tokenone.txt"
+      - name: vault balances, capital flows, burns and launch-deposit aggregates
+        id: vaults
+        continue-on-error: true
+        env:
+          RAYLS_AUDIT_OUT: ${{ runner.temp }}/tokenone-monitor
+        run: |
+          set -o pipefail
+          mkdir -p 2026-11-tokenone/runs
+          python3 2026-11-tokenone/vaults_audit.py 2>&1 | tee "2026-11-tokenone/runs/$(date -u +%Y-%m-%dT%H%MZ)-vaults-audit.txt"
+      - name: build the public monitor report without changing the article snapshot
+        id: report
+        if: steps.debentures.outcome == 'success' && steps.vaults.outcome == 'success'
+        continue-on-error: true
+        env:
+          RAYLS_AUDIT_OUT: ${{ runner.temp }}/tokenone-monitor
+        run: |
+          set -o pipefail
+          python3 2026-11-tokenone/monitor_report.py 2>&1 | tee "2026-11-tokenone/runs/$(date -u +%Y-%m-%dT%H%MZ)-monitor-report.txt"
+      - name: record all check outcomes
+        if: always()
+        env:
+          DEBENTURES: ${{ steps.debentures.outcome }}
+          VAULTS: ${{ steps.vaults.outcome }}
+          REPORT: ${{ steps.report.outcome }}
+        run: |
+          python3 - <<'PY'
+          import json, os, time
+          status = {
+              "run_utc": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()),
+              "debentures": os.environ["DEBENTURES"],
+              "vaults": os.environ["VAULTS"],
+              "monitor_report": os.environ["REPORT"],
+              "note": "Green requires successful reads and all accounting checks. Raw explorer responses are not committed."
+          }
+          with open("2026-11-tokenone/data/monitor_status.json", "w") as f:
+              json.dump(status, f, indent=1)
+              f.write("\n")
+          print(json.dumps(status, indent=1))
+          PY
+      - name: commit public monitor results only
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add 2026-11-tokenone/data/monitor_latest.json 2026-11-tokenone/data/monitor_history.jsonl 2026-11-tokenone/data/monitor_status.json 2026-11-tokenone/runs
+          if git diff --cached --quiet; then
+            echo "No public monitor output changed"
+            exit 0
+          fi
+          git commit -m "tokenone-monitor run $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do
+            if git pull --rebase && git push; then
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "Failed to push monitor results after three attempts"
+          exit 1
+      - name: fail the workflow when any required check failed
+        if: always()
+        env:
+          DEBENTURES: ${{ steps.debentures.outcome }}
+          VAULTS: ${{ steps.vaults.outcome }}
+          REPORT: ${{ steps.report.outcome }}
+        run: test "$DEBENTURES" = success && test "$VAULTS" = success && test "$REPORT" = success

@@ -13,6 +13,7 @@ import time
 import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+OUT_ROOT = os.environ.get("RAYLS_AUDIT_OUT", HERE)
 BASE = "https://web.cvm.gov.br/app/crowdfunding-web/"
 ENDPOINT = BASE + "consultarRegistro/getRegistrosCrowdfunding"
 HEADERS = {
@@ -47,11 +48,11 @@ def main():
         "entries": entries,
         "note": "Platform registration only. It is not a CVM review of NF01, NF02 or NF03.",
     }
-    os.makedirs(os.path.join(HERE, "data"), exist_ok=True)
-    os.makedirs(os.path.join(HERE, "raw", "cvm"), exist_ok=True)
-    with open(os.path.join(HERE, "data", "cvm.json"), "w") as f:
+    os.makedirs(os.path.join(OUT_ROOT, "data"), exist_ok=True)
+    os.makedirs(os.path.join(OUT_ROOT, "raw", "cvm"), exist_ok=True)
+    with open(os.path.join(OUT_ROOT, "data", "cvm.json"), "w") as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
-    with open(os.path.join(HERE, "raw", "cvm", "tokenone_registry.json"), "w") as f:
+    with open(os.path.join(OUT_ROOT, "raw", "cvm", "tokenone_registry.json"), "w") as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
