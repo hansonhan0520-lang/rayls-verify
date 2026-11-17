@@ -1,0 +1,142 @@
+{
+ "run_utc": "2026-11-17 09:23 UTC",
+ "rayls_block": 14661584,
+ "vaults": {
+  "AMC01": {
+   "symbol": "AMC01", "address": "0x2bdbd4001eaf67077105b388a5cf2df26c65f1b7", "name": "AMC TIDC", "share_decimals": 6, "share_supply": 191442095051,
+   "asset": {"address": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "name": "BRLT Token", "symbol": "BRLT", "decimals": 6, "total_supply": 46021020000, "paused": false},
+   "idle_assets": 1000000000, "asset_balance_rpc": 1000000000, "deployed_capital": 209638824450, "total_assets": 210638824450, "unbooked_assets": 0,
+   "reported_at": 1794838260, "max_report_age": 86400, "max_report_deviation_bps": 1000, "withdraw_policy": "0x0000000000000000000000000000000000000000", "compliance": "0x0000000000000000000000000000000000000000", "paused": false,
+   "contract_uri": "ipfs://bafkreigwjadjntnofwipntsmjjlrne3gqsu5gdjqr2doam2a7qvlxoyo3m", "reported_at_utc": "2026-11-16T14:11:00+00:00", "idle_balance_matches_rpc": true, "total_assets_formula_matches": true,
+   "idle_assets_text": "1000", "asset_balance_rpc_text": "1000", "deployed_capital_text": "209638.82445", "total_assets_text": "210638.82445", "unbooked_assets_text": "0", "share_supply_text": "191442.095051",
+   "event_counts": {"Deposit": 11, "Transfer": 12, "ContractURIUpdated": 25, "DeployedCapitalReported": 62, "CapitalWithdrawn": 6, "CapitalReturned": 1, "Withdraw": 1, "RoleGranted": 6}, "event_log_count": 124,
+   "roles": {
+    "DEFAULT_ADMIN_ROLE": {"hash": "0x0000000000000000000000000000000000000000000000000000000000000000", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "MANAGER_ROLE": {"hash": "0x241ecf16d79d0f8dbfb92cbc07fe17840425976cf0667f022fe9877caa831b08", "holders": ["0xa9d16bbbbd38a5b59c80d988eb8907054b032fbb"]},
+    "ORACLE_ROLE": {"hash": "0x68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ENFORCER_ROLE": {"hash": "0x973ef39d76cc2c6090feab1c030bec6ab5db557f64df047a4c4f9b5953cf1df3", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "PAUSER_ROLE": {"hash": "0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ISSUER_ROLE": {"hash": "0x114e74f6ea3bd819998f78687bfcb11b140da08e9b7d222fa9c1f1ba1f2aa122", "holders": []}
+   },
+   "role_account_kinds": {"0x14f918b1739e325ef588b725f1ee63c6215db335": "plain account (399 txs sent)", "0xa9d16bbbbd38a5b59c80d988eb8907054b032fbb": "contract (183 bytes)"},
+   "capital_withdrawn_total": 208081000000, "capital_returned_total": 11000000, "capital_withdrawn_total_text": "208081", "capital_returned_total_text": "11", "report_adjustment_vs_net_transfers": 1568824450, "report_adjustment_vs_net_transfers_text": "1568.82445",
+   "manager_asset_flows": [{
+    "manager": "0xa9d16bbbbd38a5b59c80d988eb8907054b032fbb", "manager_kind": "contract (183 bytes)", "vault_withdrawal_transfer_count": 6, "received_from_vault": 208081000000, "received_from_vault_text": "208081", "withdrawal_transfers_match_events": true,
+    "burn_count": 6, "burned": 208081000000, "burned_text": "208081", "return_to_vault_count": 1, "returned_to_vault": 11000000, "returned_to_vault_text": "11", "return_transfers_match_events": true,
+    "minted_to_manager": 11000000, "minted_to_manager_text": "11", "other_incoming": 0, "other_outgoing": 0, "manager_asset_balance": 0, "manager_asset_balance_text": "0", "reconciled_asset_balance": 0, "reconciled_asset_balance_text": "0", "asset_flow_reconciliation_matches_balance": true,
+    "burn_txs": ["0x56e6b7448d7949c0a4bb5773059ec75ac3a6980feaae7aeae101dbac2efbd6ed", "0x861e83714b0427a071c261317dc435febfd59d7f34578f18a2f7bc05d41aaefe", "0x11857cf15e9fde900aa96fd7097ad2f26fdd55ee8fb5b45505ac4acb420da3aa", "0x37d9a617d9912dfae54fd5ca27394410c0a0bfef01e065ff9ed8c111f8898116", "0xc57ff0563d03e1ec7ebb5d85a0f029fd1a6291b66f307f7cc52fcc023a8b308d", "0x9ad7b56f98d69a80c3c02ecd1ee8803d0d8b1e884d3d68a524ca786812f0f7de"],
+    "return_txs": ["0x7a3f059c9906aeb7275aafb37adb0ffd2c24b7e7e20d2cecf38fc2b43606cd70"], "mint_txs": ["0x0e4bd449caa0c9b693b90602b69e6c0f3b19977bac33d62aececcc191aee40cc"]
+   }],
+   "manager_burned_total": 208081000000, "manager_burned_total_text": "208081", "withdrawn_not_burned": 0, "withdrawn_not_burned_text": "0"
+  },
+  "GIRU01": {
+   "symbol": "GIRU01", "address": "0x84035676fa725c25346f91e17e4a9f1b41ab1f4f", "name": "Giru 01", "share_decimals": 6, "share_supply": 1000000000,
+   "asset": {"address": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "name": "BRLT Token", "symbol": "BRLT", "decimals": 6, "total_supply": 46021020000, "paused": false},
+   "idle_assets": 0, "asset_balance_rpc": 0, "deployed_capital": 1000761820, "total_assets": 1000761820, "unbooked_assets": 0,
+   "reported_at": 1794838272, "max_report_age": 86400, "max_report_deviation_bps": 1000, "withdraw_policy": "0x0000000000000000000000000000000000000000", "compliance": "0x0000000000000000000000000000000000000000", "paused": false,
+   "contract_uri": "ipfs://bafkreig3oirsyzljhgzwbulm4dy4eimhdahkai4mzugqvhxeu7fiax6fbe", "reported_at_utc": "2026-11-16T14:11:12+00:00", "idle_balance_matches_rpc": true, "total_assets_formula_matches": true,
+   "idle_assets_text": "0", "asset_balance_rpc_text": "0", "deployed_capital_text": "1000.76182", "total_assets_text": "1000.76182", "unbooked_assets_text": "0", "share_supply_text": "1000",
+   "event_counts": {"DeployedCapitalReported": 4, "CapitalWithdrawn": 1, "Deposit": 1, "Transfer": 1, "ContractURIUpdated": 4, "RoleGranted": 6}, "event_log_count": 17,
+   "roles": {
+    "DEFAULT_ADMIN_ROLE": {"hash": "0x0000000000000000000000000000000000000000000000000000000000000000", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "MANAGER_ROLE": {"hash": "0x241ecf16d79d0f8dbfb92cbc07fe17840425976cf0667f022fe9877caa831b08", "holders": ["0x4d41b6731dd05e4e784b62b0b18670c5d4d50078"]},
+    "ORACLE_ROLE": {"hash": "0x68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ENFORCER_ROLE": {"hash": "0x973ef39d76cc2c6090feab1c030bec6ab5db557f64df047a4c4f9b5953cf1df3", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "PAUSER_ROLE": {"hash": "0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ISSUER_ROLE": {"hash": "0x114e74f6ea3bd819998f78687bfcb11b140da08e9b7d222fa9c1f1ba1f2aa122", "holders": []}
+   },
+   "role_account_kinds": {"0x14f918b1739e325ef588b725f1ee63c6215db335": "plain account (399 txs sent)", "0x4d41b6731dd05e4e784b62b0b18670c5d4d50078": "contract (183 bytes)"},
+   "capital_withdrawn_total": 1000000000, "capital_returned_total": 0, "capital_withdrawn_total_text": "1000", "capital_returned_total_text": "0", "report_adjustment_vs_net_transfers": 761820, "report_adjustment_vs_net_transfers_text": "0.76182",
+   "manager_asset_flows": [{
+    "manager": "0x4d41b6731dd05e4e784b62b0b18670c5d4d50078", "manager_kind": "contract (183 bytes)", "vault_withdrawal_transfer_count": 1, "received_from_vault": 1000000000, "received_from_vault_text": "1000", "withdrawal_transfers_match_events": true,
+    "burn_count": 2, "burned": 1000000000, "burned_text": "1000", "return_to_vault_count": 0, "returned_to_vault": 0, "returned_to_vault_text": "0", "return_transfers_match_events": true,
+    "minted_to_manager": 0, "minted_to_manager_text": "0", "other_incoming": 0, "other_outgoing": 0, "manager_asset_balance": 0, "manager_asset_balance_text": "0", "reconciled_asset_balance": 0, "reconciled_asset_balance_text": "0", "asset_flow_reconciliation_matches_balance": true,
+    "burn_txs": ["0xaf4d00245c7bdc5e55c61f5c4c2c5d133c6d33ed967100c5d8ec80a193004a74", "0x980c68d0b2036b5bc87127a56415dfa279320ebd99b5a0cb572cabd8806c77a4"], "return_txs": [], "mint_txs": []
+   }],
+   "manager_burned_total": 1000000000, "manager_burned_total_text": "1000", "withdrawn_not_burned": 0, "withdrawn_not_burned_text": "0"
+  },
+  "TKONE02": {
+   "symbol": "TKONE02", "address": "0x870c2c4cfaf895f55163385813164e5808ae7029", "name": "TokenOne TIDC02", "share_decimals": 18, "share_supply": 10011068130398872492,
+   "asset": {"address": "0xa069d3798feab32994ac5d98a9f011da6024f334", "name": "Bridged BRL1 (Polygon)", "symbol": "BRL1.p", "decimals": 18, "total_supply": 255339726757000000000000, "paused": false},
+   "idle_assets": 10018367822485536403, "asset_balance_rpc": 10018367822485536403, "deployed_capital": 10765422285485408, "total_assets": 10029133244771021811, "unbooked_assets": 0,
+   "reported_at": 1794838268, "max_report_age": 86400, "max_report_deviation_bps": 1000, "withdraw_policy": "0x0000000000000000000000000000000000000000", "compliance": "0x0000000000000000000000000000000000000000", "paused": false,
+   "contract_uri": "ipfs://bafkreiafn676to4kjhrewxj5lkjvxmeuk7ksz5rzwhb5xzvjhatb5mkwdu", "reported_at_utc": "2026-11-16T14:11:08+00:00", "idle_balance_matches_rpc": true, "total_assets_formula_matches": true,
+   "idle_assets_text": "10.018367822485536403", "asset_balance_rpc_text": "10.018367822485536403", "deployed_capital_text": "0.010765422285485408", "total_assets_text": "10.029133244771021811", "unbooked_assets_text": "0", "share_supply_text": "10.011068130398872492",
+   "event_counts": {"Withdraw": 8, "Transfer": 14, "DeployedCapitalReported": 6, "Deposit": 6, "CapitalReturned": 3, "CapitalWithdrawn": 3, "ContractURIUpdated": 2, "RoleGranted": 6}, "event_log_count": 48,
+   "roles": {
+    "DEFAULT_ADMIN_ROLE": {"hash": "0x0000000000000000000000000000000000000000000000000000000000000000", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "MANAGER_ROLE": {"hash": "0x241ecf16d79d0f8dbfb92cbc07fe17840425976cf0667f022fe9877caa831b08", "holders": ["0xc2ffea55357abe49c5ad4d7e8241f033ff4cc342"]},
+    "ORACLE_ROLE": {"hash": "0x68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ENFORCER_ROLE": {"hash": "0x973ef39d76cc2c6090feab1c030bec6ab5db557f64df047a4c4f9b5953cf1df3", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "PAUSER_ROLE": {"hash": "0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ISSUER_ROLE": {"hash": "0x114e74f6ea3bd819998f78687bfcb11b140da08e9b7d222fa9c1f1ba1f2aa122", "holders": []}
+   },
+   "role_account_kinds": {"0x14f918b1739e325ef588b725f1ee63c6215db335": "plain account (399 txs sent)", "0xc2ffea55357abe49c5ad4d7e8241f033ff4cc342": "contract (183 bytes)"},
+   "capital_withdrawn_total": 4817400199104031855, "capital_returned_total": 4809000000000000000, "capital_withdrawn_total_text": "4.817400199104031855", "capital_returned_total_text": "4.809", "report_adjustment_vs_net_transfers": 2365223181453553, "report_adjustment_vs_net_transfers_text": "0.002365223181453553",
+   "manager_asset_flows": [{
+    "manager": "0xc2ffea55357abe49c5ad4d7e8241f033ff4cc342", "manager_kind": "contract (183 bytes)", "vault_withdrawal_transfer_count": 3, "received_from_vault": 4817400199104031855, "received_from_vault_text": "4.817400199104031855", "withdrawal_transfers_match_events": true,
+    "burn_count": 0, "burned": 0, "burned_text": "0", "return_to_vault_count": 3, "returned_to_vault": 4809000000000000000, "returned_to_vault_text": "4.809", "return_transfers_match_events": true,
+    "minted_to_manager": 0, "minted_to_manager_text": "0", "other_incoming": 0, "other_outgoing": 0, "manager_asset_balance": 8400199104031855, "manager_asset_balance_text": "0.008400199104031855", "reconciled_asset_balance": 8400199104031855, "reconciled_asset_balance_text": "0.008400199104031855", "asset_flow_reconciliation_matches_balance": true,
+    "burn_txs": [], "return_txs": ["0x81579de0ab0c1d298b683d135390c06a1f1d3da1e6da22b84fac67e971fc0498", "0xaac288f0eb64192ef7a586472a1fb649bbe1204d68f9f235f42917a86671ccd3", "0xe7c4abde55001b9ce0719ec5374909338a9b9c42b2f44e832a41b602075e69c0"], "mint_txs": []
+   }],
+   "manager_burned_total": 0, "manager_burned_total_text": "0", "withdrawn_not_burned": 4817400199104031855, "withdrawn_not_burned_text": "4.817400199104031855"
+  },
+  "TKONE01": {
+   "symbol": "TKONE01", "address": "0x8fff24202c1360324571df9ca8aff5137a963492", "name": "TokenOne TIDC", "share_decimals": 6, "share_supply": 166312028806,
+   "asset": {"address": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "name": "BRLT Token", "symbol": "BRLT", "decimals": 6, "total_supply": 46021020000, "paused": false},
+   "idle_assets": 45000000000, "asset_balance_rpc": 45000000000, "deployed_capital": 124424349101, "total_assets": 169424349101, "unbooked_assets": 0,
+   "reported_at": 1794838277, "max_report_age": 86400, "max_report_deviation_bps": 1000, "withdraw_policy": "0x0000000000000000000000000000000000000000", "compliance": "0x0000000000000000000000000000000000000000", "paused": false,
+   "contract_uri": "ipfs://bafkreifzufuf5b7pyw6w3mcee4ukabsukctda55nm6mw5fxgn73evjig4a", "reported_at_utc": "2026-11-16T14:11:17+00:00", "idle_balance_matches_rpc": true, "total_assets_formula_matches": true,
+   "idle_assets_text": "45000", "asset_balance_rpc_text": "45000", "deployed_capital_text": "124424.349101", "total_assets_text": "169424.349101", "unbooked_assets_text": "0", "share_supply_text": "166312.028806",
+   "event_counts": {"DeployedCapitalReported": 69, "ContractURIUpdated": 36, "CapitalWithdrawn": 7, "Deposit": 14, "Transfer": 17, "Withdraw": 3, "CapitalReturned": 2, "RoleGranted": 6}, "event_log_count": 154,
+   "roles": {
+    "DEFAULT_ADMIN_ROLE": {"hash": "0x0000000000000000000000000000000000000000000000000000000000000000", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "MANAGER_ROLE": {"hash": "0x241ecf16d79d0f8dbfb92cbc07fe17840425976cf0667f022fe9877caa831b08", "holders": ["0x85842da474e6e943f3980dea69bd80deb1883803"]},
+    "ORACLE_ROLE": {"hash": "0x68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ENFORCER_ROLE": {"hash": "0x973ef39d76cc2c6090feab1c030bec6ab5db557f64df047a4c4f9b5953cf1df3", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "PAUSER_ROLE": {"hash": "0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+    "ISSUER_ROLE": {"hash": "0x114e74f6ea3bd819998f78687bfcb11b140da08e9b7d222fa9c1f1ba1f2aa122", "holders": []}
+   },
+   "role_account_kinds": {"0x14f918b1739e325ef588b725f1ee63c6215db335": "plain account (399 txs sent)", "0x85842da474e6e943f3980dea69bd80deb1883803": "contract (183 bytes)"},
+   "capital_withdrawn_total": 123677784998, "capital_returned_total": 20000000, "capital_withdrawn_total_text": "123677.784998", "capital_returned_total_text": "20", "report_adjustment_vs_net_transfers": 766564103, "report_adjustment_vs_net_transfers_text": "766.564103",
+   "manager_asset_flows": [{
+    "manager": "0x85842da474e6e943f3980dea69bd80deb1883803", "manager_kind": "contract (183 bytes)", "vault_withdrawal_transfer_count": 7, "received_from_vault": 123677784998, "received_from_vault_text": "123677.784998", "withdrawal_transfers_match_events": true,
+    "burn_count": 6, "burned": 123657780000, "burned_text": "123657.78", "return_to_vault_count": 2, "returned_to_vault": 20000000, "returned_to_vault_text": "20", "return_transfers_match_events": true,
+    "minted_to_manager": 0, "minted_to_manager_text": "0", "other_incoming": 0, "other_outgoing": 0, "manager_asset_balance": 4998, "manager_asset_balance_text": "0.004998", "reconciled_asset_balance": 4998, "reconciled_asset_balance_text": "0.004998", "asset_flow_reconciliation_matches_balance": true,
+    "burn_txs": ["0x0c473dbcfdeeece77620769c5d88d0d1e4c5bce29d4c14e11ea092af82ede6ad", "0xa12bf65143b647404ee56c32916f27a33c5ac0fd5b43f9e1c020c05ef6795dc7", "0xb9c4d3550b9901468ea3c8c8463ed4fd56ced685ec6f1e9fd40a46c3c6b8d4d6", "0xcc6ba121e9056e6046bbb9f4f63aad9513be69f1dd194cfb7c5594105fc8680b", "0xdba8bacc41ec1a00b4a0852961f46fc3e8185be41bb282817886b45ba6dcafa9", "0xfb0baeeaef6a5f9e929e12d7a8c20306a782be38e010b12122029ca44857d32c"],
+    "return_txs": ["0x5e4506c68871e19e0107b2d13fe875619486d4c50224fcdbabe80dfae8c7caca", "0xdfb57dfe8d17ac9b5c6fbab450a4e6cbec6afdd0105e1d9963c5e5b28bfdf576"], "mint_txs": []
+   }],
+   "manager_burned_total": 123657780000, "manager_burned_total_text": "123657.78", "withdrawn_not_burned": 20004998, "withdrawn_not_burned_text": "20.004998"
+  }
+ },
+ "brlt": {
+  "address": "0xe14c117ea3eba1728cc8003590c04eb641f1e268", "name": "BRLT Token", "symbol": "BRLT", "decimals": 6, "total_supply": 46021020000, "paused": false, "whitelist_enabled": false, "mint_limit_per_period": 10000000000000, "mint_limit_period": 86400,
+  "roles": {
+   "DEFAULT_ADMIN_ROLE": {"hash": "0x0000000000000000000000000000000000000000000000000000000000000000", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+   "MINTER_ROLE": {"hash": "0x9f2df0fed2c77648de5860a4cc508cd0818c85b8b8a1ab4ceeef8d981c8956a6", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+   "BURNER_ROLE": {"hash": "0x3c11d16cbaffd01df69ce1c404f6340ee057498f5f00246190ea54220576a848", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+   "PAUSER_ROLE": {"hash": "0x65d7a28e3265b37a6474929f336521b332c1681b933f6cb9f3376673440d862a", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+   "COMPLIANCE_ROLE": {"hash": "0x442a94f1a1fac79af32856af2a64f63648cfa2ef3b98610a5bb7cbec4cee6985", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+   "UPGRADER_ROLE": {"hash": "0x189ab7a9244df0848122154315af71fe140f3db0fe014031783b0946b8c9d2e3", "holders": ["0x14f918b1739e325ef588b725f1ee63c6215db335"]},
+   "BRIDGE_ROLE": {"hash": "0x52ba824bfabc2bcfcdf7f0edbb486ebb05e1836c90e78047efeb949990f72e5f", "holders": []}
+  },
+  "role_account_kinds": {"0x14f918b1739e325ef588b725f1ee63c6215db335": "plain account (399 txs sent)"}, "total_supply_text": "46021.02"
+ },
+ "launch_deposit_seed": {
+  "address": "0x5b9565e27f5d50b14d3f660799f87e829a53fab2", "asset": "0xa069d3798feab32994ac5d98a9f011da6024f334", "asset_decimals": 18,
+  "balance": 255276478990000000000000, "balance_text": "255276.47899", "incoming_transfer_count": 12, "outgoing_transfer_count": 0, "unique_incoming_source_count": 8,
+  "incoming_total": 255276478990000000000000, "outgoing_total": 0, "incoming_total_text": "255276.47899", "outgoing_total_text": "0", "balance_matches_transfers": true,
+  "lock_end": 1795132799, "lock_end_utc": "2026-11-19T23:59:59+00:00", "latest_limits": {"minDeposit": 1000000000000000000, "maxPerAccount": 100000000000000000000000, "maxTotal": 1000000000000000000000000},
+  "privacy": "Aggregates only; depositor addresses and per-depositor amounts are intentionally not written to output."
+ },
+ "brlt_vaults_withdrawn_total": 332758784998, "brlt_vaults_returned_total": 31000000, "brlt_vaults_manager_burned_total": 332738780000, "brlt_vaults_withdrawn_less_burns": 20004998,
+ "brlt_vaults_withdrawn_total_text": "332758.784998", "brlt_vaults_returned_total_text": "31", "brlt_vaults_manager_burned_total_text": "332738.78", "brlt_vaults_withdrawn_less_burns_text": "20.004998",
+ "checks": {
+  "AMC01.idle_balance_matches_rpc": true, "AMC01.total_assets_formula_matches": true, "AMC01.manager_0.withdrawal_transfers_match_events": true, "AMC01.manager_0.return_transfers_match_events": true, "AMC01.manager_0.asset_flow_reconciliation_matches_balance": true,
+  "GIRU01.idle_balance_matches_rpc": true, "GIRU01.total_assets_formula_matches": true, "GIRU01.manager_0.withdrawal_transfers_match_events": true, "GIRU01.manager_0.return_transfers_match_events": true, "GIRU01.manager_0.asset_flow_reconciliation_matches_balance": true,
+  "TKONE02.idle_balance_matches_rpc": true, "TKONE02.total_assets_formula_matches": true, "TKONE02.manager_0.withdrawal_transfers_match_events": true, "TKONE02.manager_0.return_transfers_match_events": true, "TKONE02.manager_0.asset_flow_reconciliation_matches_balance": true,
+  "TKONE01.idle_balance_matches_rpc": true, "TKONE01.total_assets_formula_matches": true, "TKONE01.manager_0.withdrawal_transfers_match_events": true, "TKONE01.manager_0.return_transfers_match_events": true, "TKONE01.manager_0.asset_flow_reconciliation_matches_balance": true,
+  "VaultSeed.balance_matches_transfers": true
+ },
+ "audit_checks_passed": true
+}
