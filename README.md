@@ -8,7 +8,7 @@
 
 Reproducible on-chain checks behind my articles about Rayls.
 
-Each article gets its own folder named `YYYY-MM-topic`. A folder contains the script that produced the numbers, the data file the article and its images were built from, and the raw evidence (run logs and explorer screenshots) with timestamps. Articles link to a specific commit of this repository, so what you see at that link is exactly what was run.
+Each article gets its own folder named `YYYY-MM-topic`. A folder contains the script that produced the numbers, the data file the article and its images were built from, and timestamped supporting evidence such as run logs, public responses or explorer screenshots. Articles link to a specific commit of this repository, so what you see at that link is exactly what was run.
 
 Every script here is read-only. It only sends `eth_call` and log queries to public RPC endpoints and explorer APIs. It needs no wallet, no private key and no API key.
 
@@ -16,6 +16,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 | Date | Question | Folder | Article |
 |---|---|---|---|
+| 2026-11-17 | After a real-world asset is tokenised, what can an investor verify on-chain? Three TokenOne debentures and four `RwaVaultV3` vaults: 343 events, 164 capital records and 38 manager transfers reconciled at a fixed snapshot | [`2026-11-tokenone`](2026-11-tokenone/) | [Article draft](2026-11-tokenone/article.md) · [X draft](2026-11-tokenone/x_thread.md) |
 | 2026-11-14 | When a project says tokens are locked, how do you check, and can the lock open early? Parfin's 1.07 billion RLS: lock contract, the token it holds, the bridge behind it; simulated claims and role powers, checks every 6 hours | [`2026-11-rls-vesting`](2026-11-rls-vesting/) | [Binance Square](https://www.binance.com/zh-CN/square/post/388046191329779) · [X thread](https://x.com/hanson0520/status/2121457730221437332) |
 | 2026-11-06 | Is one snapshot enough to trust a bridged stablecoin's "1:1"? Every transfer paired by LayerZero GUID, a merged timeline, recovered DVN signers, checks every 6 hours (BRL1.p follow-up) | [`2026-11-brl1p-monitor`](2026-11-brl1p-monitor/) | [Binance Square](https://www.binance.com/zh-CN/square/post/385259846549504) · [X thread](https://x.com/Hanson0520/status/2118602982061478082) |
 | 2026-10-17 | How can an ordinary user verify a bridged stablecoin's "1:1 backing"? (BRL1.p on Rayls) | [`2026-10-brl1p-backing`](2026-10-brl1p-backing/) | [Binance Square](https://www.binance.com/zh-CN/square/post/378201716555838) · [X thread](https://x.com/hanson0520/status/2111378823787016491) |
@@ -23,7 +24,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 ### Ground rules
 
-- Numbers in an article come from one recorded run, saved in that folder's `evidence/` with its UTC timestamp. Live values move after that.
+- Numbers in an article come from one recorded run, with UTC-timestamped logs and normalised data saved in that article's folder. Live values move after that.
 - What was read on-chain and what is my inference are labelled separately in each folder's README.
 - Nothing here is investment advice.
 
@@ -33,7 +34,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 这里存放我写 Rayls 相关文章时用到的链上核查工具和证据，任何人都可以复现。
 
-每篇文章一个文件夹，按 `年-月-主题` 命名。文件夹里有三类东西：产出文章数字的脚本；文章和配图共用的数据文件；带时间戳的原始证据，包括运行日志和区块浏览器截图。文章引用的是本仓库某一次提交（commit）的固定链接，所以你打开链接看到的，就是我当时实际运行的那一版。
+每篇文章一个文件夹，按 `年-月-主题` 命名。文件夹里有三类东西：产出文章数字的脚本；文章和配图共用的数据文件；带时间戳的支撑证据，例如运行日志、公开响应或区块浏览器截图。文章引用的是本仓库某一次提交（commit）的固定链接，所以你打开链接看到的，就是我当时实际运行的那一版。
 
 这里所有脚本都是只读的，只向公共 RPC 节点和浏览器接口发送 `eth_call` 和日志查询，不需要钱包、私钥或 API 密钥。
 
@@ -41,13 +42,14 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 | 日期 | 问题 | 文件夹 | 文章 |
 |---|---|---|---|
+| 2026-11-17 | RWA 上链后，投资人到底能在链上核对什么？实测三只 TokenOne 债券和四个 `RwaVaultV3` 金库，在固定快照核对 343 条事件、164 条资本记录和 38 条经理转账 | [`2026-11-tokenone`](2026-11-tokenone/) | [中文稿](2026-11-tokenone/article.md) · [X 草稿](2026-11-tokenone/x_thread.md) |
 | 2026-11-14 | 项目方说币锁住了，怎么自己查？能被提前打开吗？Parfin 的 10.7 亿枚 RLS：锁仓合约、被锁的代币、背后的跨链桥，模拟领取与权限，每 6 小时自动复查 | [`2026-11-rls-vesting`](2026-11-rls-vesting/) | [币安广场](https://www.binance.com/zh-CN/square/post/388046191329779) · [X 线程](https://x.com/hanson0520/status/2121457730221437332) |
-| 2026-11-06 | 跨链稳定币的"1:1"，查一次够吗？用 LayerZero 消息编号逐笔对账、两链合并时间线、还原验证方签名人，每 6 小时自动复查（BRL1.p 后续） | [`2026-11-brl1p-monitor`](2026-11-brl1p-monitor/) | [币安广场](https://www.binance.com/zh-CN/square/post/385259846549504) · [X 线程](https://x.com/Hanson0520/status/2118602982061478082) |
+| 2026-11-06 | 跨链稳定币的"1:1"，查一次够吗？用 LayerZero 消息编号逐笔对账、两链合并时间线、还原验证方签名人，每 6 小时自动复查（BRL1.p 后续） | [`2026-11-brl1p-monitor`](2026-11-brl1p-monitor/) | [币安广场](https://www.binance.com/zh-CN/square/post/385259846549504) · [X 线程](https://x.com/hanson0520/status/2118602982061478082) |
 | 2026-10-17 | 跨链桥稳定币说"1:1 背书"，普通人怎么自己验证？（以 Rayls 上的 BRL1.p 为例） | [`2026-10-brl1p-backing`](2026-10-brl1p-backing/) | [币安广场](https://www.binance.com/zh-CN/square/post/378201716555838) · [X 线程](https://x.com/hanson0520/status/2111378823787016491) |
 | 2026-10-08 | 一笔零知识隐私转账需要多少算力？（Rayls Enygma 证明器） | 独立仓库：[`enygma-bench`](https://github.com/hansonhan0520-lang/enygma-bench) | 币安广场 |
 
 ### 约定
 
-- 文章里的数字都来自一次有记录的运行，日志存在对应文件夹的 `evidence/` 里，并标注 UTC 时间。链上数值之后会变化。
+- 文章里的数字都来自一次有记录的运行，对应文件夹保存标注 UTC 时间的日志和规范化数据。链上数值之后会变化。
 - 每个文件夹的 README 会分开写明：哪些是链上直接读出的，哪些是我的推断。
 - 本仓库内容不构成投资建议。
