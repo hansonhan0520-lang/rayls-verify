@@ -34,7 +34,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import tokenone as T
 
 H = T.HERE
-OUT = os.path.join(H, "raw", "audit")
+# Keep scheduled raw responses outside the repository. Only normalised public
+# aggregates and transfer-level institutional records are selected for commit.
+OUT_ROOT = os.environ.get("RAYLS_AUDIT_OUT", H)
+OUT = os.path.join(OUT_ROOT, "raw", "audit")
 ZERO = "0x" + "0" * 40
 BRLT = "0xe14c117ea3eba1728cc8003590c04eb641f1e268"
 BRL1P = "0xa069d3798feab32994ac5d98a9f011da6024f334"
@@ -393,7 +396,7 @@ def read_seed():
 def main():
     stamp = time.strftime("%Y-%m-%dT%H%MZ", time.gmtime())
     for directory in ("data", "runs", "raw/audit"):
-        os.makedirs(os.path.join(H, directory), exist_ok=True)
+        os.makedirs(os.path.join(OUT_ROOT, directory), exist_ok=True)
     head = int(T.rpc("eth_blockNumber", []), 16)
     run_utc = T.utc(time.time())
     say(f"RWA vault audit, run {run_utc}, Rayls block {head}")
@@ -423,14 +426,14 @@ def main():
                 result["checks"][f"{symbol}.manager_{index}.{field}"] = flow[field]
     result["checks"]["VaultSeed.balance_matches_transfers"] = result["launch_deposit_seed"]["balance_matches_transfers"]
     result["audit_checks_passed"] = all(result["checks"].values())
-    save_json(os.path.join(H, "data", "vaults.json"), result)
+    save_json(os.path.join(OUT_ROOT, "data", "vaults.json"), result)
     fields = ["vault", "event", "block", "timestamp", "tx", "to", "from", "amount", "amount_text", "deployedCapital", "deployedCapital_text", "previous", "previous_text", "current", "current_text"]
-    with open(os.path.join(H, "data", "vault_capital_events.csv"), "w", newline="") as f:
+    with open(os.path.join(OUT_ROOT, "data", "vault_capital_events.csv"), "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(all_events)
     asset_fields = ["vault", "manager", "asset", "block", "log_index", "timestamp", "tx", "from", "to", "amount", "amount_text", "explorer_type", "method"]
-    with open(os.path.join(H, "data", "manager_asset_transfers.csv"), "w", newline="") as f:
+    with open(os.path.join(OUT_ROOT, "data", "manager_asset_transfers.csv"), "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=asset_fields)
         writer.writeheader()
         writer.writerows(sorted(ASSET_ROWS, key=lambda x: (x["block"], x["log_index"], x["tx"])))
@@ -438,7 +441,7 @@ def main():
     say(f"Withdrawn less burns is arithmetic only, not a residual-balance claim: {result['brlt_vaults_withdrawn_less_burns_text']}")
     say(f"All reconciliation checks passed: {result['audit_checks_passed']}")
     say(f"finished {T.utc(time.time())}")
-    with open(os.path.join(H, "runs", f"{stamp}-vaults-audit.txt"), "w") as f:
+    with open(os.path.join(OUT_ROOT, "runs", f"{stamp}-vaults-audit.txt"), "w") as f:
         f.write("\n".join(LOG) + "\n")
     if not result["audit_checks_passed"]:
         failed = [name for name, passed in result["checks"].items() if not passed]
@@ -451,7 +454,7 @@ if __name__ == "__main__":
     except Exception:
         import traceback
         LOG.append(traceback.format_exc())
-        os.makedirs(os.path.join(H, "runs"), exist_ok=True)
-        with open(os.path.join(H, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-vaults-audit-FAILED.txt"), "w") as f:
+        os.makedirs(os.path.join(OUT_ROOT, "runs"), exist_ok=True)
+        with open(os.path.join(OUT_ROOT, "runs", time.strftime("%Y-%m-%dT%H%MZ", time.gmtime()) + "-vaults-audit-FAILED.txt"), "w") as f:
             f.write("\n".join(LOG) + "\n")
         raise
