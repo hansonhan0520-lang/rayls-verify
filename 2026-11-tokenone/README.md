@@ -42,15 +42,7 @@ The three collection scripts query the official public RPC, the public explorer 
 
 `tokenone.py` also performs `eth_call` simulations. An `eth_call` is a read-only local execution against current contract state. It does not sign or broadcast a transaction, spend gas or change the chain. A successful simulation describes a contract capability under the simulated caller and state, not a real action or intent.
 
-The Chinese article, X thread and submission description are included in this folder. To regenerate the two branded images, install `cairosvg`, `pillow` and `numpy`, then point the script to the contributor's `rayls-rail-quest` brand helper and the untouched official logo:
-
-```bash
-BRANDKIT_DIR=/path/to/rayls-rail-quest/scripts \
-RAYLS_LOGO=/path/to/rayls-rail-quest/assets/logo.png \
-python3 2026-11-tokenone/images/make_images.py
-```
-
-The image script reads the same fixed `data.json` as the article. It does not query live state. The checked local PNGs have SHA-256 `fa2d42e8e43826572635330fdbc8552dd2adec52a6b7110717bfca28ef763e27` for `cover.png` and `624a39ea580a8310692ae9bf1d53953addaf43b51e638d140b9e309623c48883` for `body.png`. Their remote binary upload is pending because the current GitHub connector exposes only UTF-8 text writes; Base64 text must not be committed under a `.png` name.
+The Chinese article, X thread and submission description are included in this folder. The final Rayls-brand PNGs are included directly in `images/`; no image-generation script or brand-helper dependency is needed to use them. `cover.png` is 3200 × 1280 pixels and `body.png` is 2160 × 2700 pixels. Both were visually checked. Their SHA-256 values are `fa2d42e8e43826572635330fdbc8552dd2adec52a6b7110717bfca28ef763e27` for `cover.png` and `624a39ea580a8310692ae9bf1d53953addaf43b51e638d140b9e309623c48883` for `body.png`.
 
 ### Contracts
 
@@ -143,8 +135,7 @@ This confirms the platform's registry entry only. It is not a CVM review or endo
 | `article.md` | Original Chinese Binance Square article with the fixed evidence permalink |
 | `x_thread.md` | Eight-post Chinese X thread with explicit image and publication-link placeholders |
 | `submission.md` | English quest submission description and its Chinese meaning |
-| `images/make_images.py` | Data-driven generator for the horizontal cover and vertical in-body image |
-| `images/cover.png` and `images/body.png` | Final 2x Rayls-brand images generated and visually checked locally; remote binary upload pending, with SHA-256 values recorded above |
+| `images/cover.png` and `images/body.png` | Final 2x Rayls-brand PNGs, visually checked, with dimensions and SHA-256 values recorded above |
 | `tokenone.py` | Supplies, holders, roles, compliance, simulations, explorer history and RPC-log diagnostic |
 | `vaults_audit.py` | Full vault event pagination, capital events, current state, manager-flow reconciliation and assertions |
 | `cvm_registry.py` | CVM public platform-registry query |
@@ -208,15 +199,7 @@ python3 2026-11-tokenone/monitor_report.py
 
 `tokenone.py` 中的模拟全部是 `eth_call`。它只针对当前合约状态做只读执行，不会上链。模拟成功表示在指定调用者和当前状态下合约允许这条调用路径，不表示有人真的执行过，也不表示任何主观意图。
 
-中文文章、X 推文串和英文提交说明都在本目录。重新生成两张品牌图还需安装 `cairosvg`、`pillow` 和 `numpy`，并把环境变量指向贡献者的 `rayls-rail-quest` 品牌工具与未修改的官方 Logo：
-
-```bash
-BRANDKIT_DIR=/path/to/rayls-rail-quest/scripts \
-RAYLS_LOGO=/path/to/rayls-rail-quest/assets/logo.png \
-python3 2026-11-tokenone/images/make_images.py
-```
-
-图片脚本与文章读取同一个固定 `data.json`，不会查询实时状态。已检查的本地 PNG 校验值为：`cover.png` 的 SHA-256 是 `fa2d42e8e43826572635330fdbc8552dd2adec52a6b7110717bfca28ef763e27`，`body.png` 是 `624a39ea580a8310692ae9bf1d53953addaf43b51e638d140b9e309623c48883`。当前 GitHub 连接器只提供 UTF-8 文本写入，因此远端二进制上传仍待完成，不能把 Base64 文本直接命名为 `.png` 提交。
+中文文章、X 推文串和英文提交说明都在本目录。两张 Rayls 品牌成品 PNG 已直接放在 `images/`，使用图片不需要生成脚本或品牌工具依赖。`cover.png` 为 3200 × 1280 像素，`body.png` 为 2160 × 2700 像素，均已目视检查。校验值为：`cover.png` 的 SHA-256 是 `fa2d42e8e43826572635330fdbc8552dd2adec52a6b7110717bfca28ef763e27`，`body.png` 是 `624a39ea580a8310692ae9bf1d53953addaf43b51e638d140b9e309623c48883`。
 
 ### 三只债券的结果
 
