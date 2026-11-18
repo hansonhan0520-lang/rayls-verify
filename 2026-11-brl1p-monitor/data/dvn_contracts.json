@@ -13,7 +13,7 @@
    "0x9b16cf4574c8e1084a3b38c9d8da3631bb200190"
   ],
   "event_counts": {
-   "SetDstConfig": 164,
+   "SetDstConfig": 165,
    "SetWorkerLib": 1,
    "SetDefaultMultiplierBps": 1,
    "RoleGranted": 5
@@ -80,8 +80,8 @@
    "0x86f0f839417da25586832187967fb830b9bc1d75"
   ],
   "event_counts": {
+   "SetDstConfig": 146,
    "UpdateSigner": 3,
-   "SetDstConfig": 145,
    "SetWorkerLib": 1,
    "RoleGranted": 5
   },
@@ -252,7 +252,7 @@
   "paused": 0,
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
-   "SetDstConfig": 20,
+   "SetDstConfig": 21,
    "Withdraw": 4,
    "RoleGranted": 1
   },
@@ -278,7 +278,7 @@
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
    "0x87e46b0a": 990,
-   "SetDstConfig": 6,
+   "SetDstConfig": 7,
    "Withdraw": 1,
    "UpdateSigner": 3,
    "0xd6d90193": 1
