@@ -178,9 +178,10 @@ def main():
              "note": "The vault's total assets is fixed at each settlement; the fund price moves with each oracle "
                      "report, so a small gap between settlements is expected."}
 
-    vrows = rows_for(VAULT, VAULT_EVENTS, ("assets", "shares", "totalAssets"))
-    for r in vrows:
-        r["assets"] = r["assets"] or r.pop("totalAssets", "")
+    vrows = rows_for(VAULT, VAULT_EVENTS, ("assets", "shares", "totalAssets", "assetsDeposited", "sharesMinted"))
+    for r in vrows:  # SettleDeposit carries the deposits it settled; NAV events carry the vault value
+        r["assets"] = r.pop("assetsDeposited", "") or r["assets"] or r.pop("totalAssets", "")
+        r["shares"] = r.pop("sharesMinted", "") or r["shares"]
     frows = rows_for(FUND, ("Deposit", "Withdraw", "CapitalWithdrawn", "CapitalReturned", "DeployedCapitalReported",
                             "ReportGuardsSet"), ("assets", "shares", "amount", "previous", "current"))
     write_csv(os.path.join(HERE, "data", "vault_events.csv"), vrows,
