@@ -1,0 +1,82 @@
+{
+ "run_utc": "2026-11-19 14:25:48 UTC",
+ "block": 14803624,
+ "block_time": "2026-11-19 14:25:14 UTC",
+ "vault": {
+  "name": "Rayls Token One 02",
+  "symbol": "RLSTKONE02",
+  "lagoon_version": "v0.6.0",
+  "total_assets": 11.01025493673786,
+  "total_shares": 11.003375147108901,
+  "share_price": 1.0006252435763554,
+  "max_cap": 300000.0,
+  "paused": false,
+  "nav_valid_now": true,
+  "async_only": false,
+  "fee_rates_bps": {
+   "management": 0,
+   "performance": 0,
+   "entry": 0,
+   "exit": 50,
+   "haircut": 0
+  },
+  "pending_deposits_in_silo": 99548.983974,
+  "safe_brl1p": 0.0,
+  "safe_fund_shares": 10.969869605267782
+ },
+ "fund": {
+  "name": "TokenOne TIDC02",
+  "symbol": "TKONE02",
+  "total_assets": 21.05817859225816,
+  "total_shares": 20.980937735666654,
+  "share_price": 1.0036814778045025,
+  "idle_on_chain": 11.004,
+  "deployed_reported": 10.05417859225816,
+  "reported_at": "2026-11-19 12:11:09 UTC",
+  "report_age_hours": 2.23,
+  "max_report_age_hours": 24.0,
+  "max_report_change_bps": 1000,
+  "paused": false
+ },
+ "layers_add_up": {
+  "vault_total_assets": 11.01025493673786,
+  "safe_position_at_fund_price": 11.01025493673786,
+  "difference": 0.0,
+  "note": "The vault's total assets is fixed at each settlement; the fund price moves with each oracle report, so a small gap between settlements is expected."
+ },
+ "settlement_cycles": [
+  {
+   "nav_proposed": "2026-11-18 12:28:20 UTC",
+   "settled": "2026-11-18 12:28:25 UTC",
+   "deposits_settled": "0",
+   "claimed_for_depositors": null
+  },
+  {
+   "nav_proposed": "2026-11-18 13:00:13 UTC",
+   "settled": "2026-11-18 13:00:19 UTC",
+   "deposits_settled": "0",
+   "claimed_for_depositors": null
+  },
+  {
+   "nav_proposed": "2026-11-19 13:00:10 UTC",
+   "settled": "2026-11-19 13:00:16 UTC",
+   "deposits_settled": "11.010255",
+   "claimed_for_depositors": "2026-11-19 13:00:24 UTC"
+  }
+ ],
+ "vault_event_counts": {
+  "Deposit": 1,
+  "DepositRequest": 3,
+  "DepositSync": 2,
+  "NewTotalAssetsUpdated": 3,
+  "SettleDeposit": 1,
+  "TotalAssetsUpdated": 3
+ },
+ "addresses": {
+  "vault": "0x1811630b90e6966573e809270a5e9316a25de6fe",
+  "vault_safe": "0x94bd10d7f58d02a4f01b9d45c52f1335df7a7892",
+  "pending_silo": "0xe8ccad69bbef1ceac3e559fb8fd41dc3f4df5779",
+  "fund": "0x870c2c4cfaf895f55163385813164e5808ae7029",
+  "asset": "0xa069d3798feab32994ac5d98a9f011da6024f334"
+ }
+}

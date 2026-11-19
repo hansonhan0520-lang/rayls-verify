@@ -1,0 +1,26 @@
+name: vault-walkthrough-monitor
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "50 */6 * * *"   # every 6 hours
+    - cron: "25 13 * * *"    # just after the vault's daily settlement (about 13:00 UTC so far)
+permissions:
+  contents: write
+concurrency:
+  group: vault-walkthrough-monitor
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: vault and fund state, events, settlement cycles
+        run: python3 2026-11-vault-walkthrough/vault.py
+      - name: commit results
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add 2026-11-vault-walkthrough
+          git commit -m "vault-walkthrough-monitor run $(date -u +%Y-%m-%dT%H:%MZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
