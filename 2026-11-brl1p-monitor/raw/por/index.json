@@ -1,5 +1,5 @@
 {
- "fetched_utc": "2026-11-18T21:12:05Z",
+ "fetched_utc": "2026-11-19T08:05:40Z",
  "pages": [
   {
    "url": "https://brl1.io/en",
@@ -19,19 +19,27 @@
   },
   {
    "url": "https://fact.finance/en/reserves/brl1",
-   "error": "HTTP Error 522: <none>"
+   "error": "HTTP Error 404: Not Found"
   },
   {
    "url": "https://fact.finance/en/reserves/brl1?frame=true",
-   "error": "HTTP Error 522: <none>"
+   "error": "HTTP Error 404: Not Found"
   },
   {
    "url": "https://docs.fact.finance/features/por/",
-   "error": "HTTP Error 522: <none>"
+   "final_url": "https://docs.fact.finance/features/por/",
+   "status": 200,
+   "file": "docs_fact_finance_features_por_.html",
+   "bytes": 48632,
+   "sha256": "ef09c42abff00b84e0cbf7724b9af0f1affa399704bcf18276b23f51c39c0f2c"
   },
   {
    "url": "https://docs.fact.finance/cases/stablecoins/",
-   "error": "HTTP Error 522: <none>"
+   "final_url": "https://docs.fact.finance/cases/stablecoins/",
+   "status": 200,
+   "file": "docs_fact_finance_cases_stablecoins_.html",
+   "bytes": 44174,
+   "sha256": "c52b2a30dc47a90d8679d3d20739fc9f5b29c916e334340c65c36d11ef7201db"
   }
  ],
  "links": {
@@ -47,8 +55,8 @@
    "status": 200,
    "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.usercontent.google.com/download?id%3D139WCYEqBpr",
    "file": "drive_139WCYEqBprr83aPoYN5YlePpYpF50hrT.html",
-   "bytes": 946877,
-   "sha256": "8baa9a4de98f69b31480bcfe689a095b53360eb15aad3df4d4cd6e56009c62b7"
+   "bytes": 946085,
+   "sha256": "84042ed444adf408c463e7a5793df7b469589389041b82699a3827a2cf8ae8db"
   },
   "1BuRUC6u3UTzf17kOChhKby_L9hE5IU73": {
    "status": 200,

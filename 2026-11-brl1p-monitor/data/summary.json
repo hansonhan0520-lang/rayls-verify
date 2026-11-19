@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-18T20:40:22Z",
- "polygon_block": 97552626,
- "rayls_block": 14756096,
+ "run_utc": "2026-11-19T07:36:42Z",
+ "polygon_block": 97578879,
+ "rayls_block": 14785374,
  "transfers": 21,
  "polygon_to_rayls": 19,
  "rayls_to_polygon": 2,
@@ -43,8 +43,8 @@
   "brl1p": 109,
   "adapter": 24
  },
- "daily_days": 36,
+ "daily_days": 37,
  "config_events": 18,
  "last_config_event": "2026-10-13T18:10:25Z",
- "seconds": 502
+ "seconds": 449
 }
