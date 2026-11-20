@@ -1,13 +1,13 @@
 {
- "run_utc": "2026-11-19 14:29:48 UTC",
- "block": 14803800,
- "block_time": "2026-11-19 14:29:12 UTC",
+ "run_utc": "2026-11-20 00:57:31 UTC",
+ "block": 14831873,
+ "block_time": "2026-11-20 00:57:06 UTC",
  "vault": {
   "name": "Rayls Token One 02",
   "symbol": "RLSTKONE02",
   "lagoon_version": "v0.6.0",
-  "total_assets": 11.01025493673786,
-  "total_shares": 11.003375147108901,
+  "total_assets": 99935.88992693672,
+  "total_shares": 99873.44469719131,
   "share_price": 1.0006252435763554,
   "max_cap": 300000.0,
   "paused": false,
@@ -20,28 +20,28 @@
    "exit": 50,
    "haircut": 0
   },
-  "pending_deposits_in_silo": 99548.983974,
+  "pending_deposits_in_silo": 0.0,
   "safe_brl1p": 0.0,
-  "safe_fund_shares": 10.969869605267782
+  "safe_fund_shares": 99569.32765715769
  },
  "fund": {
   "name": "TokenOne TIDC02",
   "symbol": "TKONE02",
-  "total_assets": 21.05817859225816,
-  "total_shares": 20.980937735666654,
+  "total_assets": 99945.93785059227,
+  "total_shares": 99579.3387252881,
   "share_price": 1.0036814778045025,
-  "idle_on_chain": 11.004,
+  "idle_on_chain": 99935.883672,
   "deployed_reported": 10.05417859225816,
   "reported_at": "2026-11-19 12:11:09 UTC",
-  "report_age_hours": 2.3,
+  "report_age_hours": 12.77,
   "max_report_age_hours": 24.0,
   "max_report_change_bps": 1000,
   "paused": false
  },
  "layers_add_up": {
-  "vault_total_assets": 11.01025493673786,
-  "safe_position_at_fund_price": 11.01025493673786,
-  "difference": 0.0,
+  "vault_total_assets": 99935.88992693672,
+  "safe_position_at_fund_price": 99935.88992693674,
+  "difference": -1.4551915228366852e-11,
   "note": "The vault's total assets is fixed at each settlement; the fund price moves with each oracle report, so a small gap between settlements is expected."
  },
  "settlement_cycles": [
@@ -62,15 +62,21 @@
    "settled": "2026-11-19 13:00:16 UTC",
    "deposits_settled": "1.000000",
    "claimed_for_depositors": "2026-11-19 13:00:24 UTC"
+  },
+  {
+   "nav_proposed": "2026-11-19 15:09:14 UTC",
+   "settled": "2026-11-19 15:09:21 UTC",
+   "deposits_settled": "99924.879672",
+   "claimed_for_depositors": "2026-11-19 15:09:29 UTC"
   }
  ],
  "vault_event_counts": {
-  "Deposit": 1,
-  "DepositRequest": 3,
+  "Deposit": 4,
+  "DepositRequest": 4,
   "DepositSync": 2,
-  "NewTotalAssetsUpdated": 3,
-  "SettleDeposit": 1,
-  "TotalAssetsUpdated": 3
+  "NewTotalAssetsUpdated": 4,
+  "SettleDeposit": 2,
+  "TotalAssetsUpdated": 4
  },
  "addresses": {
   "vault": "0x1811630b90e6966573e809270a5e9316a25de6fe",
