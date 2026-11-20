@@ -359,6 +359,11 @@
     "id": "bridge",
     "version": 2
    },
+   "0x28deced567a4477e214e15780d345139d0186142": {
+    "canonicalName": "LayerZero Labs Subsidized",
+    "id": "layerzero-labs-subsidized",
+    "version": 2
+   },
    "0xe34a8d1c1e8ec397314ac019879df14de9bcf490": {
     "canonicalName": "Canary Sponsored",
     "id": "canary-sponsored",
