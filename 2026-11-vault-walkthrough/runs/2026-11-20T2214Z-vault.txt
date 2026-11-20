@@ -1,0 +1,15 @@
+block 14888932, 2026-11-20 22:14:57 UTC
+LAYER 1  Rayls Token One 02 (RLSTKONE02, Lagoon v0.6.0)
+  share price 1.000625 BRL1.p; total assets 255,281.489245; shares 255,121.975868; cap 300,000
+  waiting in the pending silo: 0.000000 BRL1.p
+  fees (basis points): {'management': 0, 'performance': 0, 'entry': 0, 'exit': 50, 'haircut': 0}; NAV valid now True; paused False
+  vault Safe holds 254,345.123319 TKONE02 and 0.000000 BRL1.p
+LAYER 2  TokenOne TIDC02 (TKONE02, RwaVaultV3)
+  share price 1.003681; total assets 255,291.537169 = idle on-chain 255,281.482990 + deployed (reported) 10.054179
+  last report 2026-11-20 11:46:10 UTC (10.48 h ago); deposits and withdrawals stop if older than 24 h; one report may move it at most 10%
+CHECK  vault total assets 255,281.489245 vs Safe position at fund price 255,281.489245 (difference -0.000000)
+  cycle: NAV proposed 2026-11-18 12:28:20 UTC, settled 2026-11-18 12:28:25 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-18 13:00:13 UTC, settled 2026-11-18 13:00:19 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-19 13:00:10 UTC, settled 2026-11-19 13:00:16 UTC (1.000000 BRL1.p), shares claimed for depositors 2026-11-19 13:00:24 UTC
+  cycle: NAV proposed 2026-11-19 15:09:14 UTC, settled 2026-11-19 15:09:21 UTC (99924.879672 BRL1.p), shares claimed for depositors 2026-11-19 15:09:29 UTC
+  cycle: NAV proposed 2026-11-20 15:12:18 UTC, settled 2026-11-20 15:12:23 UTC (155345.599318 BRL1.p), shares claimed for depositors 2026-11-20 15:12:30 UTC
