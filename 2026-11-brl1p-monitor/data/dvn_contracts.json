@@ -170,8 +170,8 @@
    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
   ],
   "event_counts": {
+   "Withdraw": 3,
    "SetDstConfig": 465,
-   "Withdraw": 2,
    "SetWorkerLib": 1,
    "RoleGranted": 5
   },
@@ -277,7 +277,7 @@
   "paused": 0,
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
-   "0x87e46b0a": 996,
+   "0x87e46b0a": 998,
    "SetDstConfig": 7,
    "Withdraw": 1,
    "UpdateSigner": 3,

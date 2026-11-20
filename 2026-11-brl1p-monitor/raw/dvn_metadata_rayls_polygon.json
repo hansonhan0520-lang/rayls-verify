@@ -400,6 +400,11 @@
     "id": "lz-dead-dvn",
     "version": 2,
     "deprecated": true
+   },
+   "0x37724f4d5e98b782488e172ddbd2c901b20049a5": {
+    "canonicalName": "FurtherFP",
+    "id": "FurtherFP",
+    "version": 2
    }
   }
  }
