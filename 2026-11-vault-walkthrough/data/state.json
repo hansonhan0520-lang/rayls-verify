@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-20 00:57:31 UTC",
- "block": 14831873,
- "block_time": "2026-11-20 00:57:06 UTC",
+ "run_utc": "2026-11-20 14:16:21 UTC",
+ "block": 14867486,
+ "block_time": "2026-11-20 14:15:41 UTC",
  "vault": {
   "name": "Rayls Token One 02",
   "symbol": "RLSTKONE02",
@@ -11,7 +11,7 @@
   "share_price": 1.0006252435763554,
   "max_cap": 300000.0,
   "paused": false,
-  "nav_valid_now": true,
+  "nav_valid_now": false,
   "async_only": false,
   "fee_rates_bps": {
    "management": 0,
@@ -20,7 +20,7 @@
    "exit": 50,
    "haircut": 0
   },
-  "pending_deposits_in_silo": 0.0,
+  "pending_deposits_in_silo": 155345.599318,
   "safe_brl1p": 0.0,
   "safe_fund_shares": 99569.32765715769
  },
@@ -32,8 +32,8 @@
   "share_price": 1.0036814778045025,
   "idle_on_chain": 99935.883672,
   "deployed_reported": 10.05417859225816,
-  "reported_at": "2026-11-19 12:11:09 UTC",
-  "report_age_hours": 12.77,
+  "reported_at": "2026-11-20 11:46:10 UTC",
+  "report_age_hours": 2.49,
   "max_report_age_hours": 24.0,
   "max_report_change_bps": 1000,
   "paused": false
@@ -72,7 +72,7 @@
  ],
  "vault_event_counts": {
   "Deposit": 4,
-  "DepositRequest": 4,
+  "DepositRequest": 7,
   "DepositSync": 2,
   "NewTotalAssetsUpdated": 4,
   "SettleDeposit": 2,

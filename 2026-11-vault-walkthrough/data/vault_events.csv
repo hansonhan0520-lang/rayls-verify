@@ -19,3 +19,6 @@ time_utc,block,event,via,assets,shares,request_id,tx
 2026-11-19 15:09:29 UTC,14805604,Deposit,claimSharesOnBehalf,4720.200991,4717.251560,,
 2026-11-19 15:09:29 UTC,14805604,Deposit,claimSharesOnBehalf,94828.782983,94769.528944,,
 2026-11-19 15:09:29 UTC,14805604,Deposit,claimSharesOnBehalf,375.895698,375.660818,,
+2026-11-20 04:45:56 UTC,14842075,DepositRequest,moveToVault,50074.120328,,5,
+2026-11-20 04:54:41 UTC,14842464,DepositRequest,moveToVault,100000.000000,,5,
+2026-11-20 12:19:03 UTC,14862282,DepositRequest,moveToVault,5271.478990,,5,

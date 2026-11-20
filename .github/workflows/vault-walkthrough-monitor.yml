@@ -2,8 +2,7 @@ name: vault-walkthrough-monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: "50 */6 * * *"   # every 6 hours
-    - cron: "25 13 * * *"    # just after the vault's daily settlement (about 13:00 UTC so far)
+    - cron: "17 * * * *"     # hourly: settlements are run by the operator, not on a fixed clock
 permissions:
   contents: write
 concurrency:
