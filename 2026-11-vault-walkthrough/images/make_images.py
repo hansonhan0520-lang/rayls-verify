@@ -62,7 +62,7 @@ b += bk.text(122, y + 90, "我的份额与价值", bk.WHITE, 26, 700)
 b += bk.text(958, y + 90, "一致", bk.WHITE, 26, 800, "end")
 b += bk.text(122, y + 128, "份额价格", bk.WHITE, 26, 700)
 b += bk.text(958, y + 128, f"1.000625  |  {s['vault']['share_price']:.6f}", bk.WHITE, 26, 800, "end")
-b += bk.text(122, y + 170, f"对账：金库 {c['vault_total_assets']:,.2f} = 基金持仓折算 {c['safe_position_at_fund_price']:,.2f}", bk.YELLOW, 24, 800)
+b += bk.text(122, y + 170, f"对账（{s['block_time'][8:10]} 日 {s['block_time'][11:16]}）：金库 {c['vault_total_assets']:,.2f} = 基金持仓折算 {c['safe_position_at_fund_price']:,.2f}", bk.YELLOW, 24, 800)
 bk.render_body(f"{OUT}/vault-body.png",
                title="我这笔存款，五步走完",
                subtitle="2026-11-19 下午那一轮的链上时间（UTC）",

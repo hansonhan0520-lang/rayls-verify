@@ -55,6 +55,8 @@ A request made after a valuation waits for the next one. The author's request ca
 3. **Held.** `claimSharesOnBehalf` at 15:09:29 put the shares of all three requests in the depositors' wallets, 8 seconds after settlement, as in the 13:00 round.
 4. **Held.** The Safe deposited the 99,924.879672 BRL1.p into TKONE02 at 15:09:38 for 99,558.357788 shares. On 20 Nov 14:15 UTC the Safe held 99,569.327657 TKONE02 = 99,935.889927 BRL1.p at 1.003681, equal to the vault's total assets 99,935.889927 (difference 0.000000). The fund itself: 99,935.883672 idle on-chain + 10.054179 deployed (reported 2026-11-20 11:46:10 UTC).
 
+**Later reading (2026-11-21 07:32 UTC).** A fifth round: valuation 2026-11-20 15:12:18, settlement 15:12:23 (155,345.599318 BRL1.p), shares claimed for depositors 15:12:30 (7 seconds). The silo is empty. Vault total assets 255,281.489245 = the Safe's 254,345.123319 TKONE02 at 1.003681 (difference 0.000000). The fund: 255,281.482990 idle on-chain + 10.054179 deployed (reported). The RLS reward had still not arrived.
+
 The launch programme's RLS reward for the moved deposit had not reached the depositor's wallet by 2026-11-20 14:15 UTC; the dapp says it is sent by hand.
 
 ### Read on-chain vs. not visible
@@ -111,6 +113,8 @@ Read directly: every balance, event, time, fee rate, guard setting and the recon
 2. **对了。** 三笔都按 1.000625 换成份额（每笔 金额 ÷ 份额 = 1.000625，见 `data/vault_events.csv`）。作者钱包在 dapp 持仓页上显示的份额和价值与链上一致。
 3. **对了。** 15:09:29 `claimSharesOnBehalf` 把三笔的份额发进各自钱包，结算后 8 秒，和 13:00 那轮一样。
 4. **对了。** 15:09:38 Safe 把 99,924.879672 BRL1.p 存进 TKONE02，换回 99,558.357788 份。20 日 14:15 Safe 持有 99,569.327657 TKONE02，按 1.003681 合 99,935.889927 BRL1.p，等于金库总资产 99,935.889927（差额 0.000000）。基金本身：链上闲置 99,935.883672 + 已投出 10.054179（2026-11-20 11:46:10 UTC 报告）。
+
+**后续读数（2026-11-21 07:32 UTC）。** 第五轮：2026-11-20 15:12:18 估值，15:12:23 结算（155,345.599318 BRL1.p），15:12:30 份额发给存款人（7 秒）。待处理仓已清空。金库总资产 255,281.489245 = Safe 持有的 254,345.123319 TKONE02 × 1.003681（差额 0.000000）。基金：链上闲置 255,281.482990 + 已投出 10.054179（报告值）。RLS 奖励仍未到账。
 
 截至 2026-11-20 14:15 UTC，转入部分的启动计划 RLS 奖励还没有到存款人钱包；dapp 说明是人工发放。
 
