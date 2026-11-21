@@ -1,5 +1,5 @@
 {
- "fetched_utc": "2026-11-20T20:59:03Z",
+ "fetched_utc": "2026-11-21T07:53:03Z",
  "pages": [
   {
    "url": "https://brl1.io/en",
@@ -31,7 +31,7 @@
    "status": 200,
    "file": "docs_fact_finance_features_por_.html",
    "bytes": 48632,
-   "sha256": "b81f48a36d2fffe60d29e4a6869f43a7e8fd45bfee6fdccba112a27e5d1bb923"
+   "sha256": "98df9aa6aabd217fd263e919c1e707171ddac02d4a414240e16c2ef7e37ae0a6"
   },
   {
    "url": "https://docs.fact.finance/cases/stablecoins/",
@@ -39,7 +39,7 @@
    "status": 200,
    "file": "docs_fact_finance_cases_stablecoins_.html",
    "bytes": 44174,
-   "sha256": "f1c6f4044624445b3f5141f5674164770ff145b35443c60f73a7c8e3bf26a73a"
+   "sha256": "abad7d2f690cb2dc9ef2dc1fcb5865f366035a3fd5e54a43b7c9f051b302c329"
   }
  ],
  "links": {
@@ -55,8 +55,8 @@
    "status": 200,
    "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://drive.usercontent.google.com/download?id%3D139WCYEqBpr",
    "file": "drive_139WCYEqBprr83aPoYN5YlePpYpF50hrT.html",
-   "bytes": 948900,
-   "sha256": "2eb0adbe506f47c187918313d434f6aa78cf1ecfa14559ecaab8513961cc5e4f"
+   "bytes": 946429,
+   "sha256": "088a30ea944111b4868b8caf43628fc9fd903737668b6ff111307d68c5d09a35"
   },
   "1BuRUC6u3UTzf17kOChhKby_L9hE5IU73": {
    "status": 200,
