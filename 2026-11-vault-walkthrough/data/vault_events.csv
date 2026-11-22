@@ -30,3 +30,5 @@ time_utc,block,event,via,assets,shares,request_id,tx
 2026-11-20 15:12:30 UTC,14870020,Deposit,claimSharesOnBehalf,100000.000000,99937.514711,,
 2026-11-21 13:00:11 UTC,14928566,NewTotalAssetsUpdated,updateNewTotalAssets,255281.489245,,,0xa73b653fb0a7a7ec383fcd3ebed7736c2880d041517f6a9c3364bb7ee23a6f1a
 2026-11-21 13:00:16 UTC,14928570,TotalAssetsUpdated,settleDeposit,255281.489245,,,0x156ddc6914bfd4a7a2d047d2219fd7bcb8a3d25d7903595eda42932228c1b399
+2026-11-22 13:00:12 UTC,14992834,NewTotalAssetsUpdated,updateNewTotalAssets,255281.489245,,,0x3f7a79a0fb96ae9b1d786e4d7090a4bb9e9b777b6c94f08ce32d0f198e797489
+2026-11-22 13:00:19 UTC,14992839,TotalAssetsUpdated,settleDeposit,255281.489245,,,0x6329d2537ecbc4ce0f8a2228f0952f3d9ac498b17b3d4c6e6a52a85f511907dc

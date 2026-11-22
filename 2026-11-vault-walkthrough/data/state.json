@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-22 11:30:22 UTC",
- "block": 14988806,
- "block_time": "2026-11-22 11:30:00 UTC",
+ "run_utc": "2026-11-22 19:39:38 UTC",
+ "block": 15010652,
+ "block_time": "2026-11-22 19:39:17 UTC",
  "vault": {
   "name": "Rayls Token One 02",
   "symbol": "RLSTKONE02",
@@ -33,7 +33,7 @@
   "idle_on_chain": 255281.48299,
   "deployed_reported": 10.05417859225816,
   "reported_at": "2026-11-20 11:46:10 UTC",
-  "report_age_hours": 47.73,
+  "report_age_hours": 55.89,
   "max_report_age_hours": 24.0,
   "max_report_change_bps": 1000,
   "paused": false
@@ -80,15 +80,21 @@
    "settled": "2026-11-21 13:00:16 UTC",
    "deposits_settled": "0",
    "claimed_for_depositors": null
+  },
+  {
+   "nav_proposed": "2026-11-22 13:00:12 UTC",
+   "settled": "2026-11-22 13:00:19 UTC",
+   "deposits_settled": "0",
+   "claimed_for_depositors": null
   }
  ],
  "vault_event_counts": {
   "Deposit": 7,
   "DepositRequest": 7,
   "DepositSync": 2,
-  "NewTotalAssetsUpdated": 6,
+  "NewTotalAssetsUpdated": 7,
   "SettleDeposit": 3,
-  "TotalAssetsUpdated": 6
+  "TotalAssetsUpdated": 7
  },
  "addresses": {
   "vault": "0x1811630b90e6966573e809270a5e9316a25de6fe",
