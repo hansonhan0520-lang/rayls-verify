@@ -1,0 +1,15 @@
+BRL1.p backing monitor, run started 2026-11-24T10:03:13Z
+Polygon head used 97872739 (2026-11-24T10:02:58Z); Rayls head used 15113510
+Rayls explorer: 153 BRL1.p logs, 28 adapter logs
+Rayls RPC eth_getLogs over the same blocks: {'token': 95, 'adapter': 7, 'errors': 0}
+    LayerZero Scan 30109/0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6: HTTP 404 {"message":"Message not found for UA 0x3ea6bac7d4138bcc126d0f17ae10122b3620aba6 on Endpoint ID 30109!","code":4
+    LayerZero Scan 30415/0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a: HTTP 404 {"message":"Message not found for UA 0xe56ddf65e311cddb71f69c0ac4d27e58b239d69a on Endpoint ID 30415!","code":4
+LayerZero Scan: 25 messages Polygon->Rayls, 25 Rayls->Polygon
+Traceback (most recent call last):
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 559, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/rayls-verify/rayls-verify/2026-11-brl1p-monitor/collect.py", line 245, in main
+    log(f"Polygon {n}: {len(pl[n]['in'])} transfers in, {len(pl[n]['out'])} out, {len(pl[n]['lockbox'])} lockbox logs, {pl[n + '_calls']} calls")
+                            ~~^^^
+KeyError: 'publicnode'
