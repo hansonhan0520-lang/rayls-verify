@@ -1,14 +1,14 @@
 {
- "run_utc": "2026-11-24 06:03:05 UTC",
- "block": 15102792,
- "block_time": "2026-11-24 06:02:28 UTC",
+ "run_utc": "2026-11-24 17:44:14 UTC",
+ "block": 15134046,
+ "block_time": "2026-11-24 17:43:45 UTC",
  "vault": {
   "name": "Rayls Token One 02",
   "symbol": "RLSTKONE02",
   "lagoon_version": "v0.6.0",
-  "total_assets": 255441.09817520928,
+  "total_assets": 255600.81108098052,
   "total_shares": 255121.97586833793,
-  "share_price": 1.0012508616938434,
+  "share_price": 1.001876887363438,
   "max_cap": 300000.0,
   "paused": false,
   "nav_valid_now": true,
@@ -27,21 +27,21 @@
  "fund": {
   "name": "TokenOne TIDC02",
   "symbol": "TKONE02",
-  "total_assets": 255451.15238109996,
+  "total_assets": 255610.87157319885,
   "total_shares": 254355.1343868857,
-  "share_price": 1.0043090067627538,
+  "share_price": 1.0049369445179082,
   "idle_on_chain": 0.0,
-  "deployed_reported": 255451.15238109996,
-  "reported_at": "2026-11-23 20:37:30 UTC",
-  "report_age_hours": 9.42,
+  "deployed_reported": 255610.87157319885,
+  "reported_at": "2026-11-24 12:11:09 UTC",
+  "report_age_hours": 5.54,
   "max_report_age_hours": 24.0,
   "max_report_change_bps": 1000,
   "paused": false
  },
  "layers_add_up": {
-  "vault_total_assets": 255441.09817520928,
-  "safe_position_at_fund_price": 255441.0981752093,
-  "difference": -2.9103830456733704e-11,
+  "vault_total_assets": 255600.81108098052,
+  "safe_position_at_fund_price": 255600.81108098052,
+  "difference": 0.0,
   "note": "The vault's total assets is fixed at each settlement; the fund price moves with each oracle report, so a small gap between settlements is expected."
  },
  "settlement_cycles": [
@@ -98,15 +98,21 @@
    "settled": "2026-11-23 16:01:52 UTC",
    "deposits_settled": "0",
    "claimed_for_depositors": null
+  },
+  {
+   "nav_proposed": "2026-11-24 13:00:09 UTC",
+   "settled": "2026-11-24 13:00:16 UTC",
+   "deposits_settled": "0",
+   "claimed_for_depositors": null
   }
  ],
  "vault_event_counts": {
   "Deposit": 7,
   "DepositRequest": 7,
   "DepositSync": 2,
-  "NewTotalAssetsUpdated": 9,
+  "NewTotalAssetsUpdated": 10,
   "SettleDeposit": 3,
-  "TotalAssetsUpdated": 9
+  "TotalAssetsUpdated": 10
  },
  "addresses": {
   "vault": "0x1811630b90e6966573e809270a5e9316a25de6fe",
