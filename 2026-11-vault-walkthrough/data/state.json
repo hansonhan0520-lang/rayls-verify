@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-23 21:24:41 UTC",
- "block": 15079647,
- "block_time": "2026-11-23 21:24:14 UTC",
+ "run_utc": "2026-11-24 06:03:05 UTC",
+ "block": 15102792,
+ "block_time": "2026-11-24 06:02:28 UTC",
  "vault": {
   "name": "Rayls Token One 02",
   "symbol": "RLSTKONE02",
@@ -33,7 +33,7 @@
   "idle_on_chain": 0.0,
   "deployed_reported": 255451.15238109996,
   "reported_at": "2026-11-23 20:37:30 UTC",
-  "report_age_hours": 0.78,
+  "report_age_hours": 9.42,
   "max_report_age_hours": 24.0,
   "max_report_change_bps": 1000,
   "paused": false
