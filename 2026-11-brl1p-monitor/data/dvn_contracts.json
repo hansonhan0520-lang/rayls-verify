@@ -12,60 +12,8 @@
    "0x238fc6e3ffa0615925c96b23633f446881978ab5",
    "0x9b16cf4574c8e1084a3b38c9d8da3631bb200190"
   ],
-  "event_counts": {
-   "SetDstConfig": 165,
-   "SetWorkerLib": 1,
-   "SetDefaultMultiplierBps": 1,
-   "RoleGranted": 5
-  },
-  "admin_events": [
-   {
-    "event": "RoleGranted",
-    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
-    "block": 1374102,
-    "time": "2026-05-21T22:11:10Z",
-    "role": "ADMIN_ROLE",
-    "account": "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
-    "block": 1374102,
-    "time": "2026-05-21T22:11:10Z",
-    "role": "ADMIN_ROLE",
-    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
-    "block": 1374102,
-    "time": "2026-05-21T22:11:10Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
-    "block": 1374102,
-    "time": "2026-05-21T22:11:10Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0x37aaaf95887624a363effb7762d489e3c05c2a02"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0x60a2b60a6301704245c0825fdfd43599aab0c3a99ab5e3e3d5a254d4cc31dd41",
-    "block": 1374102,
-    "time": "2026-05-21T22:11:10Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0x38de71124f7a447a01d67945a51edce9ff491251"
-   },
-   {
-    "event": "SetWorkerLib",
-    "tx": "0x3a644b8469f2fd218a1c90fba00f32d55635721dcb49e97370dce889dfb6fbac",
-    "block": 1374714,
-    "time": "2026-05-21T22:24:24Z"
-   }
-  ]
+  "event_counts": {},
+  "admin_events": []
  },
  "rayls:0x8d77d35604a9f37f488e41d1d916b2a0088f82dd": {
   "chain": "rayls",
@@ -79,84 +27,8 @@
    "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
    "0x86f0f839417da25586832187967fb830b9bc1d75"
   ],
-  "event_counts": {
-   "SetDstConfig": 146,
-   "UpdateSigner": 3,
-   "SetWorkerLib": 1,
-   "RoleGranted": 5
-  },
-  "admin_events": [
-   {
-    "event": "RoleGranted",
-    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
-    "block": 1237170,
-    "time": "2026-05-19T20:38:31Z",
-    "role": "ADMIN_ROLE",
-    "account": "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
-    "block": 1237170,
-    "time": "2026-05-19T20:38:31Z",
-    "role": "ADMIN_ROLE",
-    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
-    "block": 1237170,
-    "time": "2026-05-19T20:38:31Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
-    "block": 1237170,
-    "time": "2026-05-19T20:38:31Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0x37aaaf95887624a363effb7762d489e3c05c2a02"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xed9416f70fae53169c70f1796cae75ed2f339aca41d6ac3540611df5479dbb22",
-    "block": 1237170,
-    "time": "2026-05-19T20:38:31Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0x38de71124f7a447a01d67945a51edce9ff491251"
-   },
-   {
-    "event": "SetWorkerLib",
-    "tx": "0x1b392ce2e6ad64ef1290dbe387c818c3662c4be144f8430ac5192bb6cb2e9766",
-    "block": 1237492,
-    "time": "2026-05-19T20:45:38Z"
-   },
-   {
-    "event": "UpdateSigner",
-    "tx": "0x1247af643c3c64cbe52e7e62f41a43bc110f34dbed3fb54c86693a54c8113dca",
-    "block": 12507128,
-    "time": "2026-10-14T19:55:58Z",
-    "signer": "0x86f0f839417da25586832187967fb830b9bc1d75",
-    "active": true
-   },
-   {
-    "event": "UpdateSigner",
-    "tx": "0xd5a8b01df9eda0b5dabd110ec156269e26ec6f738e1b371c67a3fb50356e56ea",
-    "block": 12508822,
-    "time": "2026-10-14T20:33:30Z",
-    "signer": "0x598ca3934788fdf2e8dc31a749a45609c54e64f7",
-    "active": true
-   },
-   {
-    "event": "UpdateSigner",
-    "tx": "0x545c5b6ed5635c3cd47cf7d47ba5bd8521aa55160d6ed9cafb6aeeb3579ab407",
-    "block": 12519503,
-    "time": "2026-10-15T00:30:01Z",
-    "signer": "0xbbd4502c1509b15697772555d03b7eb37f2895c9",
-    "active": false
-   }
-  ]
+  "event_counts": {},
+  "admin_events": []
  },
  "rayls:0xd01ae6905d48315f7be10c7330aecf8360ef5b12": {
   "chain": "rayls",
@@ -169,60 +41,8 @@
   "signers": [
    "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
   ],
-  "event_counts": {
-   "Withdraw": 3,
-   "SetDstConfig": 465,
-   "SetWorkerLib": 1,
-   "RoleGranted": 5
-  },
-  "admin_events": [
-   {
-    "event": "RoleGranted",
-    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
-    "block": 1298362,
-    "time": "2026-05-20T18:51:29Z",
-    "role": "ADMIN_ROLE",
-    "account": "0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
-    "block": 1298362,
-    "time": "2026-05-20T18:51:29Z",
-    "role": "ADMIN_ROLE",
-    "account": "0xb52fa54fc261398058c3ac7b8dd442d7d8b9f0b6"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
-    "block": 1298362,
-    "time": "2026-05-20T18:51:29Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0xc39161c743d0307eb9bcc9fef03eeb9dc4802de7"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
-    "block": 1298362,
-    "time": "2026-05-20T18:51:29Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0x37aaaf95887624a363effb7762d489e3c05c2a02"
-   },
-   {
-    "event": "RoleGranted",
-    "tx": "0xa9029dd69634ee00f86e3dafcf340e0b70c5e855b89af9e996313a26e8eadfb1",
-    "block": 1298362,
-    "time": "2026-05-20T18:51:29Z",
-    "role": "MESSAGE_LIB_ROLE",
-    "account": "0x38de71124f7a447a01d67945a51edce9ff491251"
-   },
-   {
-    "event": "SetWorkerLib",
-    "tx": "0x1351d6752431ed053b500fd09bf98294ae729a5c0acea58f338f6b49b8f9f2bc",
-    "block": 1299140,
-    "time": "2026-05-20T19:08:40Z"
-   }
-  ]
+  "event_counts": {},
+  "admin_events": []
  },
  "polygon:0x13feb7234ff60a97af04477d6421415766753ba3": {
   "chain": "polygon",
@@ -277,7 +97,7 @@
   "paused": 0,
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
-   "0x87e46b0a": 1006,
+   "0x87e46b0a": 1008,
    "SetDstConfig": 7,
    "Withdraw": 1,
    "UpdateSigner": 3,

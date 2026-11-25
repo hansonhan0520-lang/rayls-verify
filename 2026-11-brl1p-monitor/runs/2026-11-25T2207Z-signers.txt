@@ -1,0 +1,22 @@
+Signer recovery, run 2026-11-25T22:07:51Z: 6 verifications
+recovered signers for 6 of 6 verifications
+
+0x13feb7234ff60a97af04477d6421415766753ba3 Canary (id canary)  (2 verifications)
+   submitted by: ['0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb']
+   signed by 0x6d695bdb416274d37fb877f5f46a3f20c9343d80: 2 times, 2026-10-14T10:14:40Z to 2026-10-16T02:05:51Z
+
+0x23de2fe932d9043291f870324b74f820e11dc81a LayerZero Labs (id layerzero-labs)  (2 verifications)
+   submitted by: ['0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb']
+   signed by 0x03429038953855beec609022284894049746c164 0x238fc6e3ffa0615925c96b23633f446881978ab5: 2 times, 2026-10-14T10:14:29Z to 2026-10-16T02:05:42Z
+
+0x31f748a368a893bdb5abb67ec95f232507601a73 Twinstake (id nethermind)  (2 verifications)
+   submitted by: ['0xb8ff877ed78ba520ece21b1de7843a8a57ca47cb']
+   signed by 0xbbd4502c1509b15697772555d03b7eb37f2895c9: 1 times, 2026-10-14T10:14:29Z to 2026-10-14T10:14:29Z
+   signed by 0x86f0f839417da25586832187967fb830b9bc1d75: 1 times, 2026-10-16T02:05:40Z to 2026-10-16T02:05:40Z
+
+Official Rayls RPC, transaction input only:
+   Polygon->Rayls deliveries carrying the GUID: 19 of 19; carrying recipient and amount: 19 of 19
+   Rayls->Polygon sends carrying recipient and amount: 2 of 2
+   delivery transactions sent from: ['0xe93685f3bba03016f02bd1828badd6195988d950'] to ['0x4208d6e27538189bb48e603d6123a94b8abe0a0b']
+
+finished 2026-11-25T22:07:53Z
