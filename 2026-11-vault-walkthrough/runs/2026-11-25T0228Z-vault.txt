@@ -1,0 +1,20 @@
+block 15157467, 2026-11-25 02:28:45 UTC
+LAYER 1  Rayls Token One 02 (RLSTKONE02, Lagoon v0.6.0)
+  share price 1.001877 BRL1.p; total assets 255,600.811081; shares 255,121.975868; cap 300,000
+  waiting in the pending silo: 0.000000 BRL1.p
+  fees (basis points): {'management': 0, 'performance': 0, 'entry': 0, 'exit': 50, 'haircut': 0}; NAV valid now True; paused False
+  vault Safe holds 254,345.123319 TKONE02 and 0.000000 BRL1.p
+LAYER 2  TokenOne TIDC02 (TKONE02, RwaVaultV3)
+  share price 1.004937; total assets 255,610.871573 = idle on-chain 0.000000 + deployed (reported) 255,610.871573
+  last report 2026-11-24 12:11:09 UTC (14.29 h ago); deposits and withdrawals stop if older than 24 h; one report may move it at most 10%
+CHECK  vault total assets 255,600.811081 vs Safe position at fund price 255,600.811081 (difference +0.000000)
+  cycle: NAV proposed 2026-11-18 12:28:20 UTC, settled 2026-11-18 12:28:25 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-18 13:00:13 UTC, settled 2026-11-18 13:00:19 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-19 13:00:10 UTC, settled 2026-11-19 13:00:16 UTC (1.000000 BRL1.p), shares claimed for depositors 2026-11-19 13:00:24 UTC
+  cycle: NAV proposed 2026-11-19 15:09:14 UTC, settled 2026-11-19 15:09:21 UTC (99924.879672 BRL1.p), shares claimed for depositors 2026-11-19 15:09:29 UTC
+  cycle: NAV proposed 2026-11-20 15:12:18 UTC, settled 2026-11-20 15:12:23 UTC (155345.599318 BRL1.p), shares claimed for depositors 2026-11-20 15:12:30 UTC
+  cycle: NAV proposed 2026-11-21 13:00:11 UTC, settled 2026-11-21 13:00:16 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-22 13:00:12 UTC, settled 2026-11-22 13:00:19 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-23 13:00:12 UTC, settled 2026-11-23 13:00:20 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-23 16:01:42 UTC, settled 2026-11-23 16:01:52 UTC (0 BRL1.p), shares claimed for depositors None
+  cycle: NAV proposed 2026-11-24 13:00:09 UTC, settled 2026-11-24 13:00:16 UTC (0 BRL1.p), shares claimed for depositors None
