@@ -1,0 +1,18 @@
+{
+ "block": 25497874,
+ "time_utc": "2026-11-25 15:34 UTC",
+ "registry": "0xa473291ffb33e2276f364fae169f03c4406719e9",
+ "registered_accounts": 319,
+ "accounts_read": 319,
+ "accounts_without_auditor_copy": 0,
+ "auditor_copy_sizes_bytes": [
+  {
+   "ml_kem_ct": 1088,
+   "aes_ct": 92,
+   "accounts": 319
+  }
+ ],
+ "auditor_public_key_bytes": 1184,
+ "auditor_accounts": 7,
+ "registration_fee_wei": 0
+}

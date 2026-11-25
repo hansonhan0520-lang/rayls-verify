@@ -1,0 +1,57 @@
+{
+ "tx": "0x140ec97b9c4eda3afa146fd71fcedd40eb036de7b21f1ec6e8aa071c45f4d36d",
+ "time_utc": "2026-11-12T05:08:00.000000Z",
+ "method": "transferV2",
+ "status": "ok",
+ "gas_fee_usdr": 0.059867808,
+ "addresses": [
+  {
+   "address": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "role": "sender",
+   "label": "Enygma relayer (run by Rayls)"
+  },
+  {
+   "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+   "role": "target",
+   "label": "Enygma shared vault 2 (any ERC-20)"
+  }
+ ],
+ "events": [
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "Nullifier",
+   "vaultId": "2"
+  },
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "Commitment",
+   "vaultId": "2"
+  },
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "Commitment",
+   "vaultId": "2"
+  },
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "Commitment",
+   "vaultId": "2"
+  },
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "EncryptedNote",
+   "vaultId": "2"
+  },
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "EncryptedNote",
+   "vaultId": "2"
+  },
+  {
+   "contract": "Enygma shared vault 2 (any ERC-20)",
+   "event": "EncryptedNote",
+   "vaultId": "2"
+  }
+ ],
+ "token_transfers": []
+}

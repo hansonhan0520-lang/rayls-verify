@@ -1,0 +1,104 @@
+{
+ "tx": "0x74ea2ef5269beb130229d087b91a2f517815e2b0dd97d0bcf3901da377d12338",
+ "time_utc": "2026-11-24T10:15:52.000000Z",
+ "method": "0x82ad56cb",
+ "status": "ok",
+ "gas_fee_usdr": 0.107355696,
+ "addresses": [
+  {
+   "address": "0xa5f0c684eb49866a9f62f901cd85f98a19da0ac8",
+   "role": "sender",
+   "label": "Enygma relayer (run by Rayls)"
+  },
+  {
+   "address": "0xca11bde05977b3631167028862be2a173976ca11",
+   "role": "target",
+   "label": "Multicall3 (bundles a payment with its gas fee)"
+  },
+  {
+   "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+   "role": "emitted events",
+   "label": "Enygma vault 0 (USDr)"
+  },
+  {
+   "address": "0x5386a890b4321388874d758c182a69ba9ac2e155",
+   "role": "field recipient",
+   "label": "unlabelled"
+  },
+  {
+   "address": "0x0000000000000000000000000000000000000400",
+   "role": "emitted events",
+   "label": "USDr token (native gas stablecoin)"
+  },
+  {
+   "address": "0x12b6640048deb2e8ffda4bc10bb2a640b70eca6d",
+   "role": "emitted events",
+   "label": "RlsGasForwarder (ERC-2771, charges gas in RLS)"
+  },
+  {
+   "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+   "role": "emitted events",
+   "label": "Enygma vault 1 (RLS)"
+  }
+ ],
+ "events": [
+  {
+   "contract": "Enygma vault 0 (USDr)",
+   "event": "Nullifier",
+   "vaultId": "0"
+  },
+  {
+   "contract": "Enygma vault 0 (USDr)",
+   "event": "Commitment",
+   "vaultId": "0"
+  },
+  {
+   "contract": "Enygma vault 0 (USDr)",
+   "event": "PartialWithdrawal",
+   "vaultId": "0"
+  },
+  {
+   "contract": "USDr token (native gas stablecoin)",
+   "event": "Transfer",
+   "vaultId": null
+  },
+  {
+   "contract": "RlsGasForwarder (ERC-2771, charges gas in RLS)",
+   "event": "Relayed",
+   "vaultId": null
+  },
+  {
+   "contract": "Enygma vault 1 (RLS)",
+   "event": "Nullifier",
+   "vaultId": "1"
+  },
+  {
+   "contract": "Enygma vault 1 (RLS)",
+   "event": "Commitment",
+   "vaultId": "1"
+  },
+  {
+   "contract": "Enygma vault 1 (RLS)",
+   "event": "Commitment",
+   "vaultId": "1"
+  },
+  {
+   "contract": "Enygma vault 1 (RLS)",
+   "event": "EncryptedNote",
+   "vaultId": "1"
+  },
+  {
+   "contract": "Enygma vault 1 (RLS)",
+   "event": "EncryptedNote",
+   "vaultId": "1"
+  }
+ ],
+ "token_transfers": [
+  {
+   "token": "USDr",
+   "from": "0x1Edb224cf8637F92efaDAF47Ef9e70C044D75584",
+   "to": "0x5386A890B4321388874d758c182A69bA9AC2E155",
+   "amount": 0.01
+  }
+ ]
+}

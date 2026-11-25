@@ -1,0 +1,30 @@
+{
+ "block": 25497719,
+ "time_utc": "2026-11-25 15:33 UTC",
+ "vaults": {
+  "vault 0": {
+   "address": "0x1edb224cf8637f92efadaf47ef9e70c044d75584",
+   "asset": "0x0000000000000000000000000000000000000400",
+   "holds": {
+    "USDr": 8653.773767830424,
+    "RLS": 0.0
+   }
+  },
+  "vault 1": {
+   "address": "0x97b5d78dbe06d8c8c843f87b5aa2d8587b890795",
+   "asset": "0x07e17e17e17e17e17e17e17e17e17e17e17e17ea",
+   "holds": {
+    "USDr": 0.0,
+    "RLS": 85818.4894
+   }
+  },
+  "shared vault 2": {
+   "address": "0x9c5ad5e5ea5b5910e7fd1e1cc7b70ce0e4bf06c2",
+   "asset": "0x0000000000000000000000000000000000000000",
+   "holds": {
+    "USDr": 582.9015865735661,
+    "RLS": 58421.81736244
+   }
+  }
+ }
+}
