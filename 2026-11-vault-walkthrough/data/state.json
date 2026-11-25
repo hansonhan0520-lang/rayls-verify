@@ -1,7 +1,7 @@
 {
- "run_utc": "2026-11-25 02:29:26 UTC",
- "block": 15157467,
- "block_time": "2026-11-25 02:28:45 UTC",
+ "run_utc": "2026-11-25 12:55:20 UTC",
+ "block": 15185405,
+ "block_time": "2026-11-25 12:54:45 UTC",
  "vault": {
   "name": "Rayls Token One 02",
   "symbol": "RLSTKONE02",
@@ -27,21 +27,21 @@
  "fund": {
   "name": "TokenOne TIDC02",
   "symbol": "TKONE02",
-  "total_assets": 255610.87157319885,
+  "total_assets": 255770.6906286966,
   "total_shares": 254355.1343868857,
-  "share_price": 1.0049369445179082,
+  "share_price": 1.0055652748871104,
   "idle_on_chain": 0.0,
-  "deployed_reported": 255610.87157319885,
-  "reported_at": "2026-11-24 12:11:09 UTC",
-  "report_age_hours": 14.29,
+  "deployed_reported": 255770.6906286966,
+  "reported_at": "2026-11-25 12:11:09 UTC",
+  "report_age_hours": 0.73,
   "max_report_age_hours": 24.0,
   "max_report_change_bps": 1000,
   "paused": false
  },
  "layers_add_up": {
   "vault_total_assets": 255600.81108098052,
-  "safe_position_at_fund_price": 255600.81108098052,
-  "difference": 0.0,
+  "safe_position_at_fund_price": 255760.6238462202,
+  "difference": -159.81276523967972,
   "note": "The vault's total assets is fixed at each settlement; the fund price moves with each oracle report, so a small gap between settlements is expected."
  },
  "settlement_cycles": [
