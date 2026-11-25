@@ -1,10 +1,8 @@
 {
- "run_utc": "2026-11-25 09:11 UTC",
+ "run_utc": "2026-11-25 21:58 UTC",
  "minter_owner": "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
  "minter_owner_kind": "plain account (114 txs sent)",
- "minter_operator_events": {
-  "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0": true
- },
+ "minter_operator_events": {},
  "minter_operators_now": {
   "0x3147be1cd913fe9ea5df7505ffe704a8313b20b0": true
  },
