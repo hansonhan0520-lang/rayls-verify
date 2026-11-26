@@ -35,11 +35,12 @@
   "address": "0xd01ae6905d48315f7be10c7330aecf8360ef5b12",
   "registry_name_now": "Canary (id canary)",
   "quorum": 1,
-  "signer_size": 1,
+  "signer_size": 2,
   "vid": 415,
   "paused": 0,
   "signers": [
-   "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   "0x6d695bdb416274d37fb877f5f46a3f20c9343d80",
+   "0x6a2fd45c6d6070ed25e5cd7d7142b9a54afeba5a"
   ],
   "event_counts": {},
   "admin_events": []
@@ -49,18 +50,29 @@
   "address": "0x13feb7234ff60a97af04477d6421415766753ba3",
   "registry_name_now": "Canary (id canary)",
   "quorum": 1,
-  "signer_size": 1,
+  "signer_size": 2,
   "vid": 109,
   "paused": 0,
   "signers": [
-   "0x6d695bdb416274d37fb877f5f46a3f20c9343d80"
+   "0x6d695bdb416274d37fb877f5f46a3f20c9343d80",
+   "0x6a2fd45c6d6070ed25e5cd7d7142b9a54afeba5a"
   ],
   "event_counts": {
    "SetDstConfig": 327,
    "Withdraw": 17,
-   "0xd6d90193": 2
+   "0xd6d90193": 2,
+   "UpdateSigner": 1
   },
-  "admin_events": []
+  "admin_events": [
+   {
+    "event": "UpdateSigner",
+    "tx": "0x02e67bf0300622e2203890cd1094f9702d584dc2b380d1601d8d273589fd9604",
+    "block": 98005985,
+    "time": "2026-11-26T17:34:12Z",
+    "signer": "0x6a2fd45c6d6070ed25e5cd7d7142b9a54afeba5a",
+    "active": true
+   }
+  ]
  },
  "polygon:0x23de2fe932d9043291f870324b74f820e11dc81a": {
   "chain": "polygon",

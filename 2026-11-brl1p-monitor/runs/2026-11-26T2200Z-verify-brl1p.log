@@ -1,0 +1,20 @@
+BRL1.p backing check, run at 2026-11-26T22:00:27.180Z
+Polygon block 98016630 (2026-11-26T22:00:19.000Z)   Rayls block 15273951 (2026-11-26T22:00:17.000Z)
+
+[1] Stock: is every BRL1.p matched by BRL1 in the lockbox?
+  BRL1 held by lockbox   36.818245   (raw 36818245000000000000)
+  BRL1.p total supply    36.818245   (raw 36818245000000000000)
+  lockbox - supply       0.000000   OK: lockbox >= supply
+
+[2] Flows: do locks match mints and unlocks match burns?
+/home/runner/work/rayls-verify/rayls-verify/2026-10-brl1p-backing/verify-brl1p.js:48
+    if (i >= tries) throw new Error(`${method} on ${url}: ${j.error ? j.error.message : "null result"}`);
+                          ^
+
+Error: eth_getLogs on https://polygon-bor-rpc.publicnode.com: Archive requests require a personal token. Get one at: https://www.allnodes.com/publicnode
+    at rpc (/home/runner/work/rayls-verify/rayls-verify/2026-10-brl1p-backing/verify-brl1p.js:48:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async sumTransfers (/home/runner/work/rayls-verify/rayls-verify/2026-10-brl1p-backing/verify-brl1p.js:61:18)
+    at async /home/runner/work/rayls-verify/rayls-verify/2026-10-brl1p-backing/verify-brl1p.js:105:21
+
+Node.js v24.22.3
