@@ -16,7 +16,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 | Date | Question | Folder | Article |
 |---|---|---|---|
-| 2026-11-26 | How can I make private stablecoin payments that regulators can still audit? Enygma Public on the Rayls testnet: what the public sees of a shielded USDr payment, and a check that all 319 registered accounts escrowed a view key to the auditor | [`2026-11-private-payments`](2026-11-private-payments/) | (article pending) |
+| 2026-11-26 | How can I make private stablecoin payments that regulators can still audit? Enygma Public on the Rayls testnet: what the public sees of a shielded USDr payment, and a check that all 319 registered accounts escrowed a view key to the auditor | [`2026-11-private-payments`](2026-11-private-payments/) | [Binance Square](https://www.binance.com/zh-CN/square/post/392455600646586) |
 | 2026-11-20 | Where does a deposit in the TokenOne pilot vault go, when does it become shares, and what sets the price? One real deposit followed through the Lagoon vault and the TokenOne fund behind it, with predictions checked after settlement | [`2026-11-vault-walkthrough`](2026-11-vault-walkthrough/) | [Binance Square](https://www.binance.com/zh-CN/square/post/390577304412497) · [X](https://x.com/hanson0520/status/2124048911828660235) |
 | 2026-11-14 | When a project says tokens are locked, how do you check, and can the lock open early? Parfin's 1.07 billion RLS: lock contract, the token it holds, the bridge behind it; simulated claims and role powers, checks every 6 hours | [`2026-11-rls-vesting`](2026-11-rls-vesting/) | [Binance Square](https://www.binance.com/zh-CN/square/post/388046191329779) · [X thread](https://x.com/hanson0520/status/2121457730221437332) |
 | 2026-11-06 | Is one snapshot enough to trust a bridged stablecoin's "1:1"? Every transfer paired by LayerZero GUID, a merged timeline, recovered DVN signers, checks every 6 hours (BRL1.p follow-up) | [`2026-11-brl1p-monitor`](2026-11-brl1p-monitor/) | [Binance Square](https://www.binance.com/zh-CN/square/post/385259846549504) · [X thread](https://x.com/Hanson0520/status/2118602982061478082) |
@@ -43,7 +43,7 @@ Every script here is read-only. It only sends `eth_call` and log queries to publ
 
 | 日期 | 问题 | 文件夹 | 文章 |
 |---|---|---|---|
-| 2026-11-26 | 隐私稳定币支付，怎样做到监管仍能审计？Rayls 测试网上的 Enygma Public：公众能看到一笔隐私 USDr 付款的什么，以及 319 个注册账户是否都把查看密钥托管给审计方 | [`2026-11-private-payments`](2026-11-private-payments/) | （文章待发布） |
+| 2026-11-26 | 隐私稳定币支付，怎样做到监管仍能审计？Rayls 测试网上的 Enygma Public：公众能看到一笔隐私 USDr 付款的什么，以及 319 个注册账户是否都把查看密钥托管给审计方 | [`2026-11-private-payments`](2026-11-private-payments/) | [币安广场](https://www.binance.com/zh-CN/square/post/392455600646586) |
 | 2026-11-20 | 存进 TokenOne 试点金库的钱去了哪、什么时候变成份额、价格由什么决定？跟着一笔真实存款走过 Lagoon 金库和背后的 TokenOne 基金，结算后核对预测 | [`2026-11-vault-walkthrough`](2026-11-vault-walkthrough/) | [币安广场](https://www.binance.com/zh-CN/square/post/390577304412497) · [X](https://x.com/hanson0520/status/2124048911828660235) |
 | 2026-11-14 | 项目方说币锁住了，怎么自己查？能被提前打开吗？Parfin 的 10.7 亿枚 RLS：锁仓合约、被锁的代币、背后的跨链桥，模拟领取与权限，每 6 小时自动复查 | [`2026-11-rls-vesting`](2026-11-rls-vesting/) | [币安广场](https://www.binance.com/zh-CN/square/post/388046191329779) · [X 线程](https://x.com/hanson0520/status/2121457730221437332) |
 | 2026-11-06 | 跨链稳定币的"1:1"，查一次够吗？用 LayerZero 消息编号逐笔对账、两链合并时间线、还原验证方签名人，每 6 小时自动复查（BRL1.p 后续） | [`2026-11-brl1p-monitor`](2026-11-brl1p-monitor/) | [币安广场](https://www.binance.com/zh-CN/square/post/385259846549504) · [X 线程](https://x.com/hanson0520/status/2118602982061478082) |
