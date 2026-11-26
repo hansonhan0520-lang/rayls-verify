@@ -1,5 +1,5 @@
 {
- "run_utc": "2026-11-26 08:53 UTC",
+ "run_utc": "2026-11-26 21:55 UTC",
  "rayls_role_holders": {
   "DEFAULT_ADMIN": [
    "0x0e301beef8daad28f8e38d9fce09112b78fe3161",
@@ -20,7 +20,7 @@
   ]
  },
  "rayls_role_holder_kinds": {
-  "0x0e301beef8daad28f8e38d9fce09112b78fe3161": "plain account (114 txs sent)",
+  "0x0e301beef8daad28f8e38d9fce09112b78fe3161": "plain account (120 txs sent)",
   "0x6b205d256e8a153cba8057e5655db56e0e47a511": "plain account (2 txs sent)",
   "0xe4854d190146cdfe82040b495aba43872a17f609": "contract (1377 bytes)"
  },
@@ -92,15 +92,15 @@
   }
  },
  "eth_locked_in_adapter": {
-  "publicnode": "1,589,285,947.530039",
-  "tenderly": "1,589,285,947.530039"
+  "publicnode": "1,591,807,443.130039",
+  "tenderly": "1,591,807,443.130039"
  },
  "eth_rls_total_supply": {
   "publicnode": "9,931,411,076.814720",
   "tenderly": "9,931,411,076.814720"
  },
  "eth_rls_implementation_slot": "0x0000000000000000000000000000000000000000",
- "rayls_rls_supply": "1,396,155,016.000441",
+ "rayls_rls_supply": "1,398,676,511.600441",
  "bsc_rls_supply": "193,130,770.180847",
  "hub_locked_minus_rayls_and_bsc": "161.348751",
  "eth_role_holders_among_rayls_holders": {
