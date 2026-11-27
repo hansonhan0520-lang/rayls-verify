@@ -85,7 +85,7 @@
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
    "SetDstConfig": 21,
-   "Withdraw": 4,
+   "Withdraw": 5,
    "RoleGranted": 1
   },
   "admin_events": [
@@ -109,7 +109,7 @@
   "paused": 0,
   "signers": "error {'code': 3, 'message': 'execution reverted', 'data': '0x'}",
   "event_counts": {
-   "0x87e46b0a": 1008,
+   "0x87e46b0a": 1010,
    "SetDstConfig": 7,
    "Withdraw": 1,
    "UpdateSigner": 3,
